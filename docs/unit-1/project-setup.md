@@ -395,7 +395,7 @@ def song_detail(request, song_id):
 | ----------------------- | -------------------------------------------------------- | --------------------------------------------------- |
 | {% if ... %}          | Conditional statements.                                  | `{% if user.is_authenticated %}`                    |
 | {% for item in items %}         | Loops over iterable objects.                   | `{% for song in songs %}`                           |
-| {% csrf_token %}      | Security tag, required in all POST forms.                | `<form method="post">{% raw %}{% csrf_token %}{% endraw %}</form>`       |
+| {% csrf_token %}      | Security tag, required in all POST forms.                | `{% raw %}<form method="post">{% csrf_token %}</form>{% endraw %}`       |
 | {% url 'name' arg1 %} | Looks up a URL by its defined name, avoiding hardcoding. | `<a href="{% url 'song:detail' song.id %}">...</a>` |
 
 How to use it in templates:
