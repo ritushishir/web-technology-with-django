@@ -1,55 +1,17 @@
-name: Deploy Docs to GitHub Pages
-
+name: publish-site
 on:
   push:
     branches:
-      - main  # Trigger deployment on pushes to the main branch
-
-# Configure permissions for the GitHub Pages deployment token
+      - master  # or main
 permissions:
-  contents: read
-  pages: write     # Required to deploy to GitHub Pages
-  id-token: write  # Required for authentication with the OIDC token
-
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-        
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-
-      - name: Install MkDocs and Material Theme
-        # Install the dependencies needed to build the documentation
-        run: pip install mkdocs mkdocs-material
-
-      - name: Configure Git Credentials
-        # Necessary for mkdocs gh-deploy to push the built site to the gh-pages branch
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          
-      - name: Deploy MkDocs Documentation
-        # This command builds the site and pushes it to the gh-pages branch
-        run: mkdocs gh-deploy --force --clean
-        
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v5
-        
-      - name: Upload Artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './site' # MkDocs builds the site into the 'site' folder by default
-          
-      - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v4
+          python-version: 3.x
+      - run: pip install mkdocs-material 
+      - run: mkdocs gh-deploy --force
