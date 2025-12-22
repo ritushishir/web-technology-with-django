@@ -393,10 +393,10 @@ def song_detail(request, song_id):
 
 | Tag                     | Purpose                                                  | Example                                             |
 | ----------------------- | -------------------------------------------------------- | --------------------------------------------------- |
-| `{% if ... %}`          | Conditional statements.                                  | `{% if user.is_authenticated %}`                    |
-| `{% for ... %}`         | Loops over iterable objects.                             | `{% for song in songs %}`                           |
-| `{% csrf_token %}`      | Security tag, required in all POST forms.                | `<form method="post">{% csrf_token %}</form>`       |
-| `{% url 'name' arg1 %}` | Looks up a URL by its defined name, avoiding hardcoding. | `<a href="{% url 'song:detail' song.id %}">...</a>` |
+| {% if ... %}          | Conditional statements.                                  | `{% if user.is_authenticated %}`                    |
+| {% for item in items %}         | Loops over iterable objects.                   | `{% for song in songs %}`                           |
+| {% csrf_token %}      | Security tag, required in all POST forms.                | `<form method="post">{% csrf_token %}</form>`       |
+| {% url 'name' arg1 %} | Looks up a URL by its defined name, avoiding hardcoding. | `<a href="{% url 'song:detail' song.id %}">...</a>` |
 
 How to use it in templates:
 
@@ -417,11 +417,11 @@ How to use it in templates:
 
 ??? tip "Mini-Challenge: Set up Link to Details page in List of Songs and to List of Songs in Details Page"
 
-    Use the `{% url %}` tag to create a link to the song detail page dynamically.
+  Use the `{% url %}` tag to create a link to the song detail page dynamically.
 
-    ```html
+  ```html
     <a href="{% url 'song_detail' song.geet_id %}">View Details</a>
-    ```
+  ```
 
 - **Template Filters**: modify the display of variables (e.g., formatting dates, converting text to uppercase)
 
@@ -435,8 +435,8 @@ How to use it in templates:
 * `{{ html_content      | safe }}`
 
 ```html
-<p>Current date: {{ current_date|date:"F j, Y" }}</p>
-<p>Uppercase Name: {{ user.username|upper }}</p>
+  <p>Current date: {{ current_date|date:"F j, Y" }}</p>
+  <p>Uppercase Name: {{ user.username|upper }}</p>
 ```
 
 ### Templates in Views(context of MVT)
