@@ -2,6 +2,6 @@
 # Settings to prevent Jekyll from crashing on Django/Python tags
 defaults:
   - scope:
-      path: ""
+      path: "unit-1"
     values:
       render_with_liquid: false
