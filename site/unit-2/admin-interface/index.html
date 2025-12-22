@@ -1,0 +1,1324 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://example.com/docs/unit-2/admin-interface/">
+      
+      
+        <link rel="prev" href="../database-migrations/">
+      
+      
+        <link rel="next" href="../forms-in-django/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+    
+    
+      
+        <title>Admin Interface - Mastering Django</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-purple">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#admin-interface-introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Mastering Django" class="md-header__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Mastering Django
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Admin Interface
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="green" data-md-color-accent="deep-purple"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Introduction
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../unit-1/introduction-to-django/" class="md-tabs__link">
+          
+  
+  
+  Django Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
+          
+  
+  
+  Models and Databases
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Mastering Django" class="md-nav__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+      
+  <img src="../../assets/logo.png" alt="logo">
+
+    </a>
+    Mastering Django
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Django Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/introduction-to-django/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction to Django
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/virtual-environment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Virtual Environments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/project-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Setup a Project
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/project-and-app-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project and App Structure
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models and Databases
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models and Databases
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database-migrations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Migrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Interface
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Admin Interface
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-django-admin-is-used-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ What Django Admin Is Used For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 How It Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activating-the-admin-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Activating the Admin Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Customizing the Admin Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-interfaces-look-and-feel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Customizing the Admin Interface’s Look and Feel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Customizing the Admin Interface’s Look and Feel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-overriding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template Overriding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-party-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third-Party Themes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-index-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Customizing the Admin Index Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏠 Customizing the Admin Index Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔎 Search
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../forms-in-django/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Forms in Django
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-environment-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#what-django-admin-is-used-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ What Django Admin Is Used For
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-it-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔧 How It Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#activating-the-admin-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ⚙️ Activating the Admin Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Customizing the Admin Interface
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-interfaces-look-and-feel" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Customizing the Admin Interface’s Look and Feel
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Customizing the Admin Interface’s Look and Feel">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#basic-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Basic Configuration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#template-overriding" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Template Overriding
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#third-party-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Third-Party Themes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-the-admin-index-page" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🏠 Customizing the Admin Index Page
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏠 Customizing the Admin Index Page">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#default-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Default View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#customization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Customization
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#search" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔎 Search
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="admin-interface-introduction">Admin Interface - Introduction<a class="headerlink" href="#admin-interface-introduction" title="Permanent link">&para;</a></h1>
+<ul>
+<li>
+<p><strong>One of Batteries Included</strong> features of Django</p>
+</li>
+<li>
+<p>The Django admin interface is a powerful, built-in feature of the Django web framework that provides a ready-to-use administrative interface for managing your application's data.</p>
+</li>
+<li>
+<p>It reads metadata from your models to automatically create a quick, model-centric interface where trusted users can manage content on your site.</p>
+</li>
+<li>
+<p>It allows you to manage data, view records, and perform CRUD (Create, Read, Update, Delete) operations on your models without needing to write any additional code for basic data management tasks.</p>
+</li>
+</ul>
+<h2 id="what-django-admin-is-used-for">✅ What Django Admin Is Used For<a class="headerlink" href="#what-django-admin-is-used-for" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Add, edit, delete database records</li>
+<li>Search and filter data</li>
+<li>Manage users &amp; permissions</li>
+<li>Import/export data with plugins</li>
+<li>Quick internal tools for staff teams</li>
+<li>Debugging and development</li>
+</ul>
+<h2 id="how-it-works">🔧 How It Works<a class="headerlink" href="#how-it-works" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Define models  <code>models.py</code></li>
+<li>Register models in <code>admin.py</code> - <code>admin.site.register(&lt;YourModel&gt;)</code></li>
+<li>Django automatically builds forms, lists, filters, validation, and UI</li>
+</ol>
+<h2 id="activating-the-admin-interface">⚙️ Activating the Admin Interface<a class="headerlink" href="#activating-the-admin-interface" title="Permanent link">&para;</a></h2>
+<p>The Django admin interface is usually enabled by default in a new project, as the <code>django.contrib.admin</code> application is included in the <code>INSTALLED_APPS</code> setting of your project's settings.py file.</p>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>
+<p><code>django.contrib.admin</code> and its dependencies (like auth, contenttypes, and sessions) must be in <code>INSTALLED_APPS</code>.</p>
+</li>
+<li>
+<p>The admin's URL configuration must be hooked into your project's main urls.py file (typically path('admin/', admin.site.urls)).</p>
+</li>
+<li>
+<p>Access: To use it, you must first create a superuser account using the command <code>python manage.py createsuperuser</code>. After starting the development server (<code>python manage.py runserver</code>), you can access the interface, by default, at <code>/admin/</code> (e.g., <a href="http://127.0.0.1:8000/admin/">http://127.0.0.1:8000/admin/</a>).</p>
+</li>
+</ul>
+<p><img alt="admin-interface-and-setting-up-super-user" src="../assets/admin-login-createsuperuser.png" /></p>
+<p>Here is the first screen you will see after logging in:</p>
+<p><img alt="admin-interface-default-view" src="../assets/admin-interface-default-view.png" /></p>
+<p>When you register the models from your apps, they will appear here as well. Below is an example of the admin interface after registering a <strong>Songs</strong> app(with interface to add songs):</p>
+<p><img alt="admin-interface-with-an-app-registered" src="../assets/admin-interface-with-songs-app.png" /></p>
+<h2 id="customizing-the-admin-interface">🎨 Customizing the Admin Interface<a class="headerlink" href="#customizing-the-admin-interface" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Make it more user-friendly for your admin users(who are often non-technical)</li>
+<li>Tailor it to your application's specific needs</li>
+</ul>
+<p>Customization is primarily done by defining a <code>ModelAdmin</code> class for each registered model in your app's admin.py file.</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">SongAdmin</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">ModelAdmin</span><span class="p">):</span>
+    <span class="n">fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;lyrics&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;release_date&#39;</span><span class="p">)</span> <span class="c1"># Ordered list of fields in the add/edit form</span>
+    <span class="n">list_display</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;lyrics&#39;</span><span class="p">,</span> <span class="s1">&#39;release_date&#39;</span><span class="p">)</span> <span class="c1"># Columns shown in the list view</span>
+    <span class="n">search_fields</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;lyrics&#39;</span><span class="p">)</span> <span class="c1"># Fields to search against</span>
+    <span class="n">list_filter</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">,)</span> <span class="c1"># Right sidebar filters</span>
+    <span class="n">ordering</span> <span class="o">=</span> <span class="p">(</span><span class="s1">&#39;-release_date&#39;</span><span class="p">,)</span>
+
+<span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">Song</span><span class="p">,</span> <span class="n">SongAdmin</span><span class="p">)</span>
+</code></pre></div>
+
+<p>You can customize various aspects of the admin interface using different <code>ModelAdmin</code> <a href="https://docs.djangoproject.com/en/6.0/ref/contrib/admin/#modeladmin-options">options</a>. Here are some common customization areas:</p>
+<table>
+<thead>
+<tr>
+<th>Customization Area</th>
+<th>Key ModelAdmin Options</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>List View</td>
+<td>list_display</td>
+<td>Controls which fields or methods are shown as columns in the list of objects.</td>
+</tr>
+<tr>
+<td>List View</td>
+<td>list_filter</td>
+<td>Adds a right-hand sidebar to filter the list of objects based on field values.</td>
+</tr>
+<tr>
+<td>Change Form</td>
+<td>fields or fieldsets</td>
+<td>Controls the order and grouping of fields in the add/edit form.</td>
+</tr>
+<tr>
+<td>Change Form</td>
+<td>inlines</td>
+<td>Allows editing related (foreign key) objects on the same page as the parent object.</td>
+</tr>
+<tr>
+<td>Actions</td>
+<td>actions</td>
+<td>Defines custom bulk actions that can be performed on selected objects from the list view.</td>
+</tr>
+<tr>
+<td>Read Only Fields</td>
+<td>readonly_fields</td>
+<td>Specifies which fields should be read-only in the admin interface.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="customizing-the-admin-interfaces-look-and-feel">🎨 Customizing the Admin Interface’s Look and Feel<a class="headerlink" href="#customizing-the-admin-interfaces-look-and-feel" title="Permanent link">&para;</a></h2>
+<p>You can modify the visual appearance of the admin interface in several ways:</p>
+<h3 id="basic-configuration">Basic Configuration<a class="headerlink" href="#basic-configuration" title="Permanent link">&para;</a></h3>
+<p>You can change the main titles and headers by setting attributes on the default AdminSite object (usually in your project's urls.py), such as <code>admin.site.site_header</code>, <code>admin.site.site_title</code>, and <code>admin.site.index_title</code>.</p>
+<h3 id="template-overriding">Template Overriding<a class="headerlink" href="#template-overriding" title="Permanent link">&para;</a></h3>
+<p>You can override the default admin templates (e.g., <code>base_site.html</code>, <code>index.html</code>) by placing your own versions in an admin subdirectory within your project's templates directory.</p>
+<ul>
+<li>This is used for custom branding, navigation, or structure.</li>
+</ul>
+<h3 id="third-party-themes">Third-Party Themes<a class="headerlink" href="#third-party-themes" title="Permanent link">&para;</a></h3>
+<p>A popular way to radically change the look and feel is to use third-party packages, such as <strong>Django Jazzmin</strong> or <strong>Django Unfold</strong>, which are "drop-in" replacements providing modern, responsive UIs, often based on frameworks like Bootstrap or Tailwind CSS.</p>
+<h2 id="customizing-the-admin-index-page">🏠 Customizing the Admin Index Page<a class="headerlink" href="#customizing-the-admin-index-page" title="Permanent link">&para;</a></h2>
+<p>The Admin Index Page is the main dashboard you see after logging in.</p>
+<h3 id="default-view">Default View<a class="headerlink" href="#default-view" title="Permanent link">&para;</a></h3>
+<p>It lists all registered models, grouped by the application they belong to.</p>
+<h3 id="customization">Customization<a class="headerlink" href="#customization" title="Permanent link">&para;</a></h3>
+<p>You can customize this page by overriding the default <code>admin/index.html</code> template. You can add custom widgets, links, or a dashboard view to provide relevant information or quick access to management tools. Advanced customization often involves creating a custom AdminSite class and overriding its index() method.</p>
+<ul>
+<li>Overriding the Template
+The main index page uses the template located at <code>django/contrib/admin/templates/admin/index.html</code></li>
+</ul>
+<p>You can create your own custom dashboard by doing the following:</p>
+<ul>
+<li>
+<p>Create a folder structure in your app: <code>geetshala/templates/admin/</code>.</p>
+</li>
+<li>
+<p>Add a custom <code>index.html</code> inside that folder. Django will automatically find and use this template instead of the default.</p>
+</li>
+</ul>
+<p>In your custom index.html, you can iterate through the available apps and models (passed to the template via the app_list context variable) and structure the page as needed.</p>
+<h2 id="search">🔎 Search<a class="headerlink" href="#search" title="Permanent link">&para;</a></h2>
+<p>The search functionality is a key feature that allows administrators to quickly find specific records.</p>
+<p>Enabling Search: You enable search for a model by setting the search_fields attribute on its ModelAdmin class.</p>
+<p>It is a tuple of field names (e.g., <code>search_fields = ('name', 'description')</code>).</p>
+<p>Django will automatically add a search box to the Changelist view and filter the results based on the text entered against the values in the specified fields.</p>
+<p>You can search on fields from related models using the double underscore notation (<code>'foreign_key__related_field'</code>).</p>
+<details class="tip">
+<summary>Mini Challenge: Customize the Admin Interface</summary>
+<ul>
+<li>Customize the admin interface for a model in your project by creating a ModelAdmin class. Try adding at least three of the following customizations:</li>
+<li>Change the order of fields in the add/edit form using the <code>fields</code> attribute.</li>
+<li>Add search functionality using the <code>search_fields</code> attribute.</li>
+<li>Add filters to the list view using the <code>list_filter</code> attribute.</li>
+<li>Customize the columns displayed in the list view using the <code>list_display</code> attribute.</li>
+</ul>
+</details>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      
+    
+  </body>
+</html>
