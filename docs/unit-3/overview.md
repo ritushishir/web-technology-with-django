@@ -8,27 +8,27 @@ This chapter moves beyond the basics to cover more complex topics such as advanc
 
 By the end of this chapter, you will be able to:
 
-* Architect Sophisticated URL Schemes
+- Architect Sophisticated URL Schemes
 
-    - Implement modular URL configurations using inclusion and namespaces to prevent naming collisions in large-scale projects.
+  - Implement modular URL configurations using inclusion and namespaces to prevent naming collisions in large-scale projects.
 
-* Implement Class-Based Views (CBVs)
+- Implement Class-Based Views (CBVs)
 
-    - Transition from functional programming to object-oriented views, utilizing Django’s generic views to handle common patterns like list displays and detail pages with minimal code.
+  - Transition from functional programming to object-oriented views, utilizing Django’s generic views to handle common patterns like list displays and detail pages with minimal code.
 
-* Extend the Template Engine
+- Extend the Template Engine
   
-    - Use Context Processors to make data globally available across templates
+  - Use Context Processors to make data globally available across templates
 
-    - Create custom template loaders for specialized file-handling needs.
+  - Create custom template loaders for specialized file-handling needs.
 
-* Generate Dynamic Non-HTML Content
-    
-    - Configure Django to serve more than just web pages, specifically mastering the programmatic generation of CSV files and PDF documents.
+- Generate Dynamic Non-HTML Content
 
-* Optimize for SEO and Syndication
+  - Configure Django to serve more than just web pages, specifically mastering the programmatic generation of CSV files and PDF documents.
 
-    - Deploy the Sitemap and Syndication (RSS/Atom) frameworks to ensure your content is easily indexed by search engines and consumable by feed readers.
+- Optimize for SEO and Syndication
+
+  - Deploy the Sitemap and Syndication (RSS/Atom) frameworks to ensure your content is easily indexed by search engines and consumable by feed readers.
 
 ## Topics Covered
 
@@ -76,13 +76,13 @@ Tricks and techniques for managing URL patterns in Django.
 
 ## 4. Specialized Content & Outputs
 
-### [The Basics: Views and MIME-types](/docs/unit-3/specialized-content-and-outputs#views-and-mime-types)
+### [The Basics: Views and MIME-types](/docs/unit-3/specialized-content-and-output#the-basics-views-and-mime-types)
 
-### [Producing CSV Output](/docs/unit-3/specialized-content-and-outputs#producing-csv)
+### [Producing CSV Output](/docs/unit-3/specialized-content-and-output#producing-csv)
 
-### [Generating PDFs](/docs/unit-3/specialized-content-and-outputs#generating-pdfs)
+### [Generating PDFs](/docs/unit-3/specialized-content-and-output#generating-pdfs)
 
-### [Other Possibilities](/docs/unit-3/specialized-content-and-outputs#other-possibilities)
+### [Other Possibilities](/docs/unit-3/specialized-content-and-output#other-possibilities)
 
 ---
 
