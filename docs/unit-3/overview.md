@@ -76,13 +76,13 @@ Tricks and techniques for managing URL patterns in Django.
 
 ## 4. Specialized Content & Outputs
 
-### [The Basics: Views and MIME-types](./specialized-content-and-output.md#the-basics-views-and-mime-types)
+### [The Basics: Views and MIME-types](/docs/unit-3/specialized-content-and-output#the-basics-views-and-mime-types)
 
-### [Producing CSV Output](./specialized-content-and-output.md#producing-csv)
+### [Producing CSV Output](/docs/unit-3/specialized-content-and-output#producing-csv)
 
-### [Generating PDFs](./specialized-content-and-output.md#generating-pdfs)
+### [Generating PDFs](/docs/unit-3/specialized-content-and-output#generating-pdfs)
 
-### [Other Possibilities](./specialized-content-and-output.md#other-possibilities)
+### [Other Possibilities](/docs/unit-3/specialized-content-and-output#other-possibilities)
 
 ---
 
