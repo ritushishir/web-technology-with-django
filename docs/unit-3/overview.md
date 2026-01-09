@@ -1,8 +1,8 @@
-# Advanced Concepts in URL Dispatching, View and Template System
+# Advanced Concepts
 
-Welcome to the advanced concepts section of our Django course. In this unit, we will explore several key areas that will enhance your understanding and skills in Django development.
-
-This chapter moves beyond the basics to cover more complex topics such as advanced URL dispatching techniques, working with generic views, a deep dive into Django's template system, generating specialized content types, and managing metadata and discovery frameworks.
+* URL Dispatching
+* View
+* Template System
 
 ## Learning Objectives
 
@@ -36,60 +36,60 @@ By the end of this chapter, you will be able to:
 
 Tricks and techniques for managing URL patterns in Django.
 
-### [Including Other URLconfs](/docs/unit-3/advanced-url-dispatching#urlconf-tricks)
+### [Including Other URLconfs](./advanced-url-dispatching.md#urlconf-tricks)
 
-### [Naming Patterns for Easier Reverse Lookups](/docs/unit-3/advanced-url-dispatching#naming-patterns-for-easier-reverse-lookups)
+### [Naming Patterns for Easier Reverse Lookups](./advanced-url-dispatching.md#naming-patterns-for-easier-reverse-lookups)
 
-### [Passing Extra Options to View Functions](/docs/unit-3/advanced-url-dispatching#passing-extra-options-to-view-functions)
+### [Passing Extra Options to View Functions](./advanced-url-dispatching.md#passing-extra-options-to-view-functions)
 
 ---
 
 ## 2. Working with Generic Views
 
-### [Class-Based Views vs. Function-Based Views](/docs/unit-3/working-with-generic-views#cbvs-and-fbvs)
+### [Class-Based Views vs. Function-Based Views](./working-with-generic-views.md#cbvs-and-fbvs)
 
-### [Using Generic Views](/docs/unit-3/working-with-generic-views#using-generic-views)
+### [Using Generic Views](./working-with-generic-views.md#using-generic-views)
 
-### [Generic Views of Objects](/docs/unit-3/working-with-generic-views#generic-views-of-objects)
+### [Generic Views of Objects](./working-with-generic-views.md#generic-views-of-objects)
 
-### [Extending Generic Views](/docs/unit-3/working-with-generic-views#extending-generic-views)
+### [Extending Generic Views](./working-with-generic-views.md#extending-generic-views)
 
 ---
 
 ## 3. Deep Dive: Django Template System
 
-### [Template Language Review](/docs/unit-3/deep-dive-django-templates#template-language-review)
+### [Template Language Review](./deep-dive-django-templates.md#template-language-review)
 
-### [Request Context and Context Processors](/docs/unit-3/deep-dive-django-templates#request-context-and-context-processors)
+### [Request Context and Context Processors](./deep-dive-django-templates.md#request-context-and-context-processors)
 
-### [Inside Template Loading](/docs/unit-3/deep-dive-django-templates#inside-template-loading)
+### [Inside Template Loading](./deep-dive-django-templates.md#inside-template-loading)
 
-### [Extending the Template System](/docs/unit-3/deep-dive-django-templates#extending-the-template-system)
+### [Extending the Template System](./deep-dive-django-templates.md#extending-the-template-system)
 
-### [Writing Custom Template Loaders](/docs/unit-3/deep-dive-django-templates#writing-custom-template-loaders)
+### [Writing Custom Template Loaders](./deep-dive-django-templates.md#writing-custom-template-loaders)
 
-### [Using the Built-in Template Reference](/docs/unit-3/deep-dive-django-templates#using-the-built-in-template-reference)
+### [Using the Built-in Template Reference](./deep-dive-django-templates.md#using-the-built-in-template-reference)
 
-### [Configuring the Template System in Standalone Mode](/docs/unit-3/deep-dive-django-templates#configuring-the-template-system-in-standalone-mode)
+### [Configuring the Template System in Standalone Mode](./deep-dive-django-templates.md#configuring-the-template-system-in-standalone-mode)
 
 ---
 
 ## 4. Specialized Content & Outputs
 
-### [The Basics: Views and MIME-types](/docs/unit-3/specialized-content-and-output#the-basics-views-and-mime-types)
+### [The Basics: Views and MIME-types](./specialized-content-and-output.md#the-basics-views-and-mime-types)
 
-### [Producing CSV Output](/docs/unit-3/specialized-content-and-output#producing-csv)
+### [Producing CSV Output](./specialized-content-and-output.md#producing-csv)
 
-### [Generating PDFs](/docs/unit-3/specialized-content-and-output#generating-pdfs)
+### [Generating PDFs](./specialized-content-and-output.md#generating-pdfs)
 
-### [Other Possibilities](/docs/unit-3/specialized-content-and-output#other-possibilities)
+### [Other Possibilities](./specialized-content-and-output.md#other-possibilities)
 
 ---
 
 ## 5. Metadata & Discovery Frameworks
 
-### [The Syndication Feed Framework](/docs/unit-3/metadata-and-discovery-frameworks#syndication-feed-framework)
+### [The Syndication Feed Framework](./metadata-and-discovery-frameworks.md#syndication-feed-framework)
 
-### [The Sitemap Framework](/docs/unit-3/metadata-and-discovery-frameworks#sitemap-framework)
+### [The Sitemap Framework](./metadata-and-discovery-frameworks.md#sitemap-framework)
 
-### [Best Practices for Metadata and Discovery](/docs/unit-3/metadata-and-discovery-frameworks#best-practices-for-metadata-and-discovery)
+### [Best Practices for Metadata and Discovery](./metadata-and-discovery-frameworks.md#best-practices-for-metadata-and-discovery)
