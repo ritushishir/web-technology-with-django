@@ -1,6 +1,6 @@
 # Specialized Content & Outputs
 
-## The Basics: Views and MIME-types {#views-and-mime-types}
+## The Basics: Views and MIME-types {#the-basics-views-and-mime-types}
 
 * Changing the `content_type` of a response.
 * How browsers interpret different MIME types.

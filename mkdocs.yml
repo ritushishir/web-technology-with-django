@@ -65,7 +65,7 @@ nav:
       - Forms in Django: unit-2/forms-in-django.md
       - Database Setup: unit-2/database-setup.md
       - Environment Variables: unit-2/using-environment-variables.md
-  - Views, URLConfs, Template Engine and Non-HTML Content:
+  - Beyond Basics:
       - Overview: unit-3/overview.md
       - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
       - Working with Generic Views: unit-3/working-with-generic-views.md
