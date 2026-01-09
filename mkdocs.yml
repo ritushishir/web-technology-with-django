@@ -75,7 +75,8 @@ nav:
   
   - Users, caching and Subframework:
       - Overview: unit-4/overview.md
-      - Authentication and Authorization: unit-4/user-authentication-and-authorization.md
+      - Session Management: unit-4/session-and-state-management.md
+      - Authentication and Authorization: unit-4/authentication-and-authorization.md
       - Caching: unit-4/setting-up-caching.md
       - Middleware and Security: unit-4/middleware-and-security.md
       - Django Standard Library: unit-4/django-standard-library.md
