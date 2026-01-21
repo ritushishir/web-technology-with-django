@@ -73,7 +73,7 @@ nav:
       - Specialized Content & Output: unit-3/specialized-content-and-output.md
       - Metadata & Discovery Frameworks: unit-3/metadata-and-discovery-frameworks.md
   
-  - Users, caching and Subframework:
+  - Users and Sessions:
       - Overview: unit-4/overview.md
       - Session Management: unit-4/session-and-state-management.md
       - Authentication and Authorization: unit-4/authentication-and-authorization.md
