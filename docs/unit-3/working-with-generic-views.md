@@ -1,12 +1,21 @@
 # Working with Generic Views
 
-- Generic views are built-in classes in Django that provide common web development patterns, reducing the amount of boilerplate code you need to write.
+- Generic views 
+    - built-in classes in Django 
+    - provide common web development patterns, reducing the amount of boilerplate code you need to write.
 
-- Class-Based Views (CBVs) are the foundation of generic views, allowing you to create views as Python classes rather than functions.
+- Class-Based Views (CBVs)
+    - foundation of generic views
+    - allows you to create views as Python classes rather than functions.
 
-- displaying a list of items, showing details of a single item, handling forms, and more - without having to write repetitive code.
+- Examples of common tasks handled by generic views include:
+    - displaying a list of items, 
+    - showing details of a single item, 
+    - handling forms
+    - and more - without having to write repetitive code.
 
-- Reducing boilerplate code makes your codebase cleaner, more maintainable, and easier to understand.
+* Reducing boilerplate code makes your codebase cleaner, more maintainable, and easier to understand.
+
 
 ## Class-Based Views (CBVs) and Function-Based Views (FBVs) {#cbvs-and-fbvs}
 
@@ -17,13 +26,13 @@
 - FBVs are defined as simple Python functions that take a request and return a response.
 - simple, straightforward, and easy to understand for small views.
 
-- Pros:
-  - Easy to read and understand for simple views.
-  - Direct control over the request and response process.
+- **Pros**
+    - Easy to read and understand for simple views.
+    - Direct control over the request and response process.
 
-- Cons:
-  - Can lead to repetitive code for common patterns.
-  - Can lead to "spaghetti code" if the logic is complex
+- **Cons**
+    - Can lead to repetitive code for common patterns.
+    - Can lead to "spaghetti code" if the logic is complex
 
 ```python
 from django.shortcuts import render, redirect
@@ -50,14 +59,14 @@ def upload_song(request):
 - Built-in generic views handle common tasks, allowing you to focus on application-specific logic.
 - Instead of if `request.method == 'POST'`, you define methods like `get()` and `post()
 
-- Pros:
-  - Promote code reuse and organization.
-  - Easier to extend and customize through inheritance.
-  - Built-in generic views for common tasks.
+- **Pros**
+    - Promote code reuse and organization.
+    - Easier to extend and customize through inheritance.
+    - Built-in generic views for common tasks.
 
-- Cons:
-  - Slightly steeper learning curve for beginners.
-  - "hidden" logic happens behind the scenes in parent classes
+- **Cons**
+    - Slightly steeper learning curve for beginners.
+    - "hidden" logic happens behind the scenes in parent classes
 
 ```python
 from django.views import View
@@ -79,7 +88,7 @@ class UploadSong(View):
 
 - `django.views.generic` module contains various generic views that can be used to handle common tasks.
 
-- **Don't Repeat Yourself (DRY) principle**: Generic views help you adhere to the DRY principle by providing reusable components for common tasks.
+- **Don't Repeat Yourself (DRY) principle**: providing reusable components for common tasks.
 
 ## Generic Views of Objects
 
