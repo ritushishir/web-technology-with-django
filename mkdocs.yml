@@ -1,5 +1,6 @@
 site_name: Mastering Django
 site_url: https://example.com/docs/
+dev_addr: 127.0.0.1:9000
 docs_dir: docs
 site_dir: site
 strict: false
