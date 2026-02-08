@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -27,7 +27,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -231,7 +231,7 @@
           
   
   
-  Django Basics
+  1. Django Basics
 
         </a>
       </li>
@@ -251,7 +251,7 @@
           
   
   
-  Models and Databases
+  2. Models and Databases
 
         </a>
       </li>
@@ -273,7 +273,7 @@
           
   
   
-  Views, URLConfs, Template Engine and Non-HTML Content
+  3. Beyond Basics
 
         </a>
       </li>
@@ -370,7 +370,7 @@
   <span class="md-ellipsis">
     
   
-    Django Basics
+    1. Django Basics
   
 
     
@@ -386,7 +386,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Django Basics
+    1. Django Basics
   
 
           </label>
@@ -541,7 +541,7 @@
   <span class="md-ellipsis">
     
   
-    Models and Databases
+    2. Models and Databases
   
 
     
@@ -557,7 +557,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Models and Databases
+    2. Models and Databases
   
 
           </label>
@@ -773,7 +773,7 @@
   <span class="md-ellipsis">
     
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
     
@@ -789,7 +789,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
           </label>
@@ -1149,28 +1149,183 @@
 
 
 <h1 id="metadata-discovery-frameworks">Metadata &amp; Discovery Frameworks<a class="headerlink" href="#metadata-discovery-frameworks" title="Permanent link">&para;</a></h1>
+<ul>
+<li>making your content discoverable through metadata, syndication feeds, and sitemaps.</li>
+<li>Django's built-in frameworks to manage metadata and enhance content discovery.</li>
+</ul>
 <h2 id="understanding-metadata-in-django">Understanding Metadata in Django<a class="headerlink" href="#understanding-metadata-in-django" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Importance of metadata for SEO and content discovery.</li>
-<li>Using Django's <code>Meta</code> class in models to define metadata attributes.</li>
+<li>data about data</li>
+<li>in a web context, tells search engines and social media platforms what your content is about before they even load it</li>
+</ul>
+<p><strong>The Model <code>Meta</code> Class</strong>
+- defining metadata for your models
+- The <code>class Meta</code> inside a Django model allows you to specify metadata options like ordering, verbose names, and permissions.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+        <span class="n">artist</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+
+        <span class="k">class</span><span class="w"> </span><span class="nc">Meta</span><span class="p">:</span>
+            <span class="n">ordering</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span>
+            <span class="n">verbose_name</span> <span class="o">=</span> <span class="s1">&#39;Song&#39;</span>
+            <span class="n">verbose_name_plural</span> <span class="o">=</span> <span class="s1">&#39;Songs&#39;</span>
+            <span class="n">get_latest_by</span> <span class="o">=</span> <span class="s1">&#39;release_date&#39;</span>
+</code></pre></div>
+
+<p><strong>SEO Metadata</strong></p>
+<p>While the Model Meta handles internal metadata, SEO metadata (Meta tags in HTML) is crucial for discovery:</p>
+<ul>
+<li><strong>Description tags</strong>: Improve Click-Through Rate (CTR) on Google.</li>
+<li><strong>OpenGraph (OG) tags</strong>: Control how your links look when shared on WhatsApp, X (Twitter), or LinkedIn.</li>
 </ul>
 <h2 id="syndication-feed-framework">The Syndication Feed Framework<a class="headerlink" href="#syndication-feed-framework" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Setting up RSS and Atom feeds using Django's built-in syndication framework.</li>
+<li>high-level framework for creating RSS and Atom feeds.</li>
+<li>basically highly specialized views that generate XML instead of HTML that can be consumed by feed readers and aggregators.</li>
+<li>allows you to syndicate your content so that users can subscribe to updates using feed readers.</li>
+<li>Django's <code>django.contrib.syndication</code> framework to create and manage feeds.</li>
+</ul>
+<p><strong>Setting up a Feed Class</strong></p>
+<p>You define a feed by creating a subclass of <code>django.contrib.syndication.views.Feed</code> and specifying attributes like <code>title</code>, <code>link</code>, and <code>description</code>.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib.syndication.views</span><span class="w"> </span><span class="kn">import</span> <span class="n">Feed</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">LatestSongsFeed</span><span class="p">(</span><span class="n">Feed</span><span class="p">):</span>
+        <span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Latest Songs&quot;</span>
+        <span class="n">link</span> <span class="o">=</span> <span class="s2">&quot;/feeds/latest/&quot;</span>
+        <span class="n">description</span> <span class="o">=</span> <span class="s2">&quot;Updates on the latest songs added.&quot;</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;-release_date&#39;</span><span class="p">)[:</span><span class="mi">5</span><span class="p">]</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">item_title</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">item</span><span class="o">.</span><span class="n">title</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">item_description</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">item</span><span class="p">):</span>
+            <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;Artist: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">artist</span><span class="si">}</span><span class="s2">, Released on: </span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">release_date</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p><strong>Linking to URLs</strong></p>
+<p>You hook up your feed class to a URL pattern in your <code>urls.py</code>.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.feeds</span><span class="w"> </span><span class="kn">import</span> <span class="n">LatestSongsFeed</span>
+    <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">path</span><span class="p">(</span><span class="s1">&#39;feeds/latest/&#39;</span><span class="p">,</span> <span class="n">LatestSongsFeed</span><span class="p">(),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;latest-songs-feed&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+</code></pre></div>
+
+<p><strong>Customizing Feed Content</strong></p>
+<ul>
+<li>Adding additional metadata to feed items (like author, categories).</li>
+<li>Formatting dates and content for better readability in feed readers.</li>
+<li>Implementing custom feed item methods for more control over content.</li>
+<li>Handling edge cases and errors in feed generation.</li>
 <li>Creating feed classes and linking them to views.</li>
 <li>Customizing feed content and structure.</li>
+<li>Handling edge cases and errors in feed generation.</li>
 </ul>
 <h2 id="sitemap-framework">The Sitemap Framework<a class="headerlink" href="#sitemap-framework" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Generating <code>sitemap.xml</code> to help search engines index your site.</li>
-<li>Configuring sitemaps for different models and static views.</li>
-<li>Integrating with Django's URL routing to automate sitemap generation.</li>
+<li>Sitemap: <ul>
+<li>An XML file that lists all the important URLs on your site </li>
+<li>Help search engines crawl your site more intelligently </li>
+<li>Tells which pages are available, how often they are updated, and their relative importance.</li>
 </ul>
+</li>
+<li>
+<p>Django's <code>sitemaps</code> framework to generate sitemaps automatically.</p>
+</li>
+<li>
+<p>RSS feeds are for users, while sitemaps are for search engines. Both are crucial for content discovery but serve different purposes.</p>
+</li>
+</ul>
+<hr />
+<p><strong>Configuring Sitemaps</strong></p>
+<ul>
+<li>uses a <code>Sitemap</code> class to pull data from your models and generate the <urlset> XML structure.</li>
+</ul>
+<p>Example: Basic Sitemap Setup</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib.sitemaps</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sitemap</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">SongSitemap</span><span class="p">(</span><span class="n">Sitemap</span><span class="p">):</span>
+        <span class="n">changefreq</span> <span class="o">=</span> <span class="s2">&quot;weekly&quot;</span>
+        <span class="n">priority</span> <span class="o">=</span> <span class="mf">0.8</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">lastmod</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">obj</span><span class="o">.</span><span class="n">updated_at</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">location</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+            <span class="k">return</span> <span class="n">obj</span><span class="o">.</span><span class="n">get_absolute_url</span><span class="p">()</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">changefreq</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s2">&quot;weekly&quot;</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">priority</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+            <span class="k">return</span> <span class="mf">0.8</span>
+</code></pre></div>
+
+<p><strong>Integration</strong></p>
+<ul>
+<li>Installed apps: </li>
+</ul>
+<p>Add <code>django.contrib.sitemaps</code> to your <code>INSTALLED_APPS</code> in <code>settings.py</code>.</p>
+<div class="codehilite"><pre><span></span><code>    INSTALLED_APPS = [
+        ...
+        &#39;django.contrib.sitemaps&#39;,
+        ...
+    ]
+</code></pre></div>
+
+<ul>
+<li>
+<p>URL Configuration:</p>
+<p>Add it to your URL patterns to enable Django render a standard <code>sitemap.xml</code> at that path.</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib.sitemaps.views</span><span class="w"> </span><span class="kn">import</span> <span class="n">sitemap</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">.sitemaps</span><span class="w"> </span><span class="kn">import</span> <span class="n">SongSitemap</span>
+    <span class="n">sitemaps</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">SongSitemap</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">path</span><span class="p">(</span><span class="s1">&#39;sitemap.xml&#39;</span><span class="p">,</span> <span class="n">sitemap</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;sitemaps&#39;</span><span class="p">:</span> <span class="n">sitemaps</span><span class="p">},</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;sitemap&#39;</span><span class="p">),</span>
+    <span class="p">]</span>
+</code></pre></div>
+
 <h2 id="best-practices-for-metadata-and-discovery">Best Practices for Metadata and Discovery<a class="headerlink" href="#best-practices-for-metadata-and-discovery" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Strategies for effective metadata management.</li>
-<li>Ensuring your site is easily discoverable by search engines and feed readers.</li>
+<li>Goal is to make your content easily discoverable and well-represented across platforms.</li>
+<li>Actually <code>FOUND</code> not just <code>ONLINE</code></li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Strategy</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Canonical URLs</td>
+<td>Always use the <code>get_absolute_url()</code> method in models to ensure sitemaps and feeds point to the correct link.</td>
+</tr>
+<tr>
+<td>Robots.txt</td>
+<td>Use a <code>robots.txt</code> file to tell bots which parts of the site to ignore (e.g., /admin/).</td>
+</tr>
+<tr>
+<td>Rich Snippets</td>
+<td>Use Schema.org metadata (JSON-LD) to help Google show star ratings or prices in search results.</td>
+</tr>
+<tr>
+<td>Validation</td>
+<td>Use the W3C Feed Validator to ensure your RSS feeds aren't broken.</td>
+</tr>
+</tbody>
+</table>
 
 
 
@@ -1226,10 +1381,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#advanced-concepts-in-url-dispatching-view-and-template-system" class="md-skip">
+        <a href="#advanced-concepts" class="md-skip">
           Skip to content
         </a>
       
@@ -233,7 +233,7 @@
           
   
   
-  Django Basics
+  1. Django Basics
 
         </a>
       </li>
@@ -253,7 +253,7 @@
           
   
   
-  Models and Databases
+  2. Models and Databases
 
         </a>
       </li>
@@ -275,7 +275,7 @@
           
   
   
-  Views, URLConfs, Template Engine and Non-HTML Content
+  3. Beyond Basics
 
         </a>
       </li>
@@ -372,7 +372,7 @@
   <span class="md-ellipsis">
     
   
-    Django Basics
+    1. Django Basics
   
 
     
@@ -388,7 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Django Basics
+    1. Django Basics
   
 
           </label>
@@ -543,7 +543,7 @@
   <span class="md-ellipsis">
     
   
-    Models and Databases
+    2. Models and Databases
   
 
     
@@ -559,7 +559,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Models and Databases
+    2. Models and Databases
   
 
           </label>
@@ -775,7 +775,7 @@
   <span class="md-ellipsis">
     
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
     
@@ -791,7 +791,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
           </label>
@@ -1738,9 +1738,12 @@
 
 
 
-<h1 id="advanced-concepts-in-url-dispatching-view-and-template-system">Advanced Concepts in URL Dispatching, View and Template System<a class="headerlink" href="#advanced-concepts-in-url-dispatching-view-and-template-system" title="Permanent link">&para;</a></h1>
-<p>Welcome to the advanced concepts section of our Django course. In this unit, we will explore several key areas that will enhance your understanding and skills in Django development.</p>
-<p>This chapter moves beyond the basics to cover more complex topics such as advanced URL dispatching techniques, working with generic views, a deep dive into Django's template system, generating specialized content types, and managing metadata and discovery frameworks.</p>
+<h1 id="advanced-concepts">Advanced Concepts<a class="headerlink" href="#advanced-concepts" title="Permanent link">&para;</a></h1>
+<ul>
+<li>URL Dispatching</li>
+<li>View</li>
+<li>Template System</li>
+</ul>
 <h2 id="learning-objectives">Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
 <p>By the end of this chapter, you will be able to:</p>
 <ul>
@@ -1783,35 +1786,35 @@
 <h2 id="topics-covered">Topics Covered<a class="headerlink" href="#topics-covered" title="Permanent link">&para;</a></h2>
 <h2 id="1-advanced-url-dispatching">1. Advanced URL Dispatching<a class="headerlink" href="#1-advanced-url-dispatching" title="Permanent link">&para;</a></h2>
 <p>Tricks and techniques for managing URL patterns in Django.</p>
-<h3 id="including-other-urlconfs"><a href="/docs/unit-3/advanced-url-dispatching#urlconf-tricks">Including Other URLconfs</a><a class="headerlink" href="#including-other-urlconfs" title="Permanent link">&para;</a></h3>
-<h3 id="naming-patterns-for-easier-reverse-lookups"><a href="/docs/unit-3/advanced-url-dispatching#naming-patterns-for-easier-reverse-lookups">Naming Patterns for Easier Reverse Lookups</a><a class="headerlink" href="#naming-patterns-for-easier-reverse-lookups" title="Permanent link">&para;</a></h3>
-<h3 id="passing-extra-options-to-view-functions"><a href="/docs/unit-3/advanced-url-dispatching#passing-extra-options-to-view-functions">Passing Extra Options to View Functions</a><a class="headerlink" href="#passing-extra-options-to-view-functions" title="Permanent link">&para;</a></h3>
+<h3 id="including-other-urlconfs"><a href="../advanced-url-dispatching/#urlconf-tricks">Including Other URLconfs</a><a class="headerlink" href="#including-other-urlconfs" title="Permanent link">&para;</a></h3>
+<h3 id="naming-patterns-for-easier-reverse-lookups"><a href="../advanced-url-dispatching/#naming-patterns-for-easier-reverse-lookups">Naming Patterns for Easier Reverse Lookups</a><a class="headerlink" href="#naming-patterns-for-easier-reverse-lookups" title="Permanent link">&para;</a></h3>
+<h3 id="passing-extra-options-to-view-functions"><a href="../advanced-url-dispatching/#passing-extra-options-to-view-functions">Passing Extra Options to View Functions</a><a class="headerlink" href="#passing-extra-options-to-view-functions" title="Permanent link">&para;</a></h3>
 <hr />
 <h2 id="2-working-with-generic-views">2. Working with Generic Views<a class="headerlink" href="#2-working-with-generic-views" title="Permanent link">&para;</a></h2>
-<h3 id="class-based-views-vs-function-based-views"><a href="/docs/unit-3/working-with-generic-views#cbvs-and-fbvs">Class-Based Views vs. Function-Based Views</a><a class="headerlink" href="#class-based-views-vs-function-based-views" title="Permanent link">&para;</a></h3>
-<h3 id="using-generic-views"><a href="/docs/unit-3/working-with-generic-views#using-generic-views">Using Generic Views</a><a class="headerlink" href="#using-generic-views" title="Permanent link">&para;</a></h3>
-<h3 id="generic-views-of-objects"><a href="/docs/unit-3/working-with-generic-views#generic-views-of-objects">Generic Views of Objects</a><a class="headerlink" href="#generic-views-of-objects" title="Permanent link">&para;</a></h3>
-<h3 id="extending-generic-views"><a href="/docs/unit-3/working-with-generic-views#extending-generic-views">Extending Generic Views</a><a class="headerlink" href="#extending-generic-views" title="Permanent link">&para;</a></h3>
+<h3 id="class-based-views-vs-function-based-views"><a href="../working-with-generic-views/#cbvs-and-fbvs">Class-Based Views vs. Function-Based Views</a><a class="headerlink" href="#class-based-views-vs-function-based-views" title="Permanent link">&para;</a></h3>
+<h3 id="using-generic-views"><a href="../working-with-generic-views/#using-generic-views">Using Generic Views</a><a class="headerlink" href="#using-generic-views" title="Permanent link">&para;</a></h3>
+<h3 id="generic-views-of-objects"><a href="../working-with-generic-views/#generic-views-of-objects">Generic Views of Objects</a><a class="headerlink" href="#generic-views-of-objects" title="Permanent link">&para;</a></h3>
+<h3 id="extending-generic-views"><a href="../working-with-generic-views/#extending-generic-views">Extending Generic Views</a><a class="headerlink" href="#extending-generic-views" title="Permanent link">&para;</a></h3>
 <hr />
 <h2 id="3-deep-dive-django-template-system">3. Deep Dive: Django Template System<a class="headerlink" href="#3-deep-dive-django-template-system" title="Permanent link">&para;</a></h2>
-<h3 id="template-language-review"><a href="/docs/unit-3/deep-dive-django-templates#template-language-review">Template Language Review</a><a class="headerlink" href="#template-language-review" title="Permanent link">&para;</a></h3>
-<h3 id="request-context-and-context-processors"><a href="/docs/unit-3/deep-dive-django-templates#request-context-and-context-processors">Request Context and Context Processors</a><a class="headerlink" href="#request-context-and-context-processors" title="Permanent link">&para;</a></h3>
-<h3 id="inside-template-loading"><a href="/docs/unit-3/deep-dive-django-templates#inside-template-loading">Inside Template Loading</a><a class="headerlink" href="#inside-template-loading" title="Permanent link">&para;</a></h3>
-<h3 id="extending-the-template-system"><a href="/docs/unit-3/deep-dive-django-templates#extending-the-template-system">Extending the Template System</a><a class="headerlink" href="#extending-the-template-system" title="Permanent link">&para;</a></h3>
-<h3 id="writing-custom-template-loaders"><a href="/docs/unit-3/deep-dive-django-templates#writing-custom-template-loaders">Writing Custom Template Loaders</a><a class="headerlink" href="#writing-custom-template-loaders" title="Permanent link">&para;</a></h3>
-<h3 id="using-the-built-in-template-reference"><a href="/docs/unit-3/deep-dive-django-templates#using-the-built-in-template-reference">Using the Built-in Template Reference</a><a class="headerlink" href="#using-the-built-in-template-reference" title="Permanent link">&para;</a></h3>
-<h3 id="configuring-the-template-system-in-standalone-mode"><a href="/docs/unit-3/deep-dive-django-templates#configuring-the-template-system-in-standalone-mode">Configuring the Template System in Standalone Mode</a><a class="headerlink" href="#configuring-the-template-system-in-standalone-mode" title="Permanent link">&para;</a></h3>
+<h3 id="template-language-review"><a href="../deep-dive-django-templates/#template-language-review">Template Language Review</a><a class="headerlink" href="#template-language-review" title="Permanent link">&para;</a></h3>
+<h3 id="request-context-and-context-processors"><a href="../deep-dive-django-templates/#request-context-and-context-processors">Request Context and Context Processors</a><a class="headerlink" href="#request-context-and-context-processors" title="Permanent link">&para;</a></h3>
+<h3 id="inside-template-loading"><a href="../deep-dive-django-templates/#inside-template-loading">Inside Template Loading</a><a class="headerlink" href="#inside-template-loading" title="Permanent link">&para;</a></h3>
+<h3 id="extending-the-template-system"><a href="../deep-dive-django-templates/#extending-the-template-system">Extending the Template System</a><a class="headerlink" href="#extending-the-template-system" title="Permanent link">&para;</a></h3>
+<h3 id="writing-custom-template-loaders"><a href="../deep-dive-django-templates/#writing-custom-template-loaders">Writing Custom Template Loaders</a><a class="headerlink" href="#writing-custom-template-loaders" title="Permanent link">&para;</a></h3>
+<h3 id="using-the-built-in-template-reference"><a href="../deep-dive-django-templates/#using-the-built-in-template-reference">Using the Built-in Template Reference</a><a class="headerlink" href="#using-the-built-in-template-reference" title="Permanent link">&para;</a></h3>
+<h3 id="configuring-the-template-system-in-standalone-mode"><a href="../deep-dive-django-templates/#configuring-the-template-system-in-standalone-mode">Configuring the Template System in Standalone Mode</a><a class="headerlink" href="#configuring-the-template-system-in-standalone-mode" title="Permanent link">&para;</a></h3>
 <hr />
 <h2 id="4-specialized-content-outputs">4. Specialized Content &amp; Outputs<a class="headerlink" href="#4-specialized-content-outputs" title="Permanent link">&para;</a></h2>
-<h3 id="the-basics-views-and-mime-types"><a href="/docs/unit-3/specialized-content-and-outputs#views-and-mime-types">The Basics: Views and MIME-types</a><a class="headerlink" href="#the-basics-views-and-mime-types" title="Permanent link">&para;</a></h3>
-<h3 id="producing-csv-output"><a href="/docs/unit-3/specialized-content-and-outputs#producing-csv">Producing CSV Output</a><a class="headerlink" href="#producing-csv-output" title="Permanent link">&para;</a></h3>
-<h3 id="generating-pdfs"><a href="/docs/unit-3/specialized-content-and-outputs#generating-pdfs">Generating PDFs</a><a class="headerlink" href="#generating-pdfs" title="Permanent link">&para;</a></h3>
-<h3 id="other-possibilities"><a href="/docs/unit-3/specialized-content-and-outputs#other-possibilities">Other Possibilities</a><a class="headerlink" href="#other-possibilities" title="Permanent link">&para;</a></h3>
+<h3 id="the-basics-views-and-mime-types"><a href="../specialized-content-and-output/#the-basics-views-and-mime-types">The Basics: Views and MIME-types</a><a class="headerlink" href="#the-basics-views-and-mime-types" title="Permanent link">&para;</a></h3>
+<h3 id="producing-csv-output"><a href="../specialized-content-and-output/#producing-csv">Producing CSV Output</a><a class="headerlink" href="#producing-csv-output" title="Permanent link">&para;</a></h3>
+<h3 id="generating-pdfs"><a href="../specialized-content-and-output/#generating-pdfs">Generating PDFs</a><a class="headerlink" href="#generating-pdfs" title="Permanent link">&para;</a></h3>
+<h3 id="other-possibilities"><a href="../specialized-content-and-output/#other-possibilities">Other Possibilities</a><a class="headerlink" href="#other-possibilities" title="Permanent link">&para;</a></h3>
 <hr />
 <h2 id="5-metadata-discovery-frameworks">5. Metadata &amp; Discovery Frameworks<a class="headerlink" href="#5-metadata-discovery-frameworks" title="Permanent link">&para;</a></h2>
-<h3 id="the-syndication-feed-framework"><a href="/docs/unit-3/metadata-and-discovery-frameworks#syndication-feed-framework">The Syndication Feed Framework</a><a class="headerlink" href="#the-syndication-feed-framework" title="Permanent link">&para;</a></h3>
-<h3 id="the-sitemap-framework"><a href="/docs/unit-3/metadata-and-discovery-frameworks#sitemap-framework">The Sitemap Framework</a><a class="headerlink" href="#the-sitemap-framework" title="Permanent link">&para;</a></h3>
-<h3 id="best-practices-for-metadata-and-discovery"><a href="/docs/unit-3/metadata-and-discovery-frameworks#best-practices-for-metadata-and-discovery">Best Practices for Metadata and Discovery</a><a class="headerlink" href="#best-practices-for-metadata-and-discovery" title="Permanent link">&para;</a></h3>
+<h3 id="the-syndication-feed-framework"><a href="../metadata-and-discovery-frameworks/#syndication-feed-framework">The Syndication Feed Framework</a><a class="headerlink" href="#the-syndication-feed-framework" title="Permanent link">&para;</a></h3>
+<h3 id="the-sitemap-framework"><a href="../metadata-and-discovery-frameworks/#sitemap-framework">The Sitemap Framework</a><a class="headerlink" href="#the-sitemap-framework" title="Permanent link">&para;</a></h3>
+<h3 id="best-practices-for-metadata-and-discovery"><a href="../metadata-and-discovery-frameworks/#best-practices-for-metadata-and-discovery">Best Practices for Metadata and Discovery</a><a class="headerlink" href="#best-practices-for-metadata-and-discovery" title="Permanent link">&para;</a></h3>
 
 
 
@@ -1867,10 +1870,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

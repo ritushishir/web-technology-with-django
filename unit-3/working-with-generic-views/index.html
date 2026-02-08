@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -233,7 +233,7 @@
           
   
   
-  Django Basics
+  1. Django Basics
 
         </a>
       </li>
@@ -253,7 +253,7 @@
           
   
   
-  Models and Databases
+  2. Models and Databases
 
         </a>
       </li>
@@ -275,7 +275,7 @@
           
   
   
-  Views, URLConfs, Template Engine and Non-HTML Content
+  3. Beyond Basics
 
         </a>
       </li>
@@ -372,7 +372,7 @@
   <span class="md-ellipsis">
     
   
-    Django Basics
+    1. Django Basics
   
 
     
@@ -388,7 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Django Basics
+    1. Django Basics
   
 
           </label>
@@ -543,7 +543,7 @@
   <span class="md-ellipsis">
     
   
-    Models and Databases
+    2. Models and Databases
   
 
     
@@ -559,7 +559,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Models and Databases
+    2. Models and Databases
   
 
           </label>
@@ -775,7 +775,7 @@
   <span class="md-ellipsis">
     
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
     
@@ -791,7 +791,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
           </label>
@@ -920,7 +920,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#class-based-views-cbvs-and-function-based-views-fbvs" class="md-nav__link">
+  <a href="#cbvs-and-fbvs" class="md-nav__link">
     <span class="md-ellipsis">
       
         Class-Based Views (CBVs) and Function-Based Views (FBVs)
@@ -1162,7 +1162,7 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#class-based-views-cbvs-and-function-based-views-fbvs" class="md-nav__link">
+  <a href="#cbvs-and-fbvs" class="md-nav__link">
     <span class="md-ellipsis">
       
         Class-Based Views (CBVs) and Function-Based Views (FBVs)
@@ -1297,19 +1297,33 @@
 <h1 id="working-with-generic-views">Working with Generic Views<a class="headerlink" href="#working-with-generic-views" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
-<p>Generic views are built-in classes in Django that provide common web development patterns, reducing the amount of boilerplate code you need to write.</p>
+<p>Generic views </p>
+<ul>
+<li>built-in classes in Django </li>
+<li>provide common web development patterns, reducing the amount of boilerplate code you need to write.</li>
+</ul>
 </li>
 <li>
-<p>Class-Based Views (CBVs) are the foundation of generic views, allowing you to create views as Python classes rather than functions.</p>
+<p>Class-Based Views (CBVs)</p>
+<ul>
+<li>foundation of generic views</li>
+<li>allows you to create views as Python classes rather than functions.</li>
+</ul>
 </li>
 <li>
-<p>displaying a list of items, showing details of a single item, handling forms, and more - without having to write repetitive code.</p>
+<p>Examples of common tasks handled by generic views include:</p>
+<ul>
+<li>displaying a list of items, </li>
+<li>showing details of a single item, </li>
+<li>handling forms</li>
+<li>and more - without having to write repetitive code.</li>
+</ul>
 </li>
 <li>
 <p>Reducing boilerplate code makes your codebase cleaner, more maintainable, and easier to understand.</p>
 </li>
 </ul>
-<h2 id="class-based-views-cbvs-and-function-based-views-fbvs" title_cbvs-and-fbvs="title#cbvs-and-fbvs">Class-Based Views (CBVs) and Function-Based Views (FBVs)<a class="headerlink" href="#class-based-views-cbvs-and-function-based-views-fbvs" title="Permanent link">&para;</a></h2>
+<h2 id="cbvs-and-fbvs">Class-Based Views (CBVs) and Function-Based Views (FBVs)<a class="headerlink" href="#cbvs-and-fbvs" title="Permanent link">&para;</a></h2>
 <ul>
 <li>both ultimately serve the same purpose: to handle <code>HTTPRequest</code> and return <code>HTTPResponse</code>.</li>
 </ul>
@@ -1320,17 +1334,19 @@
 <p>simple, straightforward, and easy to understand for small views.</p>
 </li>
 <li>
-<p>Pros:</p>
-</li>
+<p><strong>Pros</strong></p>
+<ul>
 <li>Easy to read and understand for simple views.</li>
-<li>
-<p>Direct control over the request and response process.</p>
+<li>Direct control over the request and response process.</li>
+</ul>
 </li>
 <li>
-<p>Cons:</p>
-</li>
+<p><strong>Cons</strong></p>
+<ul>
 <li>Can lead to repetitive code for common patterns.</li>
 <li>Can lead to "spaghetti code" if the logic is complex</li>
+</ul>
+</li>
 </ul>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span><span class="p">,</span> <span class="n">redirect</span>
 <span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
@@ -1358,18 +1374,20 @@
 <p>Instead of if <code>request.method == 'POST'</code>, you define methods like <code>get()</code> and `post()</p>
 </li>
 <li>
-<p>Pros:</p>
-</li>
+<p><strong>Pros</strong></p>
+<ul>
 <li>Promote code reuse and organization.</li>
 <li>Easier to extend and customize through inheritance.</li>
-<li>
-<p>Built-in generic views for common tasks.</p>
+<li>Built-in generic views for common tasks.</li>
+</ul>
 </li>
 <li>
-<p>Cons:</p>
-</li>
+<p><strong>Cons</strong></p>
+<ul>
 <li>Slightly steeper learning curve for beginners.</li>
 <li>"hidden" logic happens behind the scenes in parent classes</li>
+</ul>
+</li>
 </ul>
 <div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.views</span><span class="w"> </span><span class="kn">import</span> <span class="n">View</span>
 
@@ -1392,7 +1410,7 @@
 <p><code>django.views.generic</code> module contains various generic views that can be used to handle common tasks.</p>
 </li>
 <li>
-<p><strong>Don't Repeat Yourself (DRY) principle</strong>: Generic views help you adhere to the DRY principle by providing reusable components for common tasks.</p>
+<p><strong>Don't Repeat Yourself (DRY) principle</strong>: providing reusable components for common tasks.</p>
 </li>
 </ul>
 <h2 id="generic-views-of-objects">Generic Views of Objects<a class="headerlink" href="#generic-views-of-objects" title="Permanent link">&para;</a></h2>
@@ -1555,10 +1573,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

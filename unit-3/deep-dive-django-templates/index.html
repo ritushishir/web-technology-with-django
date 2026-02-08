@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -233,7 +233,7 @@
           
   
   
-  Django Basics
+  1. Django Basics
 
         </a>
       </li>
@@ -253,7 +253,7 @@
           
   
   
-  Models and Databases
+  2. Models and Databases
 
         </a>
       </li>
@@ -275,7 +275,7 @@
           
   
   
-  Views, URLConfs, Template Engine and Non-HTML Content
+  3. Beyond Basics
 
         </a>
       </li>
@@ -372,7 +372,7 @@
   <span class="md-ellipsis">
     
   
-    Django Basics
+    1. Django Basics
   
 
     
@@ -388,7 +388,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Django Basics
+    1. Django Basics
   
 
           </label>
@@ -543,7 +543,7 @@
   <span class="md-ellipsis">
     
   
-    Models and Databases
+    2. Models and Databases
   
 
     
@@ -559,7 +559,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Models and Databases
+    2. Models and Databases
   
 
           </label>
@@ -775,7 +775,7 @@
   <span class="md-ellipsis">
     
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
     
@@ -791,7 +791,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
           </label>
@@ -989,6 +989,84 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Extending the Template System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-template-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Template Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Tags
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Tags simple_tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inclusion-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inclusion Tags inclusion_tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-custom-tags-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering Custom Tags and Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-custom-tags-and-filters-in-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading Custom Tags and Filters in Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1164,6 +1242,84 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Extending the Template System">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-template-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Template Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Tags
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Custom Tags">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Simple Tags simple_tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inclusion-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inclusion Tags inclusion_tag
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#registering-custom-tags-and-filters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Registering Custom Tags and Filters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#loading-custom-tags-and-filters-in-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Loading Custom Tags and Filters in Templates
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1217,35 +1373,247 @@
 
 
 <h1 id="deep-dive-django-template-system">Deep Dive - Django Template System<a class="headerlink" href="#deep-dive-django-template-system" title="Permanent link">&para;</a></h1>
+<hr />
 <h2 id="template-language-review">Template Language Review<a class="headerlink" href="#template-language-review" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Quick refresh on Tags, Filters, and Variables.</li>
-<li>Inheritance strategies (<code>{% extends %}</code> and <code>{% block %}</code>).</li>
+<li>Quick refresh on <a href="/docs/unit-1/project-setup#basic-template-tags-and-filters">Tags, Filters, and Variables</a>.</li>
+<li><a href="/docs/unit-1/project-setup#template-inheritance">Inheritance</a> strategies (<code>{% extends %}</code> and <code>{% block %}</code>) .</li>
 </ul>
+<hr />
 <h2 id="request-context-and-context-processors">Request Context and Context Processors<a class="headerlink" href="#request-context-and-context-processors" title="Permanent link">&para;</a></h2>
+<p><strong>RequestContext</strong></p>
 <ul>
-<li>Understanding <code>RequestContext</code> vs. <code>Context</code>.</li>
-<li>Configuring built-in and custom context processors to make data available globally across templates.</li>
+<li>specialized subclass of <code>Context</code> that automatically includes variables from context processors.</li>
+<li>requires the <code>HttpRequest</code> object to function, which allows it to access request-specific data.</li>
+<li>automatically executes all context processors defined in your settings, making their variables available in the template without needing to pass them explicitly.</li>
+<li>When you use <code>render()</code> in a view, it automatically uses <code>RequestContext</code>, so you get the benefits of context processors without extra work.</li>
+<li>Example: If you have a context processor that adds <code>site_name</code> to the context, you can access <code>{{ site_name }}</code> in any template rendered with <code>render()</code>.</li>
+<li>If you use <code>Template.render()</code> directly, you need to create a <code>RequestContext</code> manually to get the context processor variables.</li>
+<li>Example of using <code>RequestContext</code> with <code>Template.render()</code>:</li>
 </ul>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.template</span><span class="w"> </span><span class="kn">import</span> <span class="n">Template</span><span class="p">,</span> <span class="n">RequestContext</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpRequest</span>
+    <span class="n">request</span> <span class="o">=</span> <span class="n">HttpRequest</span><span class="p">()</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">Template</span><span class="p">(</span><span class="s2">&quot;Site Name: {{ site_name }}&quot;</span><span class="p">)</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="n">RequestContext</span><span class="p">(</span><span class="n">request</span><span class="p">)</span>
+    <span class="n">rendered</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rendered</span><span class="p">)</span>  <span class="c1"># This will include the site_name variable from the context processor</span>
+</code></pre></div>
+
+<p><strong>Context Processors</strong></p>
+<ul>
+<li>functions that take a request object and return a dictionary of variables to be added to the template context.</li>
+<li>can be used to make certain data available globally across all templates (e.g., user information, site settings, etc.).</li>
+<li>Example: A context processor that adds the current year to the context.</li>
+<li>Example of a custom context processor:</li>
+</ul>
+<div class="codehilite"><pre><span></span><code><span class="c1"># songs/context_processors.py</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">app_settings</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="s1">&#39;site_name&#39;</span><span class="p">:</span> <span class="s1">&#39;Geetshala&#39;</span><span class="p">,</span>
+    <span class="p">}</span>
+</code></pre></div>
+
+<p>Step 2: Add the context processor to your <code>TEMPLATES</code> setting in <code>settings.py</code>.</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># settings.py</span>
+<span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="o">...</span><span class="p">,</span>
+        <span class="s1">&#39;OPTIONS&#39;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="s1">&#39;context_processors&#39;</span><span class="p">:</span> <span class="p">[</span>
+                <span class="o">...</span><span class="p">,</span>
+                <span class="s1">&#39;songs.context_processors.app_settings&#39;</span><span class="p">,</span>
+            <span class="p">],</span>
+        <span class="p">},</span>
+    <span class="p">},</span>
+<span class="p">]</span>
+</code></pre></div>
+
+<p>Step 3: Use the <code>site_name</code> variable in your templates.</p>
+<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- base.html --&gt;</span>
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{{ site_name }}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+.....
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<details class="tip">
+<summary>More on Context Processors</summary>
+<p>Check out the <a href="https://docs.djangoproject.com/en/stable/ref/templates/api/#django.template.RequestContext">Django documentation on context processors</a> for more built-in options and examples.</p>
+</details>
+<hr />
 <h2 id="inside-template-loading">Inside Template Loading<a class="headerlink" href="#inside-template-loading" title="Permanent link">&para;</a></h2>
 <ul>
-<li>How Django finds your HTML files.</li>
+<li>How Django finds your HTML files?<ul>
 <li>The <code>DIRS</code> and <code>APP_DIRS</code> configurations.</li>
+<li><code>DIRS</code>: List of directories to search for templates.</li>
+<li><code>APP_DIRS</code>: If <code>True</code>, Django will look for a <code>templates</code> subdirectory in each installed application.</li>
+<li><strong>Search Order</strong>: The order of search: <code>DIRS</code> first, then each app's <code>templates</code> directory in the order listed in <code>INSTALLED_APPS</code>.</li>
 </ul>
+</li>
+</ul>
+<hr />
 <h2 id="extending-the-template-system">Extending the Template System<a class="headerlink" href="#extending-the-template-system" title="Permanent link">&para;</a></h2>
+<p>When built-in tags and filters are not sufficient, you can extend the template system by creating custom tags and filters.</p>
+<h3 id="custom-template-filters">Custom Template Filters<a class="headerlink" href="#custom-template-filters" title="Permanent link">&para;</a></h3>
+<p>Essentially functions that take a value, process it, and return a new value to be displayed in the template.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="nd">@register</span><span class="o">.</span><span class="n">filter</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">bullet_points</span><span class="p">(</span><span class="n">values</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Converts a list of items into a bullet-pointed list.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">values</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;&quot;</span>
+        <span class="k">return</span> <span class="s2">&quot;&lt;ul&gt;&quot;</span> <span class="o">+</span> <span class="s2">&quot;&quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;&lt;li&gt;</span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">&lt;/li&gt;&quot;</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">value</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;&lt;/ul&gt;&quot;</span>
+</code></pre></div>
+
+<p>You can use this filter in your template as follows:</p>
+<div class="codehilite"><pre><span></span><code>    {{ [&quot;Django&quot;, &quot;Rails&quot;, &quot;Flask&quot;]|bullet_points }}
+</code></pre></div>
+
+<h3 id="custom-tags">Custom Tags<a class="headerlink" href="#custom-tags" title="Permanent link">&para;</a></h3>
+<h4 id="simple-tags">Simple Tags <code>simple_tag</code><a class="headerlink" href="#simple-tags" title="Permanent link">&para;</a></h4>
+<p>Processes data and returns a value to be rendered in the template.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django</span><span class="w"> </span><span class="kn">import</span> <span class="n">template</span>
+    <span class="n">register</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">Library</span><span class="p">()</span>
+    <span class="nd">@register</span><span class="o">.</span><span class="n">simple_tag</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">multiply</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">a</span> <span class="o">*</span> <span class="n">b</span>
+</code></pre></div>
+
+<p>You can use this tag in your template as follows:</p>
+<div class="codehilite"><pre><span></span><code>    The result of multiplication is:
+    {% multiply 3 4 %}
+</code></pre></div>
+
+<h4 id="inclusion-tags">Inclusion Tags <code>inclusion_tag</code><a class="headerlink" href="#inclusion-tags" title="Permanent link">&para;</a></h4>
+<p>Processes data and renders a specified template with that data.</p>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django</span><span class="w"> </span><span class="kn">import</span> <span class="n">template</span>
+    <span class="n">register</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">Library</span><span class="p">()</span>
+    <span class="nd">@register</span><span class="o">.</span><span class="n">inclusion_tag</span><span class="p">(</span><span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">)</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">show_songs</span><span class="p">(</span><span class="n">songs</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">}</span>
+</code></pre></div>
+
+<p>You can use this tag in your template as follows:</p>
+<div class="codehilite"><pre><span></span><code>    {% show_songs song_list %}
+</code></pre></div>
+
+<h3 id="registering-custom-tags-and-filters">Registering Custom Tags and Filters<a class="headerlink" href="#registering-custom-tags-and-filters" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Writing Custom Template Tags (<code>simple_tag</code>, <code>inclusion_tag</code>).</li>
-<li>Creating Custom Template Filters.</li>
+<li>Creating a <code>templatetags</code> directory inside your app.</li>
+<li>Adding an <code>__init__.py</code> file to make it a package.</li>
+<li>Creating Python modules for your custom tags and filters.</li>
+<li>Registering the custom tags and filters in the template system.</li>
 </ul>
+<h3 id="loading-custom-tags-and-filters-in-templates">Loading Custom Tags and Filters in Templates<a class="headerlink" href="#loading-custom-tags-and-filters-in-templates" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Using the <code>{% load %}</code> tag to load your custom tags and filters in templates.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>{% load your_custom_tags %}
+</code></pre></div>
+
 <h2 id="writing-custom-template-loaders">Writing Custom Template Loaders<a class="headerlink" href="#writing-custom-template-loaders" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Loading templates from non-standard sources (e.g., Database or API).</li>
+<li>Custom loader - when your templates aren't stored in the standard filesystem locations.</li>
+<li>Example use case loading templates from <ul>
+<li>a database or an external API.</li>
+<li>templates stored in a non-standard location (e.g., cloud storage, encrypted files, etc.).</li>
 </ul>
+</li>
+<li>Implementing a custom loader involves subclassing <code>django.template.loaders.base.Loader</code> and overriding the <code>get_template_sources</code> and <code>get_contents</code> methods.</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.template.loaders.base</span><span class="w"> </span><span class="kn">import</span> <span class="n">Loader</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">django.template</span><span class="w"> </span><span class="kn">import</span> <span class="n">TemplateDoesNotExist</span>
+    <span class="k">class</span><span class="w"> </span><span class="nc">CustomLoader</span><span class="p">(</span><span class="n">Loader</span><span class="p">):</span>
+        <span class="k">def</span><span class="w"> </span><span class="nf">get_template_sources</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">template_name</span><span class="p">):</span>
+            <span class="c1"># Logic to yield possible template sources</span>
+            <span class="k">yield</span> <span class="sa">f</span><span class="s2">&quot;custom_location/</span><span class="si">{</span><span class="n">template_name</span><span class="si">}</span><span class="s2">&quot;</span>
+
+        <span class="k">def</span><span class="w"> </span><span class="nf">get_contents</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">origin</span><span class="p">):</span>
+            <span class="c1"># Logic to retrieve the template content from the origin</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">origin</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">f</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+            <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">TemplateDoesNotExist</span><span class="p">(</span><span class="n">origin</span><span class="p">)</span>
+</code></pre></div>
+
 <h2 id="using-the-built-in-template-reference">Using the Built-in Template Reference<a class="headerlink" href="#using-the-built-in-template-reference" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Leveraging the Django admin documentation for template tags and filters.</li>
+<li>Django includes a "self-documenting" feature for its template system.</li>
+<li>To access the built-in template reference, <ul>
+<li>you can enable the admin documentation in <code>settings.py</code> </li>
+<li>update the URL configuration in <code>urls.py</code>.</li>
 </ul>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>    <span class="n">INSTALLED_APPS</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="o">...</span>
+        <span class="s1">&#39;django.contrib.admindocs&#39;</span><span class="p">,</span>
+        <span class="o">...</span>
+    <span class="p">]</span>
+</code></pre></div>
+
+<div class="codehilite"><pre><span></span><code>    <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+    <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/doc/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.contrib.admindocs.urls&#39;</span><span class="p">)),</span>
+        <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+    <span class="p">]</span>
+</code></pre></div>
+
 <h2 id="configuring-the-template-system-in-standalone-mode">Configuring the Template System in Standalone Mode<a class="headerlink" href="#configuring-the-template-system-in-standalone-mode" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><strong>Standalone Mode</strong>: scripts or applications that are not part of a full Django project.</p>
+<ul>
+<li>automated email generation</li>
+<li>report generation</li>
+<li>other templating needs outside of web requests</li>
+</ul>
+</li>
+<li>
+<p>power of Django's templating engine without the overhead of a full Django setup</p>
+</li>
+</ul>
+<div class="codehilite"><pre><span></span><code>    <span class="kn">import</span><span class="w"> </span><span class="nn">django</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">django.conf</span><span class="w"> </span><span class="kn">import</span> <span class="n">settings</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">django.template</span><span class="w"> </span><span class="kn">import</span> <span class="n">Context</span><span class="p">,</span> <span class="n">Template</span><span class="p">,</span> <span class="n">Engine</span>
+
+    <span class="c1"># Configure settings for standalone usage</span>
+    <span class="c1"># acts as settings.py in a full Django project</span>
+    <span class="n">settings</span><span class="o">.</span><span class="n">configure</span><span class="p">(</span>
+        <span class="n">TEMPLATES</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">{</span>
+                <span class="s1">&#39;BACKEND&#39;</span><span class="p">:</span> <span class="s1">&#39;django.template.backends.django.DjangoTemplates&#39;</span><span class="p">,</span>  <span class="c1">#</span>
+                <span class="s1">&#39;DIRS&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;path/to/your/templates&#39;</span><span class="p">],</span> <span class="c1"># Specify your template directories</span>
+                <span class="s1">&#39;APP_DIRS&#39;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span> <span class="c1"># Disable app directories in standalone mode</span>
+            <span class="p">},</span>
+        <span class="p">]</span>
+    <span class="p">)</span>
+
+    <span class="c1"># Initialize Django</span>
+    <span class="n">django</span><span class="o">.</span><span class="n">setup</span><span class="p">()</span>
+
+    <span class="c1"># Create an instance of the template engine</span>
+    <span class="c1"># uses the Loader system</span>
+    <span class="n">engine</span> <span class="o">=</span> <span class="n">Engine</span><span class="o">.</span><span class="n">get_default</span><span class="p">()</span>
+
+    <span class="c1"># Load a template</span>
+    <span class="n">template</span> <span class="o">=</span> <span class="n">engine</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;your_template.html&#39;</span><span class="p">)</span>
+
+    <span class="c1"># Create a context with data</span>
+    <span class="n">context</span> <span class="o">=</span> <span class="n">Context</span><span class="p">({</span><span class="s1">&#39;key&#39;</span><span class="p">:</span> <span class="s1">&#39;value&#39;</span><span class="p">})</span>
+
+    <span class="c1"># Render the template with the context</span>
+    <span class="n">rendered_output</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">rendered_output</span><span class="p">)</span>
+</code></pre></div>
 
 
 
@@ -1301,10 +1669,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>

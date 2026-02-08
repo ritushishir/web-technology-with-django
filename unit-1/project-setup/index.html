@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../assets/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.618322db.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
       
         
         <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
@@ -235,7 +235,7 @@
           
   
   
-  Django Basics
+  1. Django Basics
 
         </a>
       </li>
@@ -255,7 +255,7 @@
           
   
   
-  Models and Databases
+  2. Models and Databases
 
         </a>
       </li>
@@ -275,7 +275,7 @@
           
   
   
-  Views, URLConfs, Template Engine and Non-HTML Content
+  3. Beyond Basics
 
         </a>
       </li>
@@ -377,7 +377,7 @@
   <span class="md-ellipsis">
     
   
-    Django Basics
+    1. Django Basics
   
 
     
@@ -393,7 +393,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Django Basics
+    1. Django Basics
   
 
           </label>
@@ -861,12 +861,12 @@
   <a href="#template-inheritance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧱 Template Inheritance.
+        🧱 Template Inheritance
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧱 Template Inheritance.">
+    <nav class="md-nav" aria-label="🧱 Template Inheritance">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -975,7 +975,7 @@
   <span class="md-ellipsis">
     
   
-    Models and Databases
+    2. Models and Databases
   
 
     
@@ -991,7 +991,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Models and Databases
+    2. Models and Databases
   
 
           </label>
@@ -1202,7 +1202,7 @@
   <span class="md-ellipsis">
     
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
     
@@ -1218,7 +1218,7 @@
             <span class="md-nav__icon md-icon"></span>
             
   
-    Views, URLConfs, Template Engine and Non-HTML Content
+    3. Beyond Basics
   
 
           </label>
@@ -1767,12 +1767,12 @@
   <a href="#template-inheritance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🧱 Template Inheritance.
+        🧱 Template Inheritance
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧱 Template Inheritance.">
+    <nav class="md-nav" aria-label="🧱 Template Inheritance">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2228,22 +2228,22 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 </thead>
 <tbody>
 <tr>
-<td><code>{% if ... %}</code></td>
+<td>{% if ... %}</td>
 <td>Conditional statements.</td>
 <td><code>{% if user.is_authenticated %}</code></td>
 </tr>
 <tr>
-<td><code>{% for ... %}</code></td>
+<td>{% for item in items %}</td>
 <td>Loops over iterable objects.</td>
 <td><code>{% for song in songs %}</code></td>
 </tr>
 <tr>
-<td><code>{% csrf_token %}</code></td>
+<td>{% csrf_token %}</td>
 <td>Security tag, required in all POST forms.</td>
 <td><code>&lt;form method="post"&gt;{% csrf_token %}&lt;/form&gt;</code></td>
 </tr>
 <tr>
-<td><code>{% url 'name' arg1 %}</code></td>
+<td>{% url 'name' arg1 %}</td>
 <td>Looks up a URL by its defined name, avoiding hardcoding.</td>
 <td><code>&lt;a href="{% url 'song:detail' song.id %}"&gt;...&lt;/a&gt;</code></td>
 </tr>
@@ -2265,10 +2265,10 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 
 <details class="tip">
 <summary>Mini-Challenge: Set up Link to Details page in List of Songs and to List of Songs in Details Page</summary>
+</details>
 <p>Use the <code>{% url %}</code> tag to create a link to the song detail page dynamically.</p>
 <p><code>html
-&lt;a href="{% url 'song_detail' song.geet_id %}"&gt;View Details&lt;/a&gt;</code></p>
-</details>
+    &lt;a href="{% url 'song_detail' song.geet_id %}"&gt;View Details&lt;/a&gt;</code></p>
 <ul>
 <li>
 <p><strong>Template Filters</strong>: modify the display of variables (e.g., formatting dates, converting text to uppercase)</p>
@@ -2286,8 +2286,8 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li><code>{{ comments          | length }}</code></li>
 <li><code>{{ html_content      | safe }}</code></li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Current date: {{ current_date|date:&quot;F j, Y&quot; }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Uppercase Name: {{ user.username|upper }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<div class="codehilite"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Current date: {{ current_date|date:&quot;F j, Y&quot; }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Uppercase Name: {{ user.username|upper }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
 </code></pre></div>
 
 <h3 id="templates-in-viewscontext-of-mvt">Templates in Views(context of MVT)<a class="headerlink" href="#templates-in-viewscontext-of-mvt" title="Permanent link">&para;</a></h3>
@@ -2355,7 +2355,7 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <span class="p">]</span>
 </code></pre></div>
 
-<h3 id="template-inheritance">🧱 Template Inheritance.<a class="headerlink" href="#template-inheritance" title="Permanent link">&para;</a></h3>
+<h3 id="template-inheritance">🧱 Template Inheritance<a class="headerlink" href="#template-inheritance" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
 <p>allows you to create a base template that defines the base tempalte containing common elements(header, footer, navigation) and then have child templates override or fill in specific blocks of content</p>
@@ -2462,10 +2462,10 @@ pip install mysqlclient</code></p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.7a47a382.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.e71a0d61.min.js"></script>
+      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
       
     
   </body>
