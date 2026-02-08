@@ -51,11 +51,8 @@
 * **Session Forging/Hijacking:** Securing session cookies and rotating IDs.
 * **Email Header Injection:** Preventing attackers from using your contact forms for spam.
 * **Directory Traversal:** Protecting file uploads and media serving.
-
-### [Exposed Error Messages](./advanced-web-security.md#exposed-error-messages)
-
-* The danger of `DEBUG = True` in production.
-* Customizing 404 and 500 error pages.
+* **Exposed Error Messages**: The danger of `DEBUG = True` in production and customizing 404 and 500 error pages.
+  
 
 ---
 

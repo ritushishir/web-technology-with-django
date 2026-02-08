@@ -1,5 +1,6 @@
 site_name: Mastering Django
 site_url: https://example.com/docs/
+dev_addr: 127.0.0.1:9000
 docs_dir: docs
 site_dir: site
 strict: false
@@ -53,27 +54,27 @@ plugins:
 #--- navigation structure ---
 nav:
   - Introduction: index.md
-  - Django Basics:
+  - 1. Django Basics:
       - Introduction to Django: unit-1/introduction-to-django.md
       - Virtual Environments: unit-1/virtual-environment.md
       - Setup a Project: unit-1/project-setup.md
       - Project and App Structure: unit-1/project-and-app-structure.md
-  - Models and Databases:
+  - 2. Models and Databases:
       - Overview: unit-2/overview.md
       - Migrations: unit-2/database-migrations.md
       - Admin Interface: unit-2/admin-interface.md
       - Forms in Django: unit-2/forms-in-django.md
       - Database Setup: unit-2/database-setup.md
       - Environment Variables: unit-2/using-environment-variables.md
-  - Beyond Basics:
+  - 3. Beyond Basics:
       - Overview: unit-3/overview.md
       - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
       - Working with Generic Views: unit-3/working-with-generic-views.md
       - Deep Dive - Django Template System: unit-3/deep-dive-django-templates.md
       - Specialized Content & Output: unit-3/specialized-content-and-output.md
       - Metadata & Discovery Frameworks: unit-3/metadata-and-discovery-frameworks.md
-  
-  - Users, caching and Subframework:
+
+  - 4. Users and Session:
       - Overview: unit-4/overview.md
       - Session Management: unit-4/session-and-state-management.md
       - Authentication and Authorization: unit-4/authentication-and-authorization.md
