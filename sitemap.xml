@@ -68,4 +68,28 @@
          <loc>https://example.com/docs/unit-3/working-with-generic-views/</loc>
          <lastmod>2026-02-08</lastmod>
     </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/authentication-and-authorization/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/django-standard-library/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/middleware-and-security/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/overview/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/session-and-state-management/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-4/setting-up-caching/</loc>
+         <lastmod>2026-02-08</lastmod>
+    </url>
 </urlset>
