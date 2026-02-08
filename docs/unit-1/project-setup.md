@@ -379,7 +379,7 @@ def song_detail(request, song_id):
   ]
 ```
 
-#### 🔖 Basic Template Tags and Filters
+#### 🔖 Basic Template Tags and Filters {#basic-template-tags-and-filters}
 
 - **Variables({{...}})**: placeholders for dynamic content, enclosed in double curly braces `{{ }}`
 
@@ -499,7 +499,7 @@ TEMPLATES = [
 ]
 ```
 
-### 🧱 Template Inheritance.
+### 🧱 Template Inheritance {#template-inheritance}
 
 - allows you to create a base template that defines the base tempalte containing common elements(header, footer, navigation) and then have child templates override or fill in specific blocks of content
 

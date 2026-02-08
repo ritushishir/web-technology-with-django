@@ -26,7 +26,7 @@ Naming your URL patterns allows you to reference them easily throughout your pro
 from django.urls import path
 from . import views
 urlpatterns = [
-    path('article/<int:id>/', views.article_detail, name='article-detail'),
+    path('song/<int:id>/', views.song_detail, name='song-detail'),
 ]
 ```
 
@@ -34,7 +34,7 @@ You can then use the `reverse` function or the `{% url %}` template tag to gener
 
 ```python
 from django.urls import reverse
-url = reverse('article-detail', args=[article.id])
+url = reverse('song-detail', args=[song.id])
 ```
 
 ### Passing Extra Options to View Functions
