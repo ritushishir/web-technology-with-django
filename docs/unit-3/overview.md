@@ -10,25 +10,25 @@ By the end of this chapter, you will be able to:
 
 - Architect Sophisticated URL Schemes
 
-  - Implement modular URL configurations using inclusion and namespaces to prevent naming collisions in large-scale projects.
+    - Implement modular URL configurations using inclusion and namespaces to prevent naming collisions in large-scale projects.
 
 - Implement Class-Based Views (CBVs)
 
-  - Transition from functional programming to object-oriented views, utilizing Django’s generic views to handle common patterns like list displays and detail pages with minimal code.
+    - Transition from functional programming to object-oriented views, utilizing Django’s generic views to handle common patterns like list displays and detail pages with minimal code.
 
 - Extend the Template Engine
   
-  - Use Context Processors to make data globally available across templates
+    - Use Context Processors to make data globally available across templates
 
-  - Create custom template loaders for specialized file-handling needs.
+    - Create custom template loaders for specialized file-handling needs.
 
 - Generate Dynamic Non-HTML Content
 
-  - Configure Django to serve more than just web pages, specifically mastering the programmatic generation of CSV files and PDF documents.
+    - Configure Django to serve more than just web pages, specifically mastering the programmatic generation of CSV files and PDF documents.
 
 - Optimize for SEO and Syndication
 
-  - Deploy the Sitemap and Syndication (RSS/Atom) frameworks to ensure your content is easily indexed by search engines and consumable by feed readers.
+    - Deploy the Sitemap and Syndication (RSS/Atom) frameworks to ensure your content is easily indexed by search engines and consumable by feed readers.
 
 ## Topics Covered
 

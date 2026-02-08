@@ -14,16 +14,16 @@
 - The `class Meta` inside a Django model allows you to specify metadata options like ordering, verbose names, and permissions.
 
 ```python
-from django.db import models
-class Song(models.Model):
-    title = models.CharField(max_length=100)
-    artist = models.CharField(max_length=100)
+    from django.db import models
+    class Song(models.Model):
+        title = models.CharField(max_length=100)
+        artist = models.CharField(max_length=100)
 
-    class Meta:
-        ordering = ['title']
-        verbose_name = 'Song'
-        verbose_name_plural = 'Songs'
-        get_latest_by = 'release_date'
+        class Meta:
+            ordering = ['title']
+            verbose_name = 'Song'
+            verbose_name_plural = 'Songs'
+            get_latest_by = 'release_date'
 ```
 
 **SEO Metadata**
@@ -35,41 +35,49 @@ While the Model Meta handles internal metadata, SEO metadata (Meta tags in HTML)
 
 ## The Syndication Feed Framework {#syndication-feed-framework}
 
+* high-level framework for creating RSS and Atom feeds.
+* basically highly specialized views that generate XML instead of HTML that can be consumed by feed readers and aggregators.
+* allows you to syndicate your content so that users can subscribe to updates using feed readers.
+* Django's `django.contrib.syndication` framework to create and manage feeds.
+
 
 **Setting up a Feed Class**
+
 You define a feed by creating a subclass of `django.contrib.syndication.views.Feed` and specifying attributes like `title`, `link`, and `description`.
 
 
 ```python
-from django.contrib.syndication.views import Feed
-from .models import Song
-class LatestSongsFeed(Feed):
-    title = "Latest Songs"
-    link = "/feeds/latest/"
-    description = "Updates on the latest songs added."
+    from django.contrib.syndication.views import Feed
+    from .models import Song
+    class LatestSongsFeed(Feed):
+        title = "Latest Songs"
+        link = "/feeds/latest/"
+        description = "Updates on the latest songs added."
 
-    def items(self):
-        return Song.objects.order_by('-release_date')[:5]
+        def items(self):
+            return Song.objects.order_by('-release_date')[:5]
 
-    def item_title(self, item):
-        return item.title
+        def item_title(self, item):
+            return item.title
 
-    def item_description(self, item):
-        return f"Artist: {item.artist}, Released on: {item.release_date}"
+        def item_description(self, item):
+            return f"Artist: {item.artist}, Released on: {item.release_date}"
 ```
 
 **Linking to URLs**
+
 You hook up your feed class to a URL pattern in your `urls.py`.
 
 ```python
-from django.urls import path
-from .feeds import LatestSongsFeed
-urlpatterns = [
-    path('feeds/latest/', LatestSongsFeed(), name='latest-songs-feed'),
-]
+    from django.urls import path
+    from .feeds import LatestSongsFeed
+    urlpatterns = [
+        path('feeds/latest/', LatestSongsFeed(), name='latest-songs-feed'),
+    ]
 ```
 
 **Customizing Feed Content**
+
 - Adding additional metadata to feed items (like author, categories).
 - Formatting dates and content for better readability in feed readers.
 - Implementing custom feed item methods for more control over content.
@@ -82,54 +90,81 @@ urlpatterns = [
 ## The Sitemap Framework {#sitemap-framework}
 
 - Sitemap: 
-  - An XML file that lists all the important URLs on your site 
-  - Help search engines crawl your site more intelligently 
-  - Tells which pages are available, how often they are updated, and their relative importance.
-- Django's `sitemaps` framework to generate sitemaps automatically.
+    - An XML file that lists all the important URLs on your site 
+    - Help search engines crawl your site more intelligently 
+    - Tells which pages are available, how often they are updated, and their relative importance.
+  - Django's `sitemaps` framework to generate sitemaps automatically.
+
+* RSS feeds are for users, while sitemaps are for search engines. Both are crucial for content discovery but serve different purposes.
 
 ---
 
 **Configuring Sitemaps**
 
+* uses a `Sitemap` class to pull data from your models and generate the <urlset> XML structure.
+
 Example: Basic Sitemap Setup
 
 ```python
-from django.contrib.sitemaps import Sitemap
-from .models import Song
-class SongSitemap(Sitemap):
-    changefreq = "weekly"
-    priority = 0.8
+    from django.contrib.sitemaps import Sitemap
+    from .models import Song
+    class SongSitemap(Sitemap):
+        changefreq = "weekly"
+        priority = 0.8
 
-    def items(self):
-        return Song.objects.all()
+        def items(self):
+            return Song.objects.all()
 
-    def lastmod(self, obj):
-        return obj.updated_at
+        def lastmod(self, obj):
+            return obj.updated_at
+        
+        def location(self, obj):
+            return obj.get_absolute_url()
+        
+        def changefreq(self, obj):
+            return "weekly"
+        
+        def priority(self, obj):
+            return 0.8
 ```
 
 **Integration**
 
-To serve the sitemap, you add it to your URL patterns. Django will then render a standard `sitemap.xml` at that path.
+* Installed apps: 
+  
+  Add `django.contrib.sitemaps` to your `INSTALLED_APPS` in `settings.py`.
+
+```pythonpython
+    INSTALLED_APPS = [
+        ...
+        'django.contrib.sitemaps',
+        ...
+    ]
+```
+
+* URL Configuration:
+  
+    Add it to your URL patterns to enable Django render a standard `sitemap.xml` at that path.
 
 ```python
-from django.contrib.sitemaps.views import sitemap
-from .sitemaps import SongSitemap
-sitemaps = {
-    'songs': SongSitemap,
-}
-urlpatterns = [
-    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
-]
+    from django.contrib.sitemaps.views import sitemap
+    from .sitemaps import SongSitemap
+    sitemaps = {
+        'songs': SongSitemap,
+    }
+    urlpatterns = [
+        path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='sitemap'),
+    ]
 ```
 
 ## Best Practices for Metadata and Discovery {#best-practices-for-metadata-and-discovery}
 
 - Goal is to make your content easily discoverable and well-represented across platforms.
-  - Actually `FOUND` not just `ONLINE`
+- Actually `FOUND` not just `ONLINE`
 
 | Strategy | Action |
 |----------|--------|
-| Canonical URLs | Always use the get_absolute_url() method in models to ensure sitemaps and feeds point to the correct link. |
-| Robots.txt | Use a robots.txt file to tell bots which parts of the site to ignore (e.g., /admin/). |
+| Canonical URLs | Always use the `get_absolute_url()` method in models to ensure sitemaps and feeds point to the correct link. |
+| Robots.txt | Use a `robots.txt` file to tell bots which parts of the site to ignore (e.g., /admin/). |
 | Rich Snippets | Use Schema.org metadata (JSON-LD) to help Google show star ratings or prices in search results. |
 | Validation | Use the W3C Feed Validator to ensure your RSS feeds aren't broken. |

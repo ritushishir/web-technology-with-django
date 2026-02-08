@@ -11,19 +11,34 @@
 
 ## Request Context and Context Processors {#request-context-and-context-processors}
 
-* Understanding `RequestContext` vs. `Context`.
+**RequestContext**
 
-When rendering a template, Django uses a `Context` object to hold the variables that will be available in the template.
+- specialized subclass of `Context` that automatically includes variables from context processors.
+- requires the `HttpRequest` object to function, which allows it to access request-specific data.
+- automatically executes all context processors defined in your settings, making their variables available in the template without needing to pass them explicitly.
+- When you use `render()` in a view, it automatically uses `RequestContext`, so you get the benefits of context processors without extra work.
+- Example: If you have a context processor that adds `site_name` to the context, you can access `{{ site_name }}` in any template rendered with `render()`.
+- If you use `Template.render()` directly, you need to create a `RequestContext` manually to get the context processor variables.
+- Example of using `RequestContext` with `Template.render()`:
 
-A `RequestContext` is a subclass of `Context` that requires the `HttpRequest` object. It automatically executes Context Processors.
+```python
+    from django.template import Template, RequestContext
+    from django.http import HttpRequest
+    request = HttpRequest()
+    template = Template("Site Name: {{ site_name }}")
+    context = RequestContext(request)
+    rendered = template.render(context)
+    print(rendered)  # This will include the site_name variable from the context processor
+```
 
-* Configuring built-in and custom context processors to make data available globally across templates.
 
-**Problem**: You want to display app-specific information (like appname) in the navigation bar of your website.
 
-**Solution**: Use the built-in `site_setting` context processor, which adds the `site_name` variable to the template context.
+**Context Processors**
 
-Step 1: Create a file named `context_processors.py` inside your app directory.
+- functions that take a request object and return a dictionary of variables to be added to the template context.
+- can be used to make certain data available globally across all templates (e.g., user information, site settings, etc.).
+- Example: A context processor that adds the current year to the context.
+- Example of a custom context processor:
 
 ```python
 # songs/context_processors.py
@@ -66,7 +81,7 @@ Step 3: Use the `site_name` variable in your templates.
 </html>
 ```
 
-??? tip "Tip"
+??? tip "More on Context Processors"
     Check out the [Django documentation on context processors](https://docs.djangoproject.com/en/stable/ref/templates/api/#django.template.RequestContext) for more built-in options and examples.
 
 ---
@@ -90,17 +105,17 @@ When built-in tags and filters are not sufficient, you can extend the template s
 Essentially functions that take a value, process it, and return a new value to be displayed in the template.
 
 ```python
-@register.filter
-def bullet_points(values):
-    """Converts a list of items into a bullet-pointed list."""
-    if not values:
-        return ""
-    return "<ul>" + "".join(f"<li>{item}</li>" for item in value) + "</ul>"
+    @register.filter
+    def bullet_points(values):
+        """Converts a list of items into a bullet-pointed list."""
+        if not values:
+            return ""
+        return "<ul>" + "".join(f"<li>{item}</li>" for item in value) + "</ul>"
 ```
 You can use this filter in your template as follows:
 
 ```html
-{{ ["Django", "Rails", "Flask"]|bullet_points }}
+    {{ ["Django", "Rails", "Flask"]|bullet_points }}
 ```
 
 ### Custom Tags {#custom-tags}
@@ -110,29 +125,29 @@ You can use this filter in your template as follows:
 Processes data and returns a value to be rendered in the template.
 
 ```python
-from django import template
-register = template.Library()
-@register.simple_tag
+    from django import template
+    register = template.Library()
+    @register.simple_tag
 
-def multiply(a, b):
-    return a * b
+    def multiply(a, b):
+        return a * b
 ```
 You can use this tag in your template as follows:
 
 ```html
-The result of multiplication is:
-{% multiply 3 4 %}
+    The result of multiplication is:
+    {% multiply 3 4 %}
 ```
 
 #### Inclusion Tags `inclusion_tag` {#inclusion-tags}
 Processes data and renders a specified template with that data.
 
 ```python
-from django import template
-register = template.Library()
-@register.inclusion_tag('songs/song_list.html')
-def show_songs(songs):
-    return {'songs': songs}
+    from django import template
+    register = template.Library()
+    @register.inclusion_tag('songs/song_list.html')
+    def show_songs(songs):
+        return {'songs': songs}
 ```
 
 You can use this tag in your template as follows:
@@ -157,65 +172,97 @@ You can use this tag in your template as follows:
 
 ## Writing Custom Template Loaders {#writing-custom-template-loaders}
 
-* Loading templates from non-standard sources (e.g., Database or API).
+* Custom loader - when your templates aren't stored in the standard filesystem locations.
+* Example use case loading templates from 
+    * a database or an external API.
+    * templates stored in a non-standard location (e.g., cloud storage, encrypted files, etc.).
+* Implementing a custom loader involves subclassing `django.template.loaders.base.Loader` and overriding the `get_template_sources` and `get_contents` methods.
+
+```python
+    from django.template.loaders.base import Loader
+    from django.template import TemplateDoesNotExist
+    class CustomLoader(Loader):
+        def get_template_sources(self, template_name):
+            # Logic to yield possible template sources
+            yield f"custom_location/{template_name}"
+
+        def get_contents(self, origin):
+            # Logic to retrieve the template content from the origin
+            try:
+                with open(origin, 'r') as f:
+                    return f.read()
+            except FileNotFoundError:
+                raise TemplateDoesNotExist(origin)
+```
+
+
 
 ## Using the Built-in Template Reference {#using-the-built-in-template-reference}
 
-Django includes a "self-documenting" feature for its template system. If you add the URL pattern for the admin documentation, you can access detailed information about template tags and filters directly from your browser.
+- Django includes a "self-documenting" feature for its template system.
+- To access the built-in template reference, 
+    - you can enable the admin documentation in `settings.py` 
+    - update the URL configuration in `urls.py`.
 
-1. Add `'django.contrib.admindocs'` to your `INSTALLED_APPS` 
-2. Include the following in your `urls.py`:
+```python
+    INSTALLED_APPS = [
+        ...
+        'django.contrib.admindocs',
+        ...
+    ]
+```
 
-    ```python
+
+```python
     from django.contrib import admin
     from django.urls import path, include
     urlpatterns = [
         path('admin/doc/', include('django.contrib.admindocs.urls')),
         path('admin/', admin.site.urls),
     ]
-    ```
+```
 
 
 ## Configuring the Template System in Standalone Mode {#configuring-the-template-system-in-standalone-mode}
 
-- Standalone Mode: scripts or applications that are not part of a full Django project.
-  - automated email generation
-  - report generation
-  - other templating needs outside of web requests
+- **Standalone Mode**: scripts or applications that are not part of a full Django project.
+    - automated email generation
+    - report generation
+    - other templating needs outside of web requests
 
-- power of Django's templating engine without the overhead of a full Django setup.
+- power of Django's templating engine without the overhead of a full Django setup
 
 ```python
-import django
-from django.conf import settings
-from django.template import Context, Template, Engine
+    import django
+    from django.conf import settings
+    from django.template import Context, Template, Engine
 
-# Configure settings for standalone usage
-# acts as settings.py in a full Django project
-settings.configure(
-    TEMPLATES=[
-        {
-            'BACKEND': 'django.template.backends.django.DjangoTemplates',  #
-            'DIRS': ['path/to/your/templates'], # Specify your template directories
-            'APP_DIRS': False, # Disable app directories in standalone mode
-        },
-    ]
-)
+    # Configure settings for standalone usage
+    # acts as settings.py in a full Django project
+    settings.configure(
+        TEMPLATES=[
+            {
+                'BACKEND': 'django.template.backends.django.DjangoTemplates',  #
+                'DIRS': ['path/to/your/templates'], # Specify your template directories
+                'APP_DIRS': False, # Disable app directories in standalone mode
+            },
+        ]
+    )
 
-# Initialize Django
-django.setup()
+    # Initialize Django
+    django.setup()
 
-# Create an instance of the template engine
-# uses the Loader system
-engine = Engine.get_default()
+    # Create an instance of the template engine
+    # uses the Loader system
+    engine = Engine.get_default()
 
-# Load a template
-template = engine.get_template('your_template.html')
+    # Load a template
+    template = engine.get_template('your_template.html')
 
-# Create a context with data
-context = Context({'key': 'value'})
+    # Create a context with data
+    context = Context({'key': 'value'})
 
-# Render the template with the context
-rendered_output = template.render(context)
-print(rendered_output)
+    # Render the template with the context
+    rendered_output = template.render(context)
+    print(rendered_output)
 ```
