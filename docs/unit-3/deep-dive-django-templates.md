@@ -199,19 +199,28 @@ You can use this tag in your template as follows:
 
 ## Using the Built-in Template Reference {#using-the-built-in-template-reference}
 
-Django includes a "self-documenting" feature for its template system. If you add the URL pattern for the admin documentation, you can access detailed information about template tags and filters directly from your browser.
+- Django includes a "self-documenting" feature for its template system.
+- To access the built-in template reference, 
+    - you can enable the admin documentation in `settings.py` 
+    - update the URL configuration in `urls.py`.
 
-1. Add `'django.contrib.admindocs'` to your `INSTALLED_APPS` 
-2. Include the following in your `urls.py`:
+```python
+    INSTALLED_APPS = [
+        ...
+        'django.contrib.admindocs',
+        ...
+    ]
+```
 
-    ```python
+
+```python
     from django.contrib import admin
     from django.urls import path, include
     urlpatterns = [
         path('admin/doc/', include('django.contrib.admindocs.urls')),
         path('admin/', admin.site.urls),
     ]
-    ```
+```
 
 
 ## Configuring the Template System in Standalone Mode {#configuring-the-template-system-in-standalone-mode}
