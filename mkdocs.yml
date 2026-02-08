@@ -54,19 +54,19 @@ plugins:
 #--- navigation structure ---
 nav:
   - Introduction: index.md
-  - Django Basics:
+  - 1. Django Basics:
       - Introduction to Django: unit-1/introduction-to-django.md
       - Virtual Environments: unit-1/virtual-environment.md
       - Setup a Project: unit-1/project-setup.md
       - Project and App Structure: unit-1/project-and-app-structure.md
-  - Models and Databases:
+  - 2. Models and Databases:
       - Overview: unit-2/overview.md
       - Migrations: unit-2/database-migrations.md
       - Admin Interface: unit-2/admin-interface.md
       - Forms in Django: unit-2/forms-in-django.md
       - Database Setup: unit-2/database-setup.md
       - Environment Variables: unit-2/using-environment-variables.md
-  - Beyond Basics:
+  - 3. Beyond Basics:
       - Overview: unit-3/overview.md
       - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
       - Working with Generic Views: unit-3/working-with-generic-views.md
