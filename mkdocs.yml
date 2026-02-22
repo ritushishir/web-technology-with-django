@@ -82,7 +82,7 @@ nav:
       - Middleware and Security: unit-4/middleware-and-security.md
       - Django Standard Library: unit-4/django-standard-library.md
 
-  - Middleware:
+  - 5. Middleware:
         - Overview: unit-5/overview.md
         - Middleware Deep Dive: unit-5/middleware-architecture.md
         - Legacy Systems and Integration: unit-5/legacy-system-and-integration.md
