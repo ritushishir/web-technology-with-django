@@ -1,11 +1,22 @@
 # Django Globalisation, Security, and Scalability
 
+**Scaling for the Real World**
+
+- project in a "controlled environment" — usually a local server, in one language, with you as the primary user.
+
+- Focusing on **Three Pillars of Professional Deployment**:
+
+    - Empathy (i18n/l10n): Making the app feel local to anyone, anywhere, no language barriers.
+
+    - Integrity (Security): Protecting the app from a single vulnerability that could compromise the entire system.
+
+    - Resilience (Architecture): Handling growth gracefully, ensuring that adding more users doesn't mean more headaches.
+
 ## Internationalization (i18n) and Localization (l10n)
 
 ### [Specifying Translation Strings in Python Code](./internationalization-and-localization.md#specifying-translation-strings-in-python-code)
 
 * Using `gettext` and `gettext_lazy`.
-* Handling pluralization in Python logic.
 
 ### [Specifying Translation Strings in Template Code](./internationalization-and-localization.md#specifying-translation-strings-in-template-code)
 
@@ -30,10 +41,6 @@
 
 * Structuring the `locale/` directory.
 * Best practices for maintaining multi-lingual content.
-
-### [Translations and JavaScript](./internationalization-and-localization.md#translations-and-javascript)
-
-* Using the `javascript_catalog` view to make translation strings available in frontend scripts.
 
 ---
 
