@@ -88,5 +88,10 @@ nav:
         - Legacy Systems and Integration: unit-5/legacy-system-and-integration.md
         - Advanced Django Admin: unit-5/advanced-django-admin.md
         
-  # - Internationalization, Security and Deployment:
-  #     - Overview: unit-6/overview.md
+  - 6. Deployment and Beyond:
+      - Overview: unit-6/overview.md
+      - Internationalization and Localization: unit-6/internationalization-and-localization.md
+      - Step-by-step-guide: unit-6/internationalization-localization-steps.md
+      - Advanced Web Security: unit-6/advanced-web-security.md
+      - Architecture and Deployment: unit-6/architecture-and-deployment.md
+      - Monitoring and Maintenance: unit-6/monitoring-and-maintenance.md
