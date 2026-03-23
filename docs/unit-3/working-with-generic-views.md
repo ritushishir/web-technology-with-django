@@ -16,7 +16,6 @@
 
 * Reducing boilerplate code makes your codebase cleaner, more maintainable, and easier to understand.
 
-
 ## Class-Based Views (CBVs) and Function-Based Views (FBVs) {#cbvs-and-fbvs}
 
 - both ultimately serve the same purpose: to handle `HTTPRequest` and return `HTTPResponse`.
