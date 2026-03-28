@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-4/overview/">
+        <link rel="canonical" href="https://example.com/docs/unit-6/overview/">
       
       
-        <link rel="prev" href="../../unit-3/metadata-and-discovery-frameworks/">
+        <link rel="prev" href="../../unit-5/advanced-django-admin/">
       
       
-        <link rel="next" href="../session-and-state-management/">
+        <link rel="next" href="../internationalization-and-localization/">
       
       
         
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-robust-secure-applications-in-django" class="md-skip">
+        <a href="#django-globalisation-security-and-scalability" class="md-skip">
           Skip to content
         </a>
       
@@ -285,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit-4/overview/" class="md-tabs__link">
           
   
   
@@ -327,11 +325,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../unit-6/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -1031,31 +1031,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1073,7 +1068,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1088,37 +1083,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../unit-4/overview/" class="md-nav__link">
         
   
   
@@ -1134,342 +1102,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Concepts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Sessions and State Management
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Django’s Session Framework
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Authentication and Authorization
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users and Authentication
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. The Caching Framework
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. The Caching Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up the Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-Site Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-View Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1482,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session-and-state-management/" class="md-nav__link">
+      <a href="../../unit-4/session-and-state-management/" class="md-nav__link">
         
   
   
@@ -1510,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication-and-authorization/" class="md-nav__link">
+      <a href="../../unit-4/authentication-and-authorization/" class="md-nav__link">
         
   
   
@@ -1538,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting-up-caching/" class="md-nav__link">
+      <a href="../../unit-4/setting-up-caching/" class="md-nav__link">
         
   
   
@@ -1566,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../middleware-and-security/" class="md-nav__link">
+      <a href="../../unit-4/middleware-and-security/" class="md-nav__link">
         
   
   
@@ -1594,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../django-standard-library/" class="md-nav__link">
+      <a href="../../unit-4/django-standard-library/" class="md-nav__link">
         
   
   
@@ -1797,26 +1429,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1834,7 +1471,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1849,10 +1486,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../unit-6/overview/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1868,6 +1532,314 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#internationalization-i18n-and-localization-l10n" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Internationalization (i18n) and Localization (l10n)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Internationalization (i18n) and Localization (l10n)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specifying-translation-strings-in-python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying Translation Strings in Python Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#specifying-translation-strings-in-template-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying Translation Strings in Template Code
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#creating-language-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Creating Language Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language-preference-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language Preference Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-set_language-redirect-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "set_language" Redirect View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-translations-in-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Translations in Projects
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-web-security" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Web Security
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Web Security">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#web-security-themes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Web Security Themes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-vulnerabilities-mitigations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Vulnerabilities &amp; Mitigations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#architecture-and-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Architecture and Deployment
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Architecture and Deployment">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#shared-nothing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Nothing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#personal-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Preferences
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#server-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server Integration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#scaling-and-performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling and Performance Tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#monitoring-and-maintenance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring and Maintenance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Monitoring and Maintenance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#importance-of-monitoring" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Importance of Monitoring
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#monitoring-tools-and-techniques" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Monitoring Tools and Techniques
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#routine-maintenance-tasks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Routine Maintenance Tasks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#backup-and-disaster-recovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Backup and Disaster Recovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-and-knowledge-sharing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Documentation and Knowledge Sharing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#security-audits-and-compliance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Security Audits and Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-feedback-and-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Feedback and Continuous Improvement
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1880,7 +1852,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-and-localization/" class="md-nav__link">
+      <a href="../internationalization-and-localization/" class="md-nav__link">
         
   
   
@@ -1908,7 +1880,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-localization-steps/" class="md-nav__link">
+      <a href="../internationalization-localization-steps/" class="md-nav__link">
         
   
   
@@ -1936,7 +1908,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/advanced-web-security/" class="md-nav__link">
+      <a href="../advanced-web-security/" class="md-nav__link">
         
   
   
@@ -1964,7 +1936,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/architecture-and-deployment/" class="md-nav__link">
+      <a href="../architecture-and-deployment/" class="md-nav__link">
         
   
   
@@ -1992,7 +1964,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/monitoring-and-maintenance/" class="md-nav__link">
+      <a href="../monitoring-and-maintenance/" class="md-nav__link">
         
   
   
@@ -2047,33 +2019,77 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#internationalization-i18n-and-localization-l10n" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Concepts
+        Internationalization (i18n) and Localization (l10n)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Internationalization (i18n) and Localization (l10n)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#specifying-translation-strings-in-python-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Specifying Translation Strings in Python Code
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#specifying-translation-strings-in-template-code" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Sessions and State Management
+        Specifying Translation Strings in Template Code
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
+  <a href="#creating-language-files" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Django’s Session Framework
+        Creating Language Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#language-preference-discovery" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Language Preference Discovery
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-set_language-redirect-view" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The "set_language" Redirect View
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#using-translations-in-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Using Translations in Projects
       
     </span>
   </a>
@@ -2086,22 +2102,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
+  <a href="#advanced-web-security" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Authentication and Authorization
+        Advanced Web Security
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
+    <nav class="md-nav" aria-label="Advanced Web Security">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
+  <a href="#web-security-themes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Users and Authentication
+        Web Security Themes
       
     </span>
   </a>
@@ -2109,43 +2125,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
+  <a href="#common-vulnerabilities-mitigations" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
+        Common Vulnerabilities &amp; Mitigations
       
     </span>
   </a>
@@ -2158,22 +2141,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
+  <a href="#architecture-and-deployment" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Caching Framework
+        Architecture and Deployment
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. The Caching Framework">
+    <nav class="md-nav" aria-label="Architecture and Deployment">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
+  <a href="#shared-nothing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setting Up the Cache
+        Shared Nothing
       
     </span>
   </a>
@@ -2181,10 +2164,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
+  <a href="#personal-preferences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-Site Cache
+        Personal Preferences
       
     </span>
   </a>
@@ -2192,10 +2175,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
+  <a href="#server-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-View Cache
+        Server Integration
       
     </span>
   </a>
@@ -2203,32 +2186,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
+  <a href="#scaling-and-performance-tuning" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
+        Scaling and Performance Tuning
       
     </span>
   </a>
@@ -2241,22 +2202,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
+  <a href="#monitoring-and-maintenance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Middleware and Security
+        Monitoring and Maintenance
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Middleware and Security">
+    <nav class="md-nav" aria-label="Monitoring and Maintenance">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
+  <a href="#importance-of-monitoring" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Order of Middleware Classes
+        Importance of Monitoring
       
     </span>
   </a>
@@ -2264,10 +2225,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
+  <a href="#monitoring-tools-and-techniques" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Best Practices
+        Monitoring Tools and Techniques
       
     </span>
   </a>
@@ -2275,38 +2236,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
+  <a href="#routine-maintenance-tasks" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
+        Routine Maintenance Tasks
       
     </span>
   </a>
@@ -2314,10 +2247,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
+  <a href="#performance-optimization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flatpages
+        Performance Optimization
       
     </span>
   </a>
@@ -2325,10 +2258,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
+  <a href="#backup-and-disaster-recovery" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Redirects
+        Backup and Disaster Recovery
       
     </span>
   </a>
@@ -2336,10 +2269,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
+  <a href="#documentation-and-knowledge-sharing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Humanizing Data
+        Documentation and Knowledge Sharing
       
     </span>
   </a>
@@ -2347,10 +2280,21 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
+  <a href="#security-audits-and-compliance" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Markup Filters
+        Security Audits and Compliance
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#user-feedback-and-continuous-improvement" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        User Feedback and Continuous Improvement
       
     </span>
   </a>
@@ -2379,116 +2323,104 @@
 
 
 
-<h1 id="building-robust-secure-applications-in-django">Building Robust, Secure Applications in Django<a class="headerlink" href="#building-robust-secure-applications-in-django" title="Permanent link">&para;</a></h1>
-<p><strong>Handling data and displaying it</strong> =&gt; <strong>human elements and infrastructure.</strong></p>
+<h1 id="django-globalisation-security-and-scalability">Django Globalisation, Security, and Scalability<a class="headerlink" href="#django-globalisation-security-and-scalability" title="Permanent link">&para;</a></h1>
+<p><strong>Scaling for the Real World</strong></p>
 <ul>
-<li>Content in the modern web<ul>
-<li>is DYNAMIC, PERSONALIZED</li>
-<li>should be PROTECTED, HIGH-PERFORMING</li>
+<li>
+<p>project in a "controlled environment" — usually a local server, in one language, with you as the primary user.</p>
+</li>
+<li>
+<p>Focusing on <strong>Three Pillars of Professional Deployment</strong>:</p>
+<ul>
+<li>
+<p>Empathy (i18n/l10n): Making the app feel local to anyone, anywhere, no language barriers.</p>
+</li>
+<li>
+<p>Integrity (Security): Protecting the app from a single vulnerability that could compromise the entire system.</p>
+</li>
+<li>
+<p>Resilience (Architecture): Handling growth gracefully, ensuring that adding more users doesn't mean more headaches.</p>
+</li>
 </ul>
 </li>
 </ul>
-<h2 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h2>
-<h2 id="1-sessions-and-state-management">1. Sessions and State Management<a class="headerlink" href="#1-sessions-and-state-management" title="Permanent link">&para;</a></h2>
+<h2 id="internationalization-i18n-and-localization-l10n">Internationalization (i18n) and Localization (l10n)<a class="headerlink" href="#internationalization-i18n-and-localization-l10n" title="Permanent link">&para;</a></h2>
+<h3 id="specifying-translation-strings-in-python-code"><a href="../internationalization-and-localization/#specifying-translation-strings-in-python-code">Specifying Translation Strings in Python Code</a><a class="headerlink" href="#specifying-translation-strings-in-python-code" title="Permanent link">&para;</a></h3>
 <ul>
-<li>web is "stateless" — every request is a fresh start.</li>
-<li>using sessions to "remember" users as they navigate your site, allowing for features like shopping carts and personalized dashboards.</li>
+<li>Using <code>gettext</code> and <code>gettext_lazy</code>.</li>
 </ul>
-<h3 id="djangos-session-framework"><a href="../session-and-state-management/#session-framework">Django’s Session Framework</a><a class="headerlink" href="#djangos-session-framework" title="Permanent link">&para;</a></h3>
+<h3 id="specifying-translation-strings-in-template-code"><a href="../internationalization-and-localization/#specifying-translation-strings-in-template-code">Specifying Translation Strings in Template Code</a><a class="headerlink" href="#specifying-translation-strings-in-template-code" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Configuring session engines (Database, Cache, File-based, or Cookie-based).</li>
-<li>How to store and retrieve persistent data for anonymous and logged-in users.</li>
+<li>Using the <code>{% trans %}</code> and <code>{% blocktrans %}</code> tags.</li>
+<li>Translating variable content within templates.</li>
 </ul>
-<hr />
-<h2 id="2-authentication-and-authorization">2. Authentication and Authorization<a class="headerlink" href="#2-authentication-and-authorization" title="Permanent link">&para;</a></h2>
+<h3 id="creating-language-files"><a href="../internationalization-and-localization/#creating-language-files">Creating Language Files</a><a class="headerlink" href="#creating-language-files" title="Permanent link">&para;</a></h3>
 <ul>
-<li>'Who they are' + 'What they are allowed to do'.</li>
-<li>Django’s robust auth system to manage permissions and protect sensitive data.</li>
+<li>Working with <code>.po</code> (Portable Object) and <code>.mo</code> (Machine Object) files.</li>
+<li>Using <code>makemessages</code> and <code>compilemessages</code> commands.</li>
 </ul>
-<h3 id="users-and-authentication"><a href="../authentication-and-authorization/#users-and-authentication">Users and Authentication</a><a class="headerlink" href="#users-and-authentication" title="Permanent link">&para;</a></h3>
+<h3 id="language-preference-discovery"><a href="../internationalization-and-localization/#language-preference-discovery">Language Preference Discovery</a><a class="headerlink" href="#language-preference-discovery" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Managing user logins, logouts, and password hashing.</li>
-<li>Using the built-in <code>User</code> model.</li>
+<li>How Django determines the user's language via URL, Cookies, or Browser headers.</li>
+<li>The role of <code>LocaleMiddleware</code>.</li>
 </ul>
-<h3 id="permissions"><a href="../authentication-and-authorization/#permissions">Permissions</a><a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>Restricting access to views based on user rights</p>
-<h3 id="groups"><a href="../authentication-and-authorization/#groups">Groups</a><a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
-<p>Organizing users for bulk permission management</p>
-<h3 id="messages"><a href="../authentication-and-authorization/#messages">Messages</a><a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
-<p>Using the Messages Framework for one-time notifications (e.g., "Login Successful").</p>
-<h3 id="profiles"><a href="../authentication-and-authorization/#profiles">Profiles</a><a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
-<p>Extending user data with Custom User Models or Profile linked models.</p>
-<hr />
-<h2 id="3-the-caching-framework">3. The Caching Framework<a class="headerlink" href="#3-the-caching-framework" title="Permanent link">&para;</a></h2>
+<h3 id="the-set_language-redirect-view"><a href="../internationalization-and-localization/#the-set_language-redirect-view">The "set_language" Redirect View</a><a class="headerlink" href="#the-set_language-redirect-view" title="Permanent link">&para;</a></h3>
 <ul>
-<li>strategies that store expensive computations, allowing thousands of requests simultaneously without breaking a sweat.</li>
+<li>Implementing a language switcher for users to manually toggle between languages.</li>
 </ul>
-<h3 id="setting-up-the-cache"><a href="../setting-up-caching/#setting-up-the-cache">Setting Up the Cache</a><a class="headerlink" href="#setting-up-the-cache" title="Permanent link">&para;</a></h3>
+<h3 id="using-translations-in-projects"><a href="../internationalization-and-localization/#using-translations-in-projects">Using Translations in Projects</a><a class="headerlink" href="#using-translations-in-projects" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Choosing a backend: Memcached, Redis, Database, or Local-memory.</li>
-</ul>
-<h3 id="the-per-site-cache"><a href="../setting-up-caching/#per-site-cache">The Per-Site Cache</a><a class="headerlink" href="#the-per-site-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Enabling the "fetch" and "update" middleware to cache the entire website automatically.</li>
-</ul>
-<h3 id="the-per-view-cache"><a href="../setting-up-caching/#per-view-cache">The Per-View Cache</a><a class="headerlink" href="#the-per-view-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using the <code>@cache_page</code> decorator to cache specific, expensive views.</li>
-</ul>
-<h3 id="the-low-level-cache-api"><a href="../setting-up-caching/#low-level-cache-api">The Low-Level Cache API</a><a class="headerlink" href="#the-low-level-cache-api" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Manually setting, getting, and deleting keys in the cache for granular control.</li>
-</ul>
-<h3 id="upstream-caches"><a href="../setting-up-caching/#upstream-caches">Upstream Caches</a><a class="headerlink" href="#upstream-caches" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Working with Nginx/Varnish and the <code>Vary</code> header for proxy caching.</li>
-</ul>
-<h3 id="other-optimizations"><a href="../setting-up-caching/#other-optimizations">Other Optimizations</a><a class="headerlink" href="#other-optimizations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Database indexing, <code>select_related</code>, and <code>prefetch_related</code> to reduce query overhead.</li>
+<li>Structuring the <code>locale/</code> directory.</li>
+<li>Best practices for maintaining multi-lingual content.</li>
 </ul>
 <hr />
-<h2 id="4-middleware-and-security">4. Middleware and Security<a class="headerlink" href="#4-middleware-and-security" title="Permanent link">&para;</a></h2>
+<h2 id="advanced-web-security">Advanced Web Security<a class="headerlink" href="#advanced-web-security" title="Permanent link">&para;</a></h2>
+<h3 id="web-security-themes"><a href="../advanced-web-security/#web-security-themes">Web Security Themes</a><a class="headerlink" href="#web-security-themes" title="Permanent link">&para;</a></h3>
 <ul>
-<li>the "invisible layer" that processes every request before it reaches your view and every response before it leaves. </li>
-<li>implementing security best practices, protecting your site from common vulnerabilities like CSRF and XSS attacks.</li>
+<li>The philosophy of "Defense in Depth."</li>
 </ul>
-<h3 id="order-of-middleware-classes"><a href="../middleware-and-security/#order-of-middleware-classes">Order of Middleware Classes</a><a class="headerlink" href="#order-of-middleware-classes" title="Permanent link">&para;</a></h3>
+<h3 id="common-vulnerabilities-mitigations"><a href="../advanced-web-security/#common-vulnerabilities-and-mitigations">Common Vulnerabilities &amp; Mitigations</a><a class="headerlink" href="#common-vulnerabilities-mitigations" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Why order matters (e.g., Session before Authentication).</li>
-<li>How request and response objects flow through the stack.</li>
-</ul>
-<h3 id="security-best-practices"><a href="../middleware-and-security/#security-best-practices">Security Best Practices</a><a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
-<h3 id="csrf-protection"><a href="../middleware-and-security/#csrf-protection">CSRF Protection</a><a class="headerlink" href="#csrf-protection" title="Permanent link">&para;</a></h3>
-<ul>
-<li>How Django prevents Cross-Site Request Forgery.</li>
-<li>Using the <code>{% csrf_token %}</code> in forms and the <code>@csrf_exempt</code> decorator.</li>
+<li><strong>SQL Injection:</strong> How the Django ORM protects against malicious queries.</li>
+<li><strong>XSS (Cross-Site Scripting):</strong> Automatic HTML escaping in templates.</li>
+<li><strong>CSRF (Cross-Site Request Forgery):</strong> Token validation for state-changing requests.</li>
+<li><strong>Session Forging/Hijacking:</strong> Securing session cookies and rotating IDs.</li>
+<li><strong>Email Header Injection:</strong> Preventing attackers from using your contact forms for spam.</li>
+<li><strong>Directory Traversal:</strong> Protecting file uploads and media serving.</li>
+<li><strong>Exposed Error Messages</strong>: The danger of <code>DEBUG = True</code> in production and customizing 404 and 500 error pages.</li>
 </ul>
 <hr />
-<h2 id="5-the-django-standard-library-contrib-apps">5. The Django Standard Library (Contrib Apps)<a class="headerlink" href="#5-the-django-standard-library-contrib-apps" title="Permanent link">&para;</a></h2>
+<h2 id="architecture-and-deployment">Architecture and Deployment<a class="headerlink" href="#architecture-and-deployment" title="Permanent link">&para;</a></h2>
+<h3 id="shared-nothing"><a href="../architecture-and-deployment/#shared-nothing">Shared Nothing</a><a class="headerlink" href="#shared-nothing" title="Permanent link">&para;</a></h3>
 <ul>
-<li>exploring more 'batteries' already included to save you from reinventing the wheel, from automated email sending to sophisticated humanizing utilities.</li>
+<li>Understanding the "Shared Nothing" architecture for horizontal scaling.</li>
+<li>Managing state (sessions/media) outside the web server.</li>
 </ul>
-<h3 id="sites"><a href="../django-standard-library/#sites">Sites</a><a class="headerlink" href="#sites" title="Permanent link">&para;</a></h3>
+<h3 id="personal-preferences"><a href="../architecture-and-deployment/#personal-preferences">Personal Preferences</a><a class="headerlink" href="#personal-preferences" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Managing multiple websites from a single Django installation.</li>
+<li>Organizing settings for different environments (Development vs. Production).</li>
 </ul>
-<h3 id="flatpages"><a href="../django-standard-library/#flatpages">Flatpages</a><a class="headerlink" href="#flatpages" title="Permanent link">&para;</a></h3>
+<h3 id="server-integration"><a href="../architecture-and-deployment/#server-integration">Server Integration</a><a class="headerlink" href="#server-integration" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Creating simple, static-like pages (e.g., "About Us", "Privacy Policy") via the Admin interface.</li>
+<li><strong>Apache and mod_python:</strong> Overview of the legacy deployment method.</li>
+<li><strong>FastCGI:</strong> Using FastCGI for non-standard hosting environments.</li>
 </ul>
-<h3 id="redirects"><a href="../django-standard-library/#redirects">Redirects</a><a class="headerlink" href="#redirects" title="Permanent link">&para;</a></h3>
+<h3 id="scaling-and-performance-tuning"><a href="../architecture-and-deployment/#scaling-and-performance-tuning">Scaling and Performance Tuning</a><a class="headerlink" href="#scaling-and-performance-tuning" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Managing 301 and 302 redirects within the database.</li>
+<li><strong>Horizontal Scaling:</strong> Adding more app servers behind a load balancer.</li>
+<li><strong>Performance Tuning:</strong> Identifying bottlenecks with tools like Django Debug Toolbar.</li>
+<li><strong>Database Optimization:</strong> Connection pooling and read-replicas.</li>
 </ul>
-<h3 id="humanizing-data"><a href="../django-standard-library/#humanizing-data">Humanizing Data</a><a class="headerlink" href="#humanizing-data" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using <code>django.contrib.humanize</code> to turn numbers/dates into readable strings (e.g., "3 days ago", "1.2 million").</li>
-</ul>
-<h3 id="markup-filters"><a href="../django-standard-library/#markup-filters">Markup Filters</a><a class="headerlink" href="#markup-filters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Processing text as Markdown, ReStructuredText, or other formats within templates.</li>
-</ul>
+<hr />
+<h2 id="monitoring-and-maintenance">Monitoring and Maintenance<a class="headerlink" href="#monitoring-and-maintenance" title="Permanent link">&para;</a></h2>
+<h3 id="importance-of-monitoring"><a href="../monitoring-and-maintenance/#importance-of-monitoring">Importance of Monitoring</a><a class="headerlink" href="#importance-of-monitoring" title="Permanent link">&para;</a></h3>
+<h3 id="monitoring-tools-and-techniques"><a href="../monitoring-and-maintenance/#monitoring-tools-and-techniques">Monitoring Tools and Techniques</a><a class="headerlink" href="#monitoring-tools-and-techniques" title="Permanent link">&para;</a></h3>
+<h3 id="routine-maintenance-tasks"><a href="../monitoring-and-maintenance/#routine-maintenance-tasks">Routine Maintenance Tasks</a><a class="headerlink" href="#routine-maintenance-tasks" title="Permanent link">&para;</a></h3>
+<h3 id="performance-optimization"><a href="../monitoring-and-maintenance/#performance-optimization">Performance Optimization</a><a class="headerlink" href="#performance-optimization" title="Permanent link">&para;</a></h3>
+<h3 id="backup-and-disaster-recovery"><a href="../monitoring-and-maintenance/#backup-and-disaster-recovery">Backup and Disaster Recovery</a><a class="headerlink" href="#backup-and-disaster-recovery" title="Permanent link">&para;</a></h3>
+<h3 id="documentation-and-knowledge-sharing"><a href="../monitoring-and-maintenance/#documentation-and-knowledge-sharing">Documentation and Knowledge Sharing</a><a class="headerlink" href="#documentation-and-knowledge-sharing" title="Permanent link">&para;</a></h3>
+<h3 id="security-audits-and-compliance"><a href="../monitoring-and-maintenance/#security-audits-and-compliance">Security Audits and Compliance</a><a class="headerlink" href="#security-audits-and-compliance" title="Permanent link">&para;</a></h3>
+<h3 id="user-feedback-and-continuous-improvement"><a href="../monitoring-and-maintenance/#user-feedback-and-continuous-improvement">User Feedback and Continuous Improvement</a><a class="headerlink" href="#user-feedback-and-continuous-improvement" title="Permanent link">&para;</a></h3>
 
 
 

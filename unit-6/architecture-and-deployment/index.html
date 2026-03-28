@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-4/overview/">
+        <link rel="canonical" href="https://example.com/docs/unit-6/architecture-and-deployment/">
       
       
-        <link rel="prev" href="../../unit-3/metadata-and-discovery-frameworks/">
+        <link rel="prev" href="../advanced-web-security/">
       
       
-        <link rel="next" href="../session-and-state-management/">
+        <link rel="next" href="../monitoring-and-maintenance/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Mastering Django</title>
+        <title>Architecture and Deployment - Mastering Django</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-robust-secure-applications-in-django" class="md-skip">
+        <a href="#architecture-and-deployment" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Architecture and Deployment
             
           </span>
         </div>
@@ -285,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit-4/overview/" class="md-tabs__link">
           
   
   
@@ -327,11 +325,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../unit-6/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -1031,31 +1031,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1073,7 +1068,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1088,37 +1083,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../unit-4/overview/" class="md-nav__link">
         
   
   
@@ -1134,342 +1102,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Concepts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Sessions and State Management
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Django’s Session Framework
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Authentication and Authorization
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users and Authentication
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. The Caching Framework
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. The Caching Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up the Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-Site Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-View Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1482,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session-and-state-management/" class="md-nav__link">
+      <a href="../../unit-4/session-and-state-management/" class="md-nav__link">
         
   
   
@@ -1510,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication-and-authorization/" class="md-nav__link">
+      <a href="../../unit-4/authentication-and-authorization/" class="md-nav__link">
         
   
   
@@ -1538,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting-up-caching/" class="md-nav__link">
+      <a href="../../unit-4/setting-up-caching/" class="md-nav__link">
         
   
   
@@ -1566,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../middleware-and-security/" class="md-nav__link">
+      <a href="../../unit-4/middleware-and-security/" class="md-nav__link">
         
   
   
@@ -1594,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../django-standard-library/" class="md-nav__link">
+      <a href="../../unit-4/django-standard-library/" class="md-nav__link">
         
   
   
@@ -1797,26 +1429,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1834,7 +1471,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1852,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -1880,7 +1517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-and-localization/" class="md-nav__link">
+      <a href="../internationalization-and-localization/" class="md-nav__link">
         
   
   
@@ -1908,7 +1545,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-localization-steps/" class="md-nav__link">
+      <a href="../internationalization-localization-steps/" class="md-nav__link">
         
   
   
@@ -1936,7 +1573,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/advanced-web-security/" class="md-nav__link">
+      <a href="../advanced-web-security/" class="md-nav__link">
         
   
   
@@ -1961,10 +1598,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../unit-6/architecture-and-deployment/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Architecture and Deployment
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1980,6 +1644,243 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#shared-nothing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Shared Nothing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Shared Nothing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-shared-nothing-architecture-for-horizontal-scaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the "Shared Nothing" architecture for horizontal scaling
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personal-preferences" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Personal Preferences
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Personal Preferences">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#configuring-settings-for-time-zone-language-and-static-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Configuring settings for time zone, language, and static files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#organizing-settings-for-different-environments-development-vs-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Organizing settings for different environments (Development vs. Production)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#server-integration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Server Integration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Server Integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deploying-django-applications-with-wsgi-servers-like-gunicorn-or-uwsgi" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Deploying Django applications with WSGI servers like Gunicorn or uWSGI
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#legacy-deployment-methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legacy Deployment Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy Deployment Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-and-mod_python-overview-of-the-legacy-deployment-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache and mod_python: Overview of the legacy deployment method
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fastcgi-using-fastcgi-for-non-standard-hosting-environments" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        FastCGI: Using FastCGI for non-standard hosting environments
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#modern-deployment-standards" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Modern Deployment Standards
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scaling-and-performance-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Scaling and Performance Tuning
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Scaling and Performance Tuning">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-scaling-adding-more-app-servers-behind-a-load-balancer" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Horizontal Scaling: Adding more app servers behind a load balancer
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#performance-tuning-identifying-bottlenecks-with-tools-like-django-debug-toolbar" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Performance Tuning: Identifying bottlenecks with tools like Django Debug Toolbar
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caching-strategies-using-djangos-caching-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Caching strategies using Django's caching framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-optimization-techniques-including-indexing-and-query-optimization" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Database optimization techniques, including indexing and query optimization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#database-optimization-connection-pooling-and-read-replicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Database Optimization: Connection pooling and read-replicas
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1992,7 +1893,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/monitoring-and-maintenance/" class="md-nav__link">
+      <a href="../monitoring-and-maintenance/" class="md-nav__link">
         
   
   
@@ -2047,33 +1948,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#shared-nothing" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Concepts
+        Shared Nothing
       
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Sessions and State Management
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
+    <nav class="md-nav" aria-label="Shared Nothing">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
+  <a href="#understanding-the-shared-nothing-architecture-for-horizontal-scaling" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Django’s Session Framework
+        Understanding the "Shared Nothing" architecture for horizontal scaling
       
     </span>
   </a>
@@ -2086,22 +1976,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
+  <a href="#personal-preferences" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Authentication and Authorization
+        Personal Preferences
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
+    <nav class="md-nav" aria-label="Personal Preferences">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
+  <a href="#configuring-settings-for-time-zone-language-and-static-files" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Users and Authentication
+        Configuring settings for time zone, language, and static files
       
     </span>
   </a>
@@ -2109,43 +1999,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
+  <a href="#organizing-settings-for-different-environments-development-vs-production" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
+        Organizing settings for different environments (Development vs. Production)
       
     </span>
   </a>
@@ -2158,22 +2015,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
+  <a href="#server-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Caching Framework
+        Server Integration
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. The Caching Framework">
+    <nav class="md-nav" aria-label="Server Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
+  <a href="#deploying-django-applications-with-wsgi-servers-like-gunicorn-or-uwsgi" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setting Up the Cache
+        Deploying Django applications with WSGI servers like Gunicorn or uWSGI
       
     </span>
   </a>
@@ -2181,10 +2038,22 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
+  <a href="#legacy-deployment-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-Site Cache
+        Legacy Deployment Methods
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Legacy Deployment Methods">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#apache-and-mod_python-overview-of-the-legacy-deployment-method" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Apache and mod_python: Overview of the legacy deployment method
       
     </span>
   </a>
@@ -2192,43 +2061,26 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
+  <a href="#fastcgi-using-fastcgi-for-non-standard-hosting-environments" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-View Cache
+        FastCGI: Using FastCGI for non-standard hosting environments
       
     </span>
   </a>
   
 </li>
         
-          <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
+      </ul>
+    </nav>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
+  <a href="#modern-deployment-standards" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
+        Modern Deployment Standards
       
     </span>
   </a>
@@ -2241,22 +2093,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
+  <a href="#scaling-and-performance-tuning" class="md-nav__link">
     <span class="md-ellipsis">
       
-        4. Middleware and Security
+        Scaling and Performance Tuning
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="4. Middleware and Security">
+    <nav class="md-nav" aria-label="Scaling and Performance Tuning">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
+  <a href="#horizontal-scaling-adding-more-app-servers-behind-a-load-balancer" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Order of Middleware Classes
+        Horizontal Scaling: Adding more app servers behind a load balancer
       
     </span>
   </a>
@@ -2264,10 +2116,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
+  <a href="#performance-tuning-identifying-bottlenecks-with-tools-like-django-debug-toolbar" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Security Best Practices
+        Performance Tuning: Identifying bottlenecks with tools like Django Debug Toolbar
       
     </span>
   </a>
@@ -2275,38 +2127,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
+  <a href="#caching-strategies-using-djangos-caching-framework" class="md-nav__link">
     <span class="md-ellipsis">
       
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
+        Caching strategies using Django's caching framework
       
     </span>
   </a>
@@ -2314,10 +2138,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
+  <a href="#database-optimization-techniques-including-indexing-and-query-optimization" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Flatpages
+        Database optimization techniques, including indexing and query optimization
       
     </span>
   </a>
@@ -2325,32 +2149,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
+  <a href="#database-optimization-connection-pooling-and-read-replicas" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
+        Database Optimization: Connection pooling and read-replicas
       
     </span>
   </a>
@@ -2379,116 +2181,141 @@
 
 
 
-<h1 id="building-robust-secure-applications-in-django">Building Robust, Secure Applications in Django<a class="headerlink" href="#building-robust-secure-applications-in-django" title="Permanent link">&para;</a></h1>
-<p><strong>Handling data and displaying it</strong> =&gt; <strong>human elements and infrastructure.</strong></p>
+<h1 id="architecture-and-deployment">Architecture and Deployment<a class="headerlink" href="#architecture-and-deployment" title="Permanent link">&para;</a></h1>
+<p>The shift from runserver to production setup.</p>
+<h2 id="shared-nothing">Shared Nothing<a class="headerlink" href="#shared-nothing" title="Permanent link">&para;</a></h2>
+<h3 id="understanding-the-shared-nothing-architecture-for-horizontal-scaling">Understanding the "Shared Nothing" architecture for horizontal scaling<a class="headerlink" href="#understanding-the-shared-nothing-architecture-for-horizontal-scaling" title="Permanent link">&para;</a></h3>
+<p>Shared Nothing architecture is a design pattern where each node in a distributed system is completely independent and self-sufficient. This approach enables horizontal scaling by adding more nodes without requiring shared state between them.</p>
+<p><strong>Core Principles:</strong></p>
+<ol>
+<li><strong>Stateless Application Servers</strong>: Each web server can handle requests independently</li>
+<li><strong>Externalized State</strong>: Sessions, files, and cache stored externally</li>
+<li><strong>Loose Coupling</strong>: Services communicate through well-defined APIs</li>
+<li><strong>Fault Tolerance</strong>: Failure of one node doesn't affect others</li>
+</ol>
+<p><strong>Benefits of Shared Nothing Architecture:</strong></p>
 <ul>
-<li>Content in the modern web<ul>
-<li>is DYNAMIC, PERSONALIZED</li>
-<li>should be PROTECTED, HIGH-PERFORMING</li>
+<li><strong>Horizontal Scalability</strong>: Add more servers to handle increased load</li>
+<li><strong>High Availability</strong>: No single point of failure</li>
+<li><strong>Geographic Distribution</strong>: Deploy servers across multiple regions</li>
+<li><strong>Independent Scaling</strong>: Scale different components separately</li>
+<li><strong>Simplified Maintenance</strong>: Update individual nodes without downtime</li>
 </ul>
+<p><strong>Implementation Components:</strong></p>
+<ol>
+<li><strong>The Entry Point: Load Balancer</strong></li>
+</ol>
+<p>Instead of users connecting directly to a single server, they connect to a Load Balancer (like Nginx, HAProxy, or an AWS ALB).</p>
+<ul>
+<li>
+<p><strong>Role</strong>: It acts as a traffic cop, distributing incoming requests across a "pool" of multiple Django servers.</p>
+</li>
+<li>
+<p><strong>Implementation</strong>: The load balancer performs "health checks" to ensure it only sends traffic to servers that are currently awake and functioning.</p>
+</li>
+<li>
+<p><strong>The Application Tier: Identical Web Servers</strong>
+You run multiple instances of your Django project, typically in containers (like Docker).</p>
+</li>
+<li>
+<p><strong>Statelessness</strong>: No user-specific data is written to the server's local hard drive. Every server runs the exact same copy of the code.</p>
+</li>
+<li>
+<p><strong>Scale</strong>: To handle more traffic, you simply "spin up" more copies of these identical servers.</p>
+</li>
+<li>
+<p><strong>State Management (Moving Data Out)</strong></p>
 </li>
 </ul>
-<h2 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h2>
-<h2 id="1-sessions-and-state-management">1. Sessions and State Management<a class="headerlink" href="#1-sessions-and-state-management" title="Permanent link">&para;</a></h2>
+<p>To make the application servers "share nothing," you must move three specific things to centralized, external locations:</p>
 <ul>
-<li>web is "stateless" — every request is a fresh start.</li>
-<li>using sessions to "remember" users as they navigate your site, allowing for features like shopping carts and personalized dashboards.</li>
+<li><strong>Sessions</strong>: Instead of storing session IDs in local files, Django is configured to store them in a centralized Cache (Redis) or the Database. This way, if a user starts a session on Server A, Server B can still recognize them.</li>
+<li><strong>Media Files</strong>: User-uploaded files (like profile pictures) are sent directly to Cloud Storage (like Amazon S3 or Google Cloud Storage) rather than the server's /media/ folder.</li>
+<li>
+<p><strong>Database</strong>: All servers connect to one centralized Database Cluster. The database is usually scaled separately (often with "Read Replicas" to handle heavy traffic).</p>
+</li>
+<li>
+<p><strong>Handling Static Assets</strong>
+In a local environment, Django might serve its own CSS and JS. In a Shared Nothing deployment:</p>
+</li>
+<li>
+<p>Static files are "collected" and pushed to a Content Delivery Network (CDN).</p>
+</li>
+<li>
+<p>The web servers are relieved of the burden of serving images, CSS, or JavaScript, allowing them to focus entirely on executing Python code.</p>
+</li>
+<li>
+<p><strong>Task Offloading (Asynchronous Workers)</strong>
+If a user triggers a heavy task (like generating a PDF or sending 1,000 emails), the application server shouldn't do it locally.</p>
+</li>
+<li>
+<p><strong>Implementation</strong>: The server drops a message into a Message Broker (like RabbitMQ or Redis).</p>
+</li>
+<li>
+<p><strong>Worker Servers</strong>: Separate "Worker" instances (running Celery) pick up these tasks and process them. This prevents a single heavy request from slowing down the web servers for other users.</p>
+</li>
 </ul>
-<h3 id="djangos-session-framework"><a href="../session-and-state-management/#session-framework">Django’s Session Framework</a><a class="headerlink" href="#djangos-session-framework" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Configuring session engines (Database, Cache, File-based, or Cookie-based).</li>
-<li>How to store and retrieve persistent data for anonymous and logged-in users.</li>
-</ul>
-<hr />
-<h2 id="2-authentication-and-authorization">2. Authentication and Authorization<a class="headerlink" href="#2-authentication-and-authorization" title="Permanent link">&para;</a></h2>
-<ul>
-<li>'Who they are' + 'What they are allowed to do'.</li>
-<li>Django’s robust auth system to manage permissions and protect sensitive data.</li>
-</ul>
-<h3 id="users-and-authentication"><a href="../authentication-and-authorization/#users-and-authentication">Users and Authentication</a><a class="headerlink" href="#users-and-authentication" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing user logins, logouts, and password hashing.</li>
-<li>Using the built-in <code>User</code> model.</li>
-</ul>
-<h3 id="permissions"><a href="../authentication-and-authorization/#permissions">Permissions</a><a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>Restricting access to views based on user rights</p>
-<h3 id="groups"><a href="../authentication-and-authorization/#groups">Groups</a><a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
-<p>Organizing users for bulk permission management</p>
-<h3 id="messages"><a href="../authentication-and-authorization/#messages">Messages</a><a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
-<p>Using the Messages Framework for one-time notifications (e.g., "Login Successful").</p>
-<h3 id="profiles"><a href="../authentication-and-authorization/#profiles">Profiles</a><a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
-<p>Extending user data with Custom User Models or Profile linked models.</p>
-<hr />
-<h2 id="3-the-caching-framework">3. The Caching Framework<a class="headerlink" href="#3-the-caching-framework" title="Permanent link">&para;</a></h2>
-<ul>
-<li>strategies that store expensive computations, allowing thousands of requests simultaneously without breaking a sweat.</li>
-</ul>
-<h3 id="setting-up-the-cache"><a href="../setting-up-caching/#setting-up-the-cache">Setting Up the Cache</a><a class="headerlink" href="#setting-up-the-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Choosing a backend: Memcached, Redis, Database, or Local-memory.</li>
-</ul>
-<h3 id="the-per-site-cache"><a href="../setting-up-caching/#per-site-cache">The Per-Site Cache</a><a class="headerlink" href="#the-per-site-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Enabling the "fetch" and "update" middleware to cache the entire website automatically.</li>
-</ul>
-<h3 id="the-per-view-cache"><a href="../setting-up-caching/#per-view-cache">The Per-View Cache</a><a class="headerlink" href="#the-per-view-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using the <code>@cache_page</code> decorator to cache specific, expensive views.</li>
-</ul>
-<h3 id="the-low-level-cache-api"><a href="../setting-up-caching/#low-level-cache-api">The Low-Level Cache API</a><a class="headerlink" href="#the-low-level-cache-api" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Manually setting, getting, and deleting keys in the cache for granular control.</li>
-</ul>
-<h3 id="upstream-caches"><a href="../setting-up-caching/#upstream-caches">Upstream Caches</a><a class="headerlink" href="#upstream-caches" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Working with Nginx/Varnish and the <code>Vary</code> header for proxy caching.</li>
-</ul>
-<h3 id="other-optimizations"><a href="../setting-up-caching/#other-optimizations">Other Optimizations</a><a class="headerlink" href="#other-optimizations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Database indexing, <code>select_related</code>, and <code>prefetch_related</code> to reduce query overhead.</li>
-</ul>
-<hr />
-<h2 id="4-middleware-and-security">4. Middleware and Security<a class="headerlink" href="#4-middleware-and-security" title="Permanent link">&para;</a></h2>
-<ul>
-<li>the "invisible layer" that processes every request before it reaches your view and every response before it leaves. </li>
-<li>implementing security best practices, protecting your site from common vulnerabilities like CSRF and XSS attacks.</li>
-</ul>
-<h3 id="order-of-middleware-classes"><a href="../middleware-and-security/#order-of-middleware-classes">Order of Middleware Classes</a><a class="headerlink" href="#order-of-middleware-classes" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Why order matters (e.g., Session before Authentication).</li>
-<li>How request and response objects flow through the stack.</li>
-</ul>
-<h3 id="security-best-practices"><a href="../middleware-and-security/#security-best-practices">Security Best Practices</a><a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
-<h3 id="csrf-protection"><a href="../middleware-and-security/#csrf-protection">CSRF Protection</a><a class="headerlink" href="#csrf-protection" title="Permanent link">&para;</a></h3>
-<ul>
-<li>How Django prevents Cross-Site Request Forgery.</li>
-<li>Using the <code>{% csrf_token %}</code> in forms and the <code>@csrf_exempt</code> decorator.</li>
-</ul>
-<hr />
-<h2 id="5-the-django-standard-library-contrib-apps">5. The Django Standard Library (Contrib Apps)<a class="headerlink" href="#5-the-django-standard-library-contrib-apps" title="Permanent link">&para;</a></h2>
-<ul>
-<li>exploring more 'batteries' already included to save you from reinventing the wheel, from automated email sending to sophisticated humanizing utilities.</li>
-</ul>
-<h3 id="sites"><a href="../django-standard-library/#sites">Sites</a><a class="headerlink" href="#sites" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing multiple websites from a single Django installation.</li>
-</ul>
-<h3 id="flatpages"><a href="../django-standard-library/#flatpages">Flatpages</a><a class="headerlink" href="#flatpages" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Creating simple, static-like pages (e.g., "About Us", "Privacy Policy") via the Admin interface.</li>
-</ul>
-<h3 id="redirects"><a href="../django-standard-library/#redirects">Redirects</a><a class="headerlink" href="#redirects" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing 301 and 302 redirects within the database.</li>
-</ul>
-<h3 id="humanizing-data"><a href="../django-standard-library/#humanizing-data">Humanizing Data</a><a class="headerlink" href="#humanizing-data" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using <code>django.contrib.humanize</code> to turn numbers/dates into readable strings (e.g., "3 days ago", "1.2 million").</li>
-</ul>
-<h3 id="markup-filters"><a href="../django-standard-library/#markup-filters">Markup Filters</a><a class="headerlink" href="#markup-filters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Processing text as Markdown, ReStructuredText, or other formats within templates.</li>
-</ul>
+<h2 id="personal-preferences">Personal Preferences<a class="headerlink" href="#personal-preferences" title="Permanent link">&para;</a></h2>
+<h3 id="configuring-settings-for-time-zone-language-and-static-files">Configuring settings for time zone, language, and static files<a class="headerlink" href="#configuring-settings-for-time-zone-language-and-static-files" title="Permanent link">&para;</a></h3>
+<p><strong>Time Zone Configuration:</strong></p>
+<p><strong>Language and Localization Settings:</strong></p>
+<p><strong>Static Files Configuration:</strong></p>
+<h3 id="organizing-settings-for-different-environments-development-vs-production">Organizing settings for different environments (Development vs. Production)<a class="headerlink" href="#organizing-settings-for-different-environments-development-vs-production" title="Permanent link">&para;</a></h3>
+<p><strong>Settings Structure:</strong></p>
+<p><strong>Environment Management:</strong></p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># .env.example - Environment variables template</span>
+<span class="c1"># Copy this to .env and fill in your values</span>
+
+<span class="c1"># Django settings</span>
+<span class="nv">DJANGO_ENV</span><span class="o">=</span>development
+<span class="nv">SECRET_KEY</span><span class="o">=</span>your-secret-key-here
+<span class="nv">DEBUG</span><span class="o">=</span>True
+
+<span class="c1"># Database</span>
+<span class="nv">DB_NAME</span><span class="o">=</span>myapp
+<span class="nv">DB_USER</span><span class="o">=</span>postgres
+<span class="nv">DB_PASSWORD</span><span class="o">=</span>password
+<span class="nv">DB_HOST</span><span class="o">=</span>localhost
+<span class="nv">DB_PORT</span><span class="o">=</span><span class="m">5432</span>
+
+<span class="c1"># Redis</span>
+<span class="nv">REDIS_HOST</span><span class="o">=</span>localhost
+<span class="nv">REDIS_PORT</span><span class="o">=</span><span class="m">6379</span>
+
+<span class="c1"># AWS S3</span>
+<span class="nv">AWS_ACCESS_KEY_ID</span><span class="o">=</span>your-aws-access-key
+<span class="nv">AWS_SECRET_ACCESS_KEY</span><span class="o">=</span>your-aws-secret-key
+<span class="nv">AWS_STORAGE_BUCKET_NAME</span><span class="o">=</span>your-s3-bucket
+</code></pre></div>
+
+<h2 id="server-integration">Server Integration<a class="headerlink" href="#server-integration" title="Permanent link">&para;</a></h2>
+<h3 id="deploying-django-applications-with-wsgi-servers-like-gunicorn-or-uwsgi">Deploying Django applications with WSGI servers like Gunicorn or uWSGI<a class="headerlink" href="#deploying-django-applications-with-wsgi-servers-like-gunicorn-or-uwsgi" title="Permanent link">&para;</a></h3>
+<p><strong>Gunicorn Configuration:</strong></p>
+<p><strong>Systemd Service Files:</strong></p>
+<p><strong>Docker Deployment:</strong></p>
+<h3 id="legacy-deployment-methods">Legacy Deployment Methods<a class="headerlink" href="#legacy-deployment-methods" title="Permanent link">&para;</a></h3>
+<h4 id="apache-and-mod_python-overview-of-the-legacy-deployment-method">Apache and mod_python: Overview of the legacy deployment method<a class="headerlink" href="#apache-and-mod_python-overview-of-the-legacy-deployment-method" title="Permanent link">&para;</a></h4>
+<p><strong>Note</strong>: mod_python is deprecated and no longer maintained. This information is provided for historical context and legacy systems.</p>
+<h4 id="fastcgi-using-fastcgi-for-non-standard-hosting-environments">FastCGI: Using FastCGI for non-standard hosting environments<a class="headerlink" href="#fastcgi-using-fastcgi-for-non-standard-hosting-environments" title="Permanent link">&para;</a></h4>
+<p><strong>Note</strong>: FastCGI is also largely deprecated in favor of WSGI/ASGI.</p>
+<h3 id="modern-deployment-standards">Modern Deployment Standards<a class="headerlink" href="#modern-deployment-standards" title="Permanent link">&para;</a></h3>
+<p><strong>Note</strong>: Modern standards typically prefer WSGI (Gunicorn) or ASGI (Daphne/Uvicorn).</p>
+<h2 id="scaling-and-performance-tuning">Scaling and Performance Tuning<a class="headerlink" href="#scaling-and-performance-tuning" title="Permanent link">&para;</a></h2>
+<h3 id="horizontal-scaling-adding-more-app-servers-behind-a-load-balancer">Horizontal Scaling: Adding more app servers behind a load balancer<a class="headerlink" href="#horizontal-scaling-adding-more-app-servers-behind-a-load-balancer" title="Permanent link">&para;</a></h3>
+<h3 id="performance-tuning-identifying-bottlenecks-with-tools-like-django-debug-toolbar">Performance Tuning: Identifying bottlenecks with tools like Django Debug Toolbar<a class="headerlink" href="#performance-tuning-identifying-bottlenecks-with-tools-like-django-debug-toolbar" title="Permanent link">&para;</a></h3>
+<p><strong>Django Debug Toolbar Configuration:</strong></p>
+<p><strong>Custom Performance Monitoring:</strong></p>
+<h3 id="caching-strategies-using-djangos-caching-framework">Caching strategies using Django's caching framework<a class="headerlink" href="#caching-strategies-using-djangos-caching-framework" title="Permanent link">&para;</a></h3>
+<p><strong>Multi-level Caching Strategy:</strong></p>
+<p><strong>Advanced Caching Patterns:</strong></p>
+<p><strong>Template Caching:</strong></p>
+<h3 id="database-optimization-techniques-including-indexing-and-query-optimization">Database optimization techniques, including indexing and query optimization<a class="headerlink" href="#database-optimization-techniques-including-indexing-and-query-optimization" title="Permanent link">&para;</a></h3>
+<p><strong>Query Optimization Techniques:</strong></p>
+<h3 id="database-optimization-connection-pooling-and-read-replicas">Database Optimization: Connection pooling and read-replicas<a class="headerlink" href="#database-optimization-connection-pooling-and-read-replicas" title="Permanent link">&para;</a></h3>
+<p><strong>Database Router for Read Replicas:</strong></p>
+<p><strong>Connection Pooling with PgBouncer:</strong></p>
+<p><strong>Database Health Monitoring:</strong></p>
+<p><strong>Performance Monitoring Dashboard:</strong></p>
 
 
 

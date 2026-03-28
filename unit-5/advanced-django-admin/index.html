@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-4/overview/">
+        <link rel="canonical" href="https://example.com/docs/unit-5/advanced-django-admin/">
       
       
-        <link rel="prev" href="../../unit-3/metadata-and-discovery-frameworks/">
+        <link rel="prev" href="../legacy-system-and-integration/">
       
       
-        <link rel="next" href="../session-and-state-management/">
+        <link rel="next" href="../../unit-6/overview/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Mastering Django</title>
+        <title>Advanced Django Admin - Mastering Django</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-robust-secure-applications-in-django" class="md-skip">
+        <a href="#advanced-django-admin" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Advanced Django Admin
             
           </span>
         </div>
@@ -285,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit-4/overview/" class="md-tabs__link">
           
   
   
@@ -307,11 +305,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../unit-5/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -1031,31 +1031,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1073,7 +1068,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1088,37 +1083,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../unit-4/overview/" class="md-nav__link">
         
   
   
@@ -1134,342 +1102,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Core Concepts
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        1. Sessions and State Management
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Django’s Session Framework
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        2. Authentication and Authorization
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users and Authentication
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        3. The Caching Framework
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="3. The Caching Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up the Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-Site Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-View Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1482,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session-and-state-management/" class="md-nav__link">
+      <a href="../../unit-4/session-and-state-management/" class="md-nav__link">
         
   
   
@@ -1510,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication-and-authorization/" class="md-nav__link">
+      <a href="../../unit-4/authentication-and-authorization/" class="md-nav__link">
         
   
   
@@ -1538,7 +1170,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../setting-up-caching/" class="md-nav__link">
+      <a href="../../unit-4/setting-up-caching/" class="md-nav__link">
         
   
   
@@ -1566,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../middleware-and-security/" class="md-nav__link">
+      <a href="../../unit-4/middleware-and-security/" class="md-nav__link">
         
   
   
@@ -1594,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../django-standard-library/" class="md-nav__link">
+      <a href="../../unit-4/django-standard-library/" class="md-nav__link">
         
   
   
@@ -1626,26 +1258,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
@@ -1663,7 +1300,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1681,7 +1318,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -1709,7 +1346,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/middleware-architecture/" class="md-nav__link">
+      <a href="../middleware-architecture/" class="md-nav__link">
         
   
   
@@ -1737,7 +1374,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/legacy-system-and-integration/" class="md-nav__link">
+      <a href="../legacy-system-and-integration/" class="md-nav__link">
         
   
   
@@ -1762,10 +1399,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../unit-5/advanced-django-admin/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Advanced Django Admin
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1781,6 +1445,70 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-zen-of-admin" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🧘 The Zen of Admin
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-admin-templates" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🎨 Customizing Admin Templates
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-custom-admin-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ➕ Creating Custom Admin Views
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#overriding-built-in-views" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🔄 Overriding Built-in Views
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -2047,10 +1775,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#the-zen-of-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Concepts
+        🧘 The Zen of Admin
       
     </span>
   </a>
@@ -2058,307 +1786,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
+  <a href="#customizing-admin-templates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Sessions and State Management
+        🎨 Customizing Admin Templates
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Django’s Session Framework
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
+  <a href="#creating-custom-admin-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Authentication and Authorization
+        ➕ Creating Custom Admin Views
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Users and Authentication
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Permissions
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
+  <a href="#overriding-built-in-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Caching Framework
+        🔄 Overriding Built-in Views
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="3. The Caching Framework">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up the Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-Site Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-View Cache
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2379,115 +1835,98 @@
 
 
 
-<h1 id="building-robust-secure-applications-in-django">Building Robust, Secure Applications in Django<a class="headerlink" href="#building-robust-secure-applications-in-django" title="Permanent link">&para;</a></h1>
-<p><strong>Handling data and displaying it</strong> =&gt; <strong>human elements and infrastructure.</strong></p>
+<h1 id="advanced-django-admin">Advanced Django Admin<a class="headerlink" href="#advanced-django-admin" title="Permanent link">&para;</a></h1>
+<h2 id="the-zen-of-admin">🧘 The Zen of Admin<a class="headerlink" href="#the-zen-of-admin" title="Permanent link">&para;</a></h2>
+<p>The Django Admin is a powerful internal operations tool:</p>
 <ul>
-<li>Content in the modern web<ul>
-<li>is DYNAMIC, PERSONALIZED</li>
-<li>should be PROTECTED, HIGH-PERFORMING</li>
+<li>For internal staff, not end-users.</li>
+<li>Meant for data management, not complex workflows.</li>
+<li>Best for CRUD operations, not custom dashboards.</li>
 </ul>
+<p>It is NOT:</p>
+<ul>
+<li>A public-facing interface.</li>
+<li>A replacement for a custom dashboard.</li>
+<li>Designed for heavy customization or complex UI.</li>
+</ul>
+<p>Use Admin when:</p>
+<ul>
+<li>You need a quick internal tool for data management.</li>
+<li>Your staff is comfortable with a basic interface.</li>
+<li>You want to leverage Django's built-in features for admin tasks.</li>
+</ul>
+<p>Build a custom dashboard when:</p>
+<ul>
+<li>UX matters</li>
+<li>Workflows are complex</li>
+<li>Role-specific interfaces are required</li>
+</ul>
+<h2 id="customizing-admin-templates">🎨 Customizing Admin Templates<a class="headerlink" href="#customizing-admin-templates" title="Permanent link">&para;</a></h2>
+<p>Django allows template overrides.</p>
+<p>Override <code>admin/base_site.html</code> to change the overall layout and branding.</p>
+<p><strong>Steps</strong>:</p>
+<ol>
+<li>
+<p>Create <code>templates/admin/base_site.html</code> in your app.</p>
 </li>
-</ul>
-<h2 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h2>
-<h2 id="1-sessions-and-state-management">1. Sessions and State Management<a class="headerlink" href="#1-sessions-and-state-management" title="Permanent link">&para;</a></h2>
+<li>
+<p>Extend the default template:</p>
+</li>
+</ol>
+<div class="codehilite"><pre><span></span><code>{% extends &quot;admin/base_site.html&quot; %}
+
+{% block title %}My Custom Admin{% endblock %}
+
+{% block branding %}
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>My Company Admin<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+{% endblock %}
+</code></pre></div>
+
+<h2 id="creating-custom-admin-views">➕ Creating Custom Admin Views<a class="headerlink" href="#creating-custom-admin-views" title="Permanent link">&para;</a></h2>
+<p>Extend AdminSite:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib.admin</span><span class="w"> </span><span class="kn">import</span> <span class="n">AdminSite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyAdminSite</span><span class="p">(</span><span class="n">AdminSite</span><span class="p">):</span>
+
+    <span class="n">site_header</span> <span class="o">=</span> <span class="s2">&quot;Custom Admin&quot;</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">get_urls</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">urls</span> <span class="o">=</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">get_urls</span><span class="p">()</span>
+        <span class="n">custom_urls</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">path</span><span class="p">(</span><span class="s1">&#39;custom-view/&#39;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">admin_view</span><span class="p">(</span><span class="n">views</span><span class="o">.</span><span class="n">custom_view</span><span class="p">),</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;custom-view&#39;</span><span class="p">),</span>
+        <span class="p">]</span>
+        <span class="k">return</span> <span class="n">custom_urls</span> <span class="o">+</span> <span class="n">urls</span>
+
+    <span class="k">def</span><span class="w"> </span><span class="nf">reports_view</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">):</span>
+        <span class="c1"># Custom view logic</span>
+        <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;This is a custom admin view.&quot;</span><span class="p">)</span>
+</code></pre></div>
+
+<h2 id="overriding-built-in-views">🔄 Overriding Built-in Views<a class="headerlink" href="#overriding-built-in-views" title="Permanent link">&para;</a></h2>
+<p>You can override:</p>
 <ul>
-<li>web is "stateless" — every request is a fresh start.</li>
-<li>using sessions to "remember" users as they navigate your site, allowing for features like shopping carts and personalized dashboards.</li>
+<li><code>add_view()</code></li>
+<li><code>change_view()</code></li>
+<li><code>changelist_view()</code></li>
 </ul>
-<h3 id="djangos-session-framework"><a href="../session-and-state-management/#session-framework">Django’s Session Framework</a><a class="headerlink" href="#djangos-session-framework" title="Permanent link">&para;</a></h3>
+<p>Example: Customizing the change view</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">MyModel</span>
+<span class="k">class</span><span class="w"> </span><span class="nc">MyModelAdmin</span><span class="p">(</span><span class="n">admin</span><span class="o">.</span><span class="n">ModelAdmin</span><span class="p">):</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">change_view</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">request</span><span class="p">,</span> <span class="n">object_id</span><span class="p">,</span> <span class="n">form_url</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">extra_context</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="n">extra_context</span> <span class="o">=</span> <span class="n">extra_context</span> <span class="ow">or</span> <span class="p">{}</span>
+        <span class="n">extra_context</span><span class="p">[</span><span class="s1">&#39;custom_data&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;This is some custom data for the change view.&#39;</span>
+        <span class="k">return</span> <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="n">change_view</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">object_id</span><span class="p">,</span> <span class="n">form_url</span><span class="p">,</span> <span class="n">extra_context</span><span class="o">=</span><span class="n">extra_context</span><span class="p">)</span>
+</code></pre></div>
+
+<p><strong>Use Cases</strong></p>
 <ul>
-<li>Configuring session engines (Database, Cache, File-based, or Cookie-based).</li>
-<li>How to store and retrieve persistent data for anonymous and logged-in users.</li>
-</ul>
-<hr />
-<h2 id="2-authentication-and-authorization">2. Authentication and Authorization<a class="headerlink" href="#2-authentication-and-authorization" title="Permanent link">&para;</a></h2>
-<ul>
-<li>'Who they are' + 'What they are allowed to do'.</li>
-<li>Django’s robust auth system to manage permissions and protect sensitive data.</li>
-</ul>
-<h3 id="users-and-authentication"><a href="../authentication-and-authorization/#users-and-authentication">Users and Authentication</a><a class="headerlink" href="#users-and-authentication" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing user logins, logouts, and password hashing.</li>
-<li>Using the built-in <code>User</code> model.</li>
-</ul>
-<h3 id="permissions"><a href="../authentication-and-authorization/#permissions">Permissions</a><a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>Restricting access to views based on user rights</p>
-<h3 id="groups"><a href="../authentication-and-authorization/#groups">Groups</a><a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
-<p>Organizing users for bulk permission management</p>
-<h3 id="messages"><a href="../authentication-and-authorization/#messages">Messages</a><a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
-<p>Using the Messages Framework for one-time notifications (e.g., "Login Successful").</p>
-<h3 id="profiles"><a href="../authentication-and-authorization/#profiles">Profiles</a><a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
-<p>Extending user data with Custom User Models or Profile linked models.</p>
-<hr />
-<h2 id="3-the-caching-framework">3. The Caching Framework<a class="headerlink" href="#3-the-caching-framework" title="Permanent link">&para;</a></h2>
-<ul>
-<li>strategies that store expensive computations, allowing thousands of requests simultaneously without breaking a sweat.</li>
-</ul>
-<h3 id="setting-up-the-cache"><a href="../setting-up-caching/#setting-up-the-cache">Setting Up the Cache</a><a class="headerlink" href="#setting-up-the-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Choosing a backend: Memcached, Redis, Database, or Local-memory.</li>
-</ul>
-<h3 id="the-per-site-cache"><a href="../setting-up-caching/#per-site-cache">The Per-Site Cache</a><a class="headerlink" href="#the-per-site-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Enabling the "fetch" and "update" middleware to cache the entire website automatically.</li>
-</ul>
-<h3 id="the-per-view-cache"><a href="../setting-up-caching/#per-view-cache">The Per-View Cache</a><a class="headerlink" href="#the-per-view-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using the <code>@cache_page</code> decorator to cache specific, expensive views.</li>
-</ul>
-<h3 id="the-low-level-cache-api"><a href="../setting-up-caching/#low-level-cache-api">The Low-Level Cache API</a><a class="headerlink" href="#the-low-level-cache-api" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Manually setting, getting, and deleting keys in the cache for granular control.</li>
-</ul>
-<h3 id="upstream-caches"><a href="../setting-up-caching/#upstream-caches">Upstream Caches</a><a class="headerlink" href="#upstream-caches" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Working with Nginx/Varnish and the <code>Vary</code> header for proxy caching.</li>
-</ul>
-<h3 id="other-optimizations"><a href="../setting-up-caching/#other-optimizations">Other Optimizations</a><a class="headerlink" href="#other-optimizations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Database indexing, <code>select_related</code>, and <code>prefetch_related</code> to reduce query overhead.</li>
-</ul>
-<hr />
-<h2 id="4-middleware-and-security">4. Middleware and Security<a class="headerlink" href="#4-middleware-and-security" title="Permanent link">&para;</a></h2>
-<ul>
-<li>the "invisible layer" that processes every request before it reaches your view and every response before it leaves. </li>
-<li>implementing security best practices, protecting your site from common vulnerabilities like CSRF and XSS attacks.</li>
-</ul>
-<h3 id="order-of-middleware-classes"><a href="../middleware-and-security/#order-of-middleware-classes">Order of Middleware Classes</a><a class="headerlink" href="#order-of-middleware-classes" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Why order matters (e.g., Session before Authentication).</li>
-<li>How request and response objects flow through the stack.</li>
-</ul>
-<h3 id="security-best-practices"><a href="../middleware-and-security/#security-best-practices">Security Best Practices</a><a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
-<h3 id="csrf-protection"><a href="../middleware-and-security/#csrf-protection">CSRF Protection</a><a class="headerlink" href="#csrf-protection" title="Permanent link">&para;</a></h3>
-<ul>
-<li>How Django prevents Cross-Site Request Forgery.</li>
-<li>Using the <code>{% csrf_token %}</code> in forms and the <code>@csrf_exempt</code> decorator.</li>
-</ul>
-<hr />
-<h2 id="5-the-django-standard-library-contrib-apps">5. The Django Standard Library (Contrib Apps)<a class="headerlink" href="#5-the-django-standard-library-contrib-apps" title="Permanent link">&para;</a></h2>
-<ul>
-<li>exploring more 'batteries' already included to save you from reinventing the wheel, from automated email sending to sophisticated humanizing utilities.</li>
-</ul>
-<h3 id="sites"><a href="../django-standard-library/#sites">Sites</a><a class="headerlink" href="#sites" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing multiple websites from a single Django installation.</li>
-</ul>
-<h3 id="flatpages"><a href="../django-standard-library/#flatpages">Flatpages</a><a class="headerlink" href="#flatpages" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Creating simple, static-like pages (e.g., "About Us", "Privacy Policy") via the Admin interface.</li>
-</ul>
-<h3 id="redirects"><a href="../django-standard-library/#redirects">Redirects</a><a class="headerlink" href="#redirects" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing 301 and 302 redirects within the database.</li>
-</ul>
-<h3 id="humanizing-data"><a href="../django-standard-library/#humanizing-data">Humanizing Data</a><a class="headerlink" href="#humanizing-data" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using <code>django.contrib.humanize</code> to turn numbers/dates into readable strings (e.g., "3 days ago", "1.2 million").</li>
-</ul>
-<h3 id="markup-filters"><a href="../django-standard-library/#markup-filters">Markup Filters</a><a class="headerlink" href="#markup-filters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Processing text as Markdown, ReStructuredText, or other formats within templates.</li>
+<li>Injecting additional context into the template.</li>
+<li>Altering form behavior based on the object being edited.</li>
+<li>Adding custom validation or processing logic before saving an object.</li>
+<li>Customizing the change list view to display additional information or actions.</li>
+<li>Modifying the add view to pre-populate fields or change the form layout.</li>
 </ul>
 
 

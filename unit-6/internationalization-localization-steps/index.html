@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-4/setting-up-caching/">
+        <link rel="canonical" href="https://example.com/docs/unit-6/internationalization-localization-steps/">
       
       
-        <link rel="prev" href="../authentication-and-authorization/">
+        <link rel="prev" href="../internationalization-and-localization/">
       
       
-        <link rel="next" href="../middleware-and-security/">
+        <link rel="next" href="../advanced-web-security/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Caching - Mastering Django</title>
+        <title>Step-by-step-guide - Mastering Django</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#caching" class="md-skip">
+        <a href="#step-by-step-guide-django-internationalization-and-localization" class="md-skip">
           Skip to content
         </a>
       
@@ -109,7 +109,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Caching
+              Step-by-step-guide
             
           </span>
         </div>
@@ -285,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit-4/overview/" class="md-tabs__link">
           
   
   
@@ -327,11 +325,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../unit-6/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../overview/" class="md-tabs__link">
           
   
   
@@ -1031,31 +1031,26 @@
       
   
   
-    
   
   
-  
     
     
     
     
-      
-        
-        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
   
@@ -1073,7 +1068,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1091,7 +1086,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../../unit-4/overview/" class="md-nav__link">
         
   
   
@@ -1119,7 +1114,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session-and-state-management/" class="md-nav__link">
+      <a href="../../unit-4/session-and-state-management/" class="md-nav__link">
         
   
   
@@ -1147,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../authentication-and-authorization/" class="md-nav__link">
+      <a href="../../unit-4/authentication-and-authorization/" class="md-nav__link">
         
   
   
@@ -1172,37 +1167,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Caching
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../unit-4/setting-up-caching/" class="md-nav__link">
         
   
   
@@ -1218,92 +1186,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up the Cache
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#per-site-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-Site Cache
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#per-view-cache" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Per-View Cache
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#low-level-cache-api" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1316,7 +1198,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../middleware-and-security/" class="md-nav__link">
+      <a href="../../unit-4/middleware-and-security/" class="md-nav__link">
         
   
   
@@ -1344,7 +1226,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../django-standard-library/" class="md-nav__link">
+      <a href="../../unit-4/django-standard-library/" class="md-nav__link">
         
   
   
@@ -1547,26 +1429,31 @@
       
   
   
+    
   
   
+  
     
     
     
     
+      
+        
+        
       
       
         
       
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="">
             
   
   
@@ -1584,7 +1471,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             
@@ -1602,7 +1489,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/overview/" class="md-nav__link">
+      <a href="../overview/" class="md-nav__link">
         
   
   
@@ -1630,7 +1517,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-and-localization/" class="md-nav__link">
+      <a href="../internationalization-and-localization/" class="md-nav__link">
         
   
   
@@ -1655,10 +1542,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../../unit-6/internationalization-localization-steps/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Step-by-step-guide
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -1674,6 +1588,232 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-project-setup-and-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Project Setup and Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Project Setup and Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-configure-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Configure Settings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-add-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.2 Add Middleware
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-url-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: URL Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: URL Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-configure-internationalized-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Configure Internationalized URLs
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-3-mark-strings-for-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Mark Strings for Translation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Mark Strings for Translation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-python-code-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Python Code Translation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-template-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.2 Template Translation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-4-create-translation-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Translation Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4: Create Translation Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-extract-translation-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Extract Translation Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-translate-the-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Translate the Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-compile-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Compile Translations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-create-language-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create Language Switcher
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Create Language Switcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-language-switcher-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Language Switcher Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-add-to-base-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Add to Base Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-adding-and-using-new-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Adding and using new translations
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1686,7 +1826,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/advanced-web-security/" class="md-nav__link">
+      <a href="../advanced-web-security/" class="md-nav__link">
         
   
   
@@ -1714,7 +1854,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/architecture-and-deployment/" class="md-nav__link">
+      <a href="../architecture-and-deployment/" class="md-nav__link">
         
   
   
@@ -1742,7 +1882,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/monitoring-and-maintenance/" class="md-nav__link">
+      <a href="../monitoring-and-maintenance/" class="md-nav__link">
         
   
   
@@ -1797,65 +1937,205 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
+  <a href="#step-1-project-setup-and-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setting Up the Cache
+        Step 1: Project Setup and Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 1: Project Setup and Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-configure-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1.1 Configure Settings
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#per-site-cache" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#12-add-middleware" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-Site Cache
+        1.2 Add Middleware
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#per-view-cache" class="md-nav__link">
+  <a href="#step-2-url-configuration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-View Cache
+        Step 2: URL Configuration
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 2: URL Configuration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-configure-internationalized-urls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2.1 Configure Internationalized URLs
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#low-level-cache-api" class="md-nav__link">
+  <a href="#step-3-mark-strings-for-translation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Low-Level Cache API
+        Step 3: Mark Strings for Translation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 3: Mark Strings for Translation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#31-python-code-translation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3.1 Python Code Translation
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#32-template-translation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Upstream Caches
+        3.2 Template Translation
       
     </span>
   </a>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
+  <a href="#step-4-create-translation-files" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Other Optimizations
+        Step 4: Create Translation Files
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 4: Create Translation Files">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-extract-translation-strings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1 Extract Translation Strings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-translate-the-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.2 Translate the Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-compile-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.3 Compile Translations
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-5-create-language-switcher" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create Language Switcher
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step 5: Create Language Switcher">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-language-switcher-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.1 Language Switcher Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-add-to-base-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5.2 Add to Base Template
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-6-adding-and-using-new-translations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Adding and using new translations
       
     </span>
   </a>
@@ -1879,63 +2159,180 @@
 
 
 
-<h1 id="caching">Caching<a class="headerlink" href="#caching" title="Permanent link">&para;</a></h1>
-<p>Django's caching framework helps improve the performance of your web applications by storing frequently accessed data in a fast storage layer. This reduces the need to repeatedly fetch data from the database or perform expensive computations.</p>
-<h2 id="setting-up-the-cache">Setting Up the Cache<a class="headerlink" href="#setting-up-the-cache" title="Permanent link">&para;</a></h2>
-<p>To set up caching in your Django project, you need to choose a caching backend. Common options include Memcached, Redis, database caching, or local-memory caching. You can configure the cache backend in your <code>settings.py</code> file using the <code>CACHES</code> setting. For example, to use Memcached:</p>
-<div class="codehilite"><pre><span></span><code><span class="n">CACHES</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
-    <span class="s1">&#39;BACKEND&#39;</span><span class="p">:</span> <span class="s1">&#39;django.core.cache.backends.memcached.MemcachedCache&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;LOCATION&#39;</span><span class="p">:</span> <span class="s1">&#39;127.0.0.1:11211&#39;</span><span class="p">,</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<h1 id="step-by-step-guide-django-internationalization-and-localization">Step-by-Step Guide: Django Internationalization and Localization<a class="headerlink" href="#step-by-step-guide-django-internationalization-and-localization" title="Permanent link">&para;</a></h1>
+<p>This guide provides a complete implementation roadmap for adding internationalization (i18n) and localization (l10n) to your Django project.</p>
+<h2 id="step-1-project-setup-and-configuration">Step 1: Project Setup and Configuration<a class="headerlink" href="#step-1-project-setup-and-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="11-configure-settings">1.1 Configure Settings<a class="headerlink" href="#11-configure-settings" title="Permanent link">&para;</a></h3>
+<p>Add these settings to your <code>settings.py</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Enable internationalization</span>
+<span class="n">USE_I18N</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">USE_L10N</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">USE_TZ</span> <span class="o">=</span> <span class="kc">True</span>
+
+<span class="c1"># Default language and locale</span>
+<span class="n">LANGUAGE_CODE</span> <span class="o">=</span> <span class="s1">&#39;en-us&#39;</span>
+<span class="n">TIME_ZONE</span> <span class="o">=</span> <span class="s1">&#39;UTC&#39;</span>
+
+<span class="c1"># Supported languages</span>
+<span class="n">LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="s1">&#39;English&#39;</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;ne&#39;</span><span class="p">,</span> <span class="s1">&#39;Nepali&#39;</span><span class="p">),</span>
+<span class="p">]</span>
+
+<span class="c1"># Locale paths for translation files</span>
+<span class="n">LOCALE_PATHS</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;locale/&#39;</span><span class="p">,</span>
+<span class="p">]</span>
+
+<span class="c1"># Language cookie settings -- optional</span>
+<span class="n">LANGUAGE_COOKIE_NAME</span> <span class="o">=</span> <span class="s1">&#39;django_language&#39;</span>
+<span class="n">LANGUAGE_COOKIE_AGE</span> <span class="o">=</span> <span class="mi">365</span> <span class="o">*</span> <span class="mi">24</span> <span class="o">*</span> <span class="mi">60</span> <span class="o">*</span> <span class="mi">60</span>  <span class="c1"># 1 year</span>
+<span class="n">LANGUAGE_COOKIE_DOMAIN</span> <span class="o">=</span> <span class="kc">None</span>
+<span class="n">LANGUAGE_COOKIE_PATH</span> <span class="o">=</span> <span class="s1">&#39;/&#39;</span>
+<span class="n">LANGUAGE_COOKIE_SECURE</span> <span class="o">=</span> <span class="kc">False</span>  <span class="c1"># Set to True for HTTPS</span>
+<span class="n">LANGUAGE_COOKIE_HTTPONLY</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="n">LANGUAGE_COOKIE_SAMESITE</span> <span class="o">=</span> <span class="s1">&#39;Lax&#39;</span>
 </code></pre></div>
 
-<h2 id="per-site-cache">The Per-Site Cache<a class="headerlink" href="#per-site-cache" title="Permanent link">&para;</a></h2>
-<p>The per-site cache allows you to cache the entire site by enabling the <code>FetchFromCacheMiddleware</code> and <code>UpdateCacheMiddleware</code> in your <code>MIDDLEWARE</code> settings. This caches all pages automatically.</p>
+<h3 id="12-add-middleware">1.2 Add Middleware<a class="headerlink" href="#12-add-middleware" title="Permanent link">&para;</a></h3>
+<p>Update your middleware configuration:</p>
 <div class="codehilite"><pre><span></span><code><span class="n">MIDDLEWARE</span> <span class="o">=</span> <span class="p">[</span>
-  <span class="s1">&#39;django.middleware.cache.UpdateCacheMiddleware&#39;</span><span class="p">,</span>
-  <span class="c1"># ... other middleware ...</span>
-  <span class="s1">&#39;django.middleware.cache.FetchFromCacheMiddleware&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;django.contrib.sessions.middleware.SessionMiddleware&#39;</span><span class="p">,</span>
+    <span class="s1">&#39;django.middleware.locale.LocaleMiddleware&#39;</span><span class="p">,</span>        <span class="c1"># After SessionMiddleware</span>
+    <span class="s1">&#39;django.middleware.common.CommonMiddleware&#39;</span><span class="p">,</span>         <span class="c1"># Before CommonMiddleware</span>
+    <span class="c1"># ... other middleware</span>
 <span class="p">]</span>
 </code></pre></div>
 
-<h2 id="per-view-cache">The Per-View Cache<a class="headerlink" href="#per-view-cache" title="Permanent link">&para;</a></h2>
-<p>You can cache specific views using the <code>@cache_page</code> decorator. This is useful for caching expensive views that don't change often.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.views.decorators.cache</span><span class="w"> </span><span class="kn">import</span> <span class="n">cache_page</span>
-<span class="nd">@cache_page</span><span class="p">(</span><span class="mi">60</span> <span class="o">*</span> <span class="mi">15</span><span class="p">)</span>  <span class="c1"># Cache for 15 minutes</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">my_expensive_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-  <span class="c1"># View logic here</span>
+<p><strong>Important</strong>: <code>LocaleMiddleware</code> must be placed after <code>SessionMiddleware</code> and before <code>CommonMiddleware</code>.</p>
+<h2 id="step-2-url-configuration">Step 2: URL Configuration<a class="headerlink" href="#step-2-url-configuration" title="Permanent link">&para;</a></h2>
+<h3 id="21-configure-internationalized-urls">2.1 Configure Internationalized URLs<a class="headerlink" href="#21-configure-internationalized-urls" title="Permanent link">&para;</a></h3>
+<p>Update your main <code>urls.py</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.i18n</span><span class="w"> </span><span class="kn">import</span> <span class="n">i18n_patterns</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.static</span><span class="w"> </span><span class="kn">import</span> <span class="n">static</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">django.conf</span><span class="w"> </span><span class="kn">import</span> <span class="n">settings</span>
+
+<span class="c1"># Include i18n URLs (for language switching and JavaScript catalog)</span>
+<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;i18n/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.conf.urls.i18n&#39;</span><span class="p">)),</span>
+    <span class="c1"># Add other non-internationalized URLs here</span>
+<span class="p">]</span>
 </code></pre></div>
 
-<h2 id="low-level-cache-api">The Low-Level Cache API<a class="headerlink" href="#low-level-cache-api" title="Permanent link">&para;</a></h2>
-<p>Django provides a low-level cache API that allows you to manually set, get, and delete cache entries. You can use the <code>cache</code> object from <code>django.core.cache</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.core.cache</span><span class="w"> </span><span class="kn">import</span> <span class="n">cache</span>
-<span class="c1"># Set a value in the cache</span>
-<span class="n">cache</span><span class="o">.</span><span class="n">set</span><span class="p">(</span><span class="s1">&#39;my_key&#39;</span><span class="p">,</span> <span class="s1">&#39;my_value&#39;</span><span class="p">,</span> <span class="n">timeout</span><span class="o">=</span><span class="mi">300</span><span class="p">)</span>  <span class="c1"># Expires in</span>
-<span class="c1"># Get a value from the cache</span>
-<span class="n">value</span> <span class="o">=</span> <span class="n">cache</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;my_key&#39;</span><span class="p">)</span>
-<span class="c1"># Delete a value from the cache</span>
-<span class="n">cache</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="s1">&#39;my_key&#39;</span><span class="p">)</span>
+<h2 id="step-3-mark-strings-for-translation">Step 3: Mark Strings for Translation<a class="headerlink" href="#step-3-mark-strings-for-translation" title="Permanent link">&para;</a></h2>
+<h3 id="31-python-code-translation">3.1 Python Code Translation<a class="headerlink" href="#31-python-code-translation" title="Permanent link">&para;</a></h3>
+<p>Update your Python files to mark strings for translation:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># views.py</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">django.utils.translation</span><span class="w"> </span><span class="kn">import</span> <span class="n">gettext</span> <span class="k">as</span> <span class="n">_</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+
+    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+    <span class="n">message</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Welcome to our song collection!&quot;</span><span class="p">)</span>
+    <span class="n">page_title</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s2">&quot;Song List&quot;</span><span class="p">)</span>
+    <span class="c1"># Logic to fetch and display a list of songs</span>
+    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;song_list.html&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">,</span> <span class="s1">&#39;message&#39;</span><span class="p">:</span> <span class="n">message</span><span class="p">,</span> <span class="s1">&#39;page_title&#39;</span><span class="p">:</span> <span class="n">page_title</span><span class="p">})</span>
 </code></pre></div>
 
-<h2 id="upstream-caches">Upstream Caches<a class="headerlink" href="#upstream-caches" title="Permanent link">&para;</a></h2>
-<p>When using upstream caches like Nginx or Varnish, you can control caching behavior with the <code>Vary</code> header. This header tells the cache to store different versions of a resource based on certain request headers (e.g., <code>Accept-Language</code>, <code>User-Agent</code>).</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.views.decorators.vary</span><span class="w"> </span><span class="kn">import</span> <span class="n">vary_on_headers</span>
-<span class="nd">@vary_on_headers</span><span class="p">(</span><span class="s1">&#39;User-Agent&#39;</span><span class="p">)</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">my_view</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-  <span class="c1"># View logic here</span>
+<h3 id="32-template-translation">3.2 Template Translation<a class="headerlink" href="#32-template-translation" title="Permanent link">&para;</a></h3>
+<p>Update your templates to use translation tags:</p>
+<div class="codehilite"><pre><span></span><code>{% load i18n %}
+
+<span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;{% get_current_language as LANGUAGE_CODE %}{{ LANGUAGE_CODE }}&quot;</span><span class="p">&gt;</span>
 </code></pre></div>
 
-<h2 id="other-optimizations">Other Optimizations<a class="headerlink" href="#other-optimizations" title="Permanent link">&para;</a></h2>
-<p>In addition to caching, you can optimize database queries using techniques like indexing, <code>select_related</code>, and <code>prefetch_related</code>. These methods help reduce the number of database queries and improve performance.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Using select_related to fetch related objects in a single query</span>
-<span class="n">books</span> <span class="o">=</span> <span class="n">Book</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">select_related</span><span class="p">(</span><span class="s1">&#39;author&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-<span class="c1"># Using prefetch_related to fetch many-to-many relationships efficiently</span>
-<span class="n">authors</span> <span class="o">=</span> <span class="n">Author</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">prefetch_related</span><span class="p">(</span><span class="s1">&#39;books&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<h2 id="step-4-create-translation-files">Step 4: Create Translation Files<a class="headerlink" href="#step-4-create-translation-files" title="Permanent link">&para;</a></h2>
+<h3 id="41-extract-translation-strings">4.1 Extract Translation Strings<a class="headerlink" href="#41-extract-translation-strings" title="Permanent link">&para;</a></h3>
+<p>Run these commands to create and update translation files:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Create translation files for each language</span>
+python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne
 </code></pre></div>
 
-<p>By implementing caching and optimizing database access, you can significantly enhance the performance of your Django applications.</p>
+<h3 id="42-translate-the-content">4.2 Translate the Content<a class="headerlink" href="#42-translate-the-content" title="Permanent link">&para;</a></h3>
+<p>Edit the <code>.po</code> files in <code>locale/[language]/LC_MESSAGES/django.po</code>:</p>
+<div class="codehilite"><pre><span></span><code><span class="c1"># locale/ne/LC_MESSAGES/django.po</span>
+
+<span class="c1"># This file is distributed under the same license as the geetshala package.</span>
+<span class="c1">#</span>
+<span class="nv">msgid</span> <span class="s">&quot;&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;&quot;</span>
+<span class="s">&quot;</span><span class="py">Project-Id-Version:</span><span class="s"> geetshala\n&quot;</span>
+<span class="s">&quot;</span><span class="py">Report-Msgid-Bugs-To:</span><span class="s"> \n&quot;</span>
+<span class="s">&quot;</span><span class="py">POT-Creation-Date:</span><span class="s"> 2024-01-01 00:00+0000\n&quot;</span>
+<span class="s">&quot;</span><span class="py">PO-Revision-Date:</span><span class="s"> 2024-01-01 00:00+0000\n&quot;</span>
+<span class="s">&quot;</span><span class="py">Last-Translator:</span><span class="s"> \n&quot;</span>
+<span class="s">&quot;</span><span class="py">Language-Team:</span><span class="s"> Nepali\n&quot;</span>
+<span class="s">&quot;</span><span class="py">Language:</span><span class="s"> ne\n&quot;</span>
+<span class="s">&quot;</span><span class="py">MIME-Version:</span><span class="s"> 1.0\n&quot;</span>
+<span class="s">&quot;</span><span class="py">Content-Type:</span><span class="s"> text/plain; charset=UTF-8\n&quot;</span>
+<span class="s">&quot;</span><span class="py">Content-Transfer-Encoding:</span><span class="s"> 8bit\n&quot;</span>
+
+<span class="nv">msgid</span> <span class="s">&quot;Welcome to our song collection!&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;हाम्रो गीत संग्रहमा स्वागत छ!&quot;</span>
+
+<span class="nv">msgid</span> <span class="s">&quot;Welcome to Geetshala&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;गीतशालामा स्वागत छ&quot;</span>
+
+<span class="nv">msgid</span> <span class="s">&quot;Home&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;होम&quot;</span>
+
+<span class="nv">msgid</span> <span class="s">&quot;List of Songs&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;गीतहरूको सूची&quot;</span>
+
+<span class="nv">msgid</span> <span class="s">&quot;Add New Song Details&quot;</span>
+<span class="nv">msgstr</span> <span class="s">&quot;नयाँ गीत विवरण थप्नुहोस्&quot;</span>
+</code></pre></div>
+
+<h3 id="43-compile-translations">4.3 Compile Translations<a class="headerlink" href="#43-compile-translations" title="Permanent link">&para;</a></h3>
+<div class="codehilite"><pre><span></span><code><span class="c1"># Compile all translation files</span>
+python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages
+
+<span class="c1"># Compile specific language</span>
+python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<span class="w"> </span>-l<span class="w"> </span>ne
+</code></pre></div>
+
+<h2 id="step-5-create-language-switcher">Step 5: Create Language Switcher<a class="headerlink" href="#step-5-create-language-switcher" title="Permanent link">&para;</a></h2>
+<h3 id="51-language-switcher-template">5.1 Language Switcher Template<a class="headerlink" href="#51-language-switcher-template" title="Permanent link">&para;</a></h3>
+<p>Create <code>templates/partials/language_switcher.html</code>:</p>
+<div class="codehilite"><pre><span></span><code>{% load i18n static %}
+
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;margin: 10px 0;&quot;</span><span class="p">&gt;</span>
+    {% get_current_language as LANGUAGE_CODE %}
+    {% get_available_languages as LANGUAGES %}
+
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;{% url &#39;set_language&#39; %}&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;padding: 5px;border-radius: 4px;border: 1px solid #ddd;&quot;</span><span class="p">&gt;</span>
+        {% csrf_token %}
+        <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;next&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ request.path }}&quot;</span> <span class="p">/&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;language-select&quot;</span><span class="p">&gt;</span>{% trans &quot;Language:&quot; %}<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;language&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;language-select&quot;</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&quot;this.form.submit()&quot;</span><span class="p">&gt;</span>
+            {% for lang_code, lang_name in LANGUAGES %}
+                <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ lang_code }}&quot;</span> 
+                        <span class="err">{%</span> <span class="na">if</span> <span class="na">lang_code </span><span class="o">=</span><span class="s">=</span> <span class="na">LANGUAGE_CODE</span> <span class="err">%}</span><span class="na">selected</span><span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="p">&gt;</span>
+                    {{ lang_name }}
+                <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+            {% endfor %}
+        <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+</code></pre></div>
+
+<h3 id="52-add-to-base-template">5.2 Add to Base Template<a class="headerlink" href="#52-add-to-base-template" title="Permanent link">&para;</a></h3>
+<p>Include the language switcher in your base template or wherever you want it to appear:</p>
+<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- In your base.html or any template --&gt;</span>
+{% include &#39;partials/language_switcher.html&#39; %}
+</code></pre></div>
+
+<h2 id="step-6-adding-and-using-new-translations">Step 6: Adding and using new translations<a class="headerlink" href="#step-6-adding-and-using-new-translations" title="Permanent link">&para;</a></h2>
+<p>When you need to add new translations:</p>
+<ul>
+<li>Add the new text to your templates using <code>{% trans %}</code> or <code>{% blocktrans %}</code></li>
+<li>Run <code>python manage.py makemessages -l ne</code> to update the <code>.po</code> file</li>
+<li>Translate the new strings in the <code>.po</code> file</li>
+<li>Run <code>python manage.py compilemessages</code> to compile the translations</li>
+</ul>
 
 
 

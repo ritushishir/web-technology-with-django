@@ -92,4 +92,44 @@
          <loc>https://example.com/docs/unit-4/setting-up-caching/</loc>
          <lastmod>2026-03-28</lastmod>
     </url>
+    <url>
+         <loc>https://example.com/docs/unit-5/advanced-django-admin/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-5/legacy-system-and-integration/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-5/middleware-architecture/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-5/overview/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/advanced-web-security/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/architecture-and-deployment/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/internationalization-and-localization/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/internationalization-localization-steps/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/monitoring-and-maintenance/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://example.com/docs/unit-6/overview/</loc>
+         <lastmod>2026-03-28</lastmod>
+    </url>
 </urlset>

@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-4/overview/">
+        <link rel="canonical" href="https://example.com/docs/unit-5/overview/">
       
       
-        <link rel="prev" href="../../unit-3/metadata-and-discovery-frameworks/">
+        <link rel="prev" href="../../unit-4/django-standard-library/">
       
       
-        <link rel="next" href="../session-and-state-management/">
+        <link rel="next" href="../middleware-architecture/">
       
       
         
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#building-robust-secure-applications-in-django" class="md-skip">
+        <a href="#django-middleware-and-advanced-admin-customization" class="md-skip">
           Skip to content
         </a>
       
@@ -285,13 +285,11 @@
   
   
   
-    
-  
   
     
     
-      <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+      <li class="md-tabs__item">
+        <a href="../../unit-4/overview/" class="md-tabs__link">
           
   
   
@@ -307,11 +305,13 @@
   
   
   
+    
+  
   
     
     
-      <li class="md-tabs__item">
-        <a href="../../unit-5/overview/" class="md-tabs__link">
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
           
   
   
@@ -1031,6 +1031,233 @@
       
   
   
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    4. Users and Session
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    4. Users and Session
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/session-and-state-management/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Session Management
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/authentication-and-authorization/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Authentication and Authorization
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/setting-up-caching/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Caching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/middleware-and-security/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Middleware and Security
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-4/django-standard-library/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Django Standard Library
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -1052,17 +1279,17 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="">
             
   
   
   <span class="md-ellipsis">
     
   
-    4. Users and Session
+    5. Middleware
   
 
     
@@ -1073,12 +1300,12 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             
   
-    4. Users and Session
+    5. Middleware
   
 
           </label>
@@ -1151,33 +1378,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#1-middleware-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Concepts
+        1. Middleware Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Middleware Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#middleware-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Middleware Overview
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#middleware-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Sessions and State Management
+        Middleware Installation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
+  <a href="#middleware-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Django’s Session Framework
+        Middleware Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Built-in Middleware
       
     </span>
   </a>
@@ -1190,22 +1439,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
+  <a href="#2-legacy-systems-and-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Authentication and Authorization
+        2. Legacy Systems and Integration
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
+    <nav class="md-nav" aria-label="2. Legacy Systems and Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
+  <a href="#integrating-with-a-legacy-database" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Users and Authentication
+        Integrating with a Legacy Database
       
     </span>
   </a>
@@ -1213,10 +1462,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
+  <a href="#integrating-with-an-authentication-system" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissions
+        Integrating with an Authentication System
       
     </span>
   </a>
@@ -1224,32 +1473,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
+  <a href="#integrating-with-legacy-web-applications" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
+        Integrating with Legacy Web Applications
       
     </span>
   </a>
@@ -1262,22 +1489,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
+  <a href="#3-advanced-django-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Caching Framework
+        3. Advanced Django Admin
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. The Caching Framework">
+    <nav class="md-nav" aria-label="3. Advanced Django Admin">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
+  <a href="#the-zen-of-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setting Up the Cache
+        The Zen of Admin
       
     </span>
   </a>
@@ -1285,10 +1512,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
+  <a href="#customizing-admin-templates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-Site Cache
+        Customizing Admin Templates
       
     </span>
   </a>
@@ -1296,10 +1523,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
+  <a href="#creating-custom-admin-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-View Cache
+        Creating Custom Admin Views
       
     </span>
   </a>
@@ -1307,154 +1534,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
+  <a href="#overriding-built-in-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
+        Overriding Built-in Views
       
     </span>
   </a>
@@ -1482,234 +1565,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../session-and-state-management/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Session Management
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../authentication-and-authorization/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Authentication and Authorization
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../setting-up-caching/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Caching
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../middleware-and-security/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Middleware and Security
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../django-standard-library/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Django Standard Library
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
-    
-      
-      
-  
-  
-  
-  
-    
-    
-    
-    
-      
-      
-        
-      
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
-        
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
-        
-          
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
-            
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    5. Middleware
-  
-
-    
-  </span>
-  
-  
-
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
-            <span class="md-nav__icon md-icon"></span>
-            
-  
-    5. Middleware
-  
-
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-5/overview/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Overview
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-5/middleware-architecture/" class="md-nav__link">
+      <a href="../middleware-architecture/" class="md-nav__link">
         
   
   
@@ -1737,7 +1593,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/legacy-system-and-integration/" class="md-nav__link">
+      <a href="../legacy-system-and-integration/" class="md-nav__link">
         
   
   
@@ -1765,7 +1621,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/advanced-django-admin/" class="md-nav__link">
+      <a href="../advanced-django-admin/" class="md-nav__link">
         
   
   
@@ -2047,33 +1903,55 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#core-concepts" class="md-nav__link">
+  <a href="#1-middleware-architecture" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Concepts
+        1. Middleware Architecture
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Middleware Architecture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#middleware-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Middleware Overview
       
     </span>
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
-  <a href="#1-sessions-and-state-management" class="md-nav__link">
+        
+          <li class="md-nav__item">
+  <a href="#middleware-installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        1. Sessions and State Management
+        Middleware Installation
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="1. Sessions and State Management">
-      <ul class="md-nav__list">
+</li>
         
           <li class="md-nav__item">
-  <a href="#djangos-session-framework" class="md-nav__link">
+  <a href="#middleware-methods" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Django’s Session Framework
+        Middleware Methods
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#built-in-middleware" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Built-in Middleware
       
     </span>
   </a>
@@ -2086,22 +1964,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#2-authentication-and-authorization" class="md-nav__link">
+  <a href="#2-legacy-systems-and-integration" class="md-nav__link">
     <span class="md-ellipsis">
       
-        2. Authentication and Authorization
+        2. Legacy Systems and Integration
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="2. Authentication and Authorization">
+    <nav class="md-nav" aria-label="2. Legacy Systems and Integration">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#users-and-authentication" class="md-nav__link">
+  <a href="#integrating-with-a-legacy-database" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Users and Authentication
+        Integrating with a Legacy Database
       
     </span>
   </a>
@@ -2109,10 +1987,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#permissions" class="md-nav__link">
+  <a href="#integrating-with-an-authentication-system" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Permissions
+        Integrating with an Authentication System
       
     </span>
   </a>
@@ -2120,32 +1998,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#groups" class="md-nav__link">
+  <a href="#integrating-with-legacy-web-applications" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Groups
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#messages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Messages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#profiles" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Profiles
+        Integrating with Legacy Web Applications
       
     </span>
   </a>
@@ -2158,22 +2014,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#3-the-caching-framework" class="md-nav__link">
+  <a href="#3-advanced-django-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        3. The Caching Framework
+        3. Advanced Django Admin
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="3. The Caching Framework">
+    <nav class="md-nav" aria-label="3. Advanced Django Admin">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#setting-up-the-cache" class="md-nav__link">
+  <a href="#the-zen-of-admin" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Setting Up the Cache
+        The Zen of Admin
       
     </span>
   </a>
@@ -2181,10 +2037,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-site-cache" class="md-nav__link">
+  <a href="#customizing-admin-templates" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-Site Cache
+        Customizing Admin Templates
       
     </span>
   </a>
@@ -2192,10 +2048,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-per-view-cache" class="md-nav__link">
+  <a href="#creating-custom-admin-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Per-View Cache
+        Creating Custom Admin Views
       
     </span>
   </a>
@@ -2203,154 +2059,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#the-low-level-cache-api" class="md-nav__link">
+  <a href="#overriding-built-in-views" class="md-nav__link">
     <span class="md-ellipsis">
       
-        The Low-Level Cache API
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#upstream-caches" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Upstream Caches
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#other-optimizations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Other Optimizations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#4-middleware-and-security" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        4. Middleware and Security
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="4. Middleware and Security">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#order-of-middleware-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Order of Middleware Classes
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#security-best-practices" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Security Best Practices
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#csrf-protection" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        CSRF Protection
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#5-the-django-standard-library-contrib-apps" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        5. The Django Standard Library (Contrib Apps)
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="5. The Django Standard Library (Contrib Apps)">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#sites" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Sites
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#flatpages" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Flatpages
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#redirects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Redirects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#humanizing-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Humanizing Data
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#markup-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Markup Filters
+        Overriding Built-in Views
       
     </span>
   </a>
@@ -2379,115 +2091,65 @@
 
 
 
-<h1 id="building-robust-secure-applications-in-django">Building Robust, Secure Applications in Django<a class="headerlink" href="#building-robust-secure-applications-in-django" title="Permanent link">&para;</a></h1>
-<p><strong>Handling data and displaying it</strong> =&gt; <strong>human elements and infrastructure.</strong></p>
+<h1 id="django-middleware-and-advanced-admin-customization">Django Middleware and Advanced Admin Customization<a class="headerlink" href="#django-middleware-and-advanced-admin-customization" title="Permanent link">&para;</a></h1>
+<h2 id="1-middleware-architecture">1. Middleware Architecture<a class="headerlink" href="#1-middleware-architecture" title="Permanent link">&para;</a></h2>
+<h3 id="middleware-overview"><a href="../middleware-architecture/#middleware-overview">Middleware Overview</a><a class="headerlink" href="#middleware-overview" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Content in the modern web<ul>
-<li>is DYNAMIC, PERSONALIZED</li>
-<li>should be PROTECTED, HIGH-PERFORMING</li>
+<li>Understanding the request/response lifecycle.</li>
+<li>How Middleware acts as a "hook" system for Django’s input and output.</li>
 </ul>
-</li>
-</ul>
-<h2 id="core-concepts">Core Concepts<a class="headerlink" href="#core-concepts" title="Permanent link">&para;</a></h2>
-<h2 id="1-sessions-and-state-management">1. Sessions and State Management<a class="headerlink" href="#1-sessions-and-state-management" title="Permanent link">&para;</a></h2>
+<h3 id="middleware-installation"><a href="../middleware-architecture/#middleware-installation">Middleware Installation</a><a class="headerlink" href="#middleware-installation" title="Permanent link">&para;</a></h3>
 <ul>
-<li>web is "stateless" — every request is a fresh start.</li>
-<li>using sessions to "remember" users as they navigate your site, allowing for features like shopping carts and personalized dashboards.</li>
+<li>Configuring the <code>MIDDLEWARE</code> setting in <code>settings.py</code>.</li>
+<li>Understanding the importance of plugin order.</li>
 </ul>
-<h3 id="djangos-session-framework"><a href="../session-and-state-management/#session-framework">Django’s Session Framework</a><a class="headerlink" href="#djangos-session-framework" title="Permanent link">&para;</a></h3>
+<h3 id="middleware-methods"><a href="../middleware-architecture/#middleware-methods">Middleware Methods</a><a class="headerlink" href="#middleware-methods" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Configuring session engines (Database, Cache, File-based, or Cookie-based).</li>
-<li>How to store and retrieve persistent data for anonymous and logged-in users.</li>
+<li>Defining custom logic using <code>__call__</code>.</li>
+<li>Hooking into specific stages: <code>process_view</code>, <code>process_exception</code>, and <code>process_template_response</code>.</li>
 </ul>
-<hr />
-<h2 id="2-authentication-and-authorization">2. Authentication and Authorization<a class="headerlink" href="#2-authentication-and-authorization" title="Permanent link">&para;</a></h2>
+<h3 id="built-in-middleware"><a href="../middleware-architecture/#built-in-middleware">Built-in Middleware</a><a class="headerlink" href="#built-in-middleware" title="Permanent link">&para;</a></h3>
 <ul>
-<li>'Who they are' + 'What they are allowed to do'.</li>
-<li>Django’s robust auth system to manage permissions and protect sensitive data.</li>
-</ul>
-<h3 id="users-and-authentication"><a href="../authentication-and-authorization/#users-and-authentication">Users and Authentication</a><a class="headerlink" href="#users-and-authentication" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Managing user logins, logouts, and password hashing.</li>
-<li>Using the built-in <code>User</code> model.</li>
-</ul>
-<h3 id="permissions"><a href="../authentication-and-authorization/#permissions">Permissions</a><a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>Restricting access to views based on user rights</p>
-<h3 id="groups"><a href="../authentication-and-authorization/#groups">Groups</a><a class="headerlink" href="#groups" title="Permanent link">&para;</a></h3>
-<p>Organizing users for bulk permission management</p>
-<h3 id="messages"><a href="../authentication-and-authorization/#messages">Messages</a><a class="headerlink" href="#messages" title="Permanent link">&para;</a></h3>
-<p>Using the Messages Framework for one-time notifications (e.g., "Login Successful").</p>
-<h3 id="profiles"><a href="../authentication-and-authorization/#profiles">Profiles</a><a class="headerlink" href="#profiles" title="Permanent link">&para;</a></h3>
-<p>Extending user data with Custom User Models or Profile linked models.</p>
-<hr />
-<h2 id="3-the-caching-framework">3. The Caching Framework<a class="headerlink" href="#3-the-caching-framework" title="Permanent link">&para;</a></h2>
-<ul>
-<li>strategies that store expensive computations, allowing thousands of requests simultaneously without breaking a sweat.</li>
-</ul>
-<h3 id="setting-up-the-cache"><a href="../setting-up-caching/#setting-up-the-cache">Setting Up the Cache</a><a class="headerlink" href="#setting-up-the-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Choosing a backend: Memcached, Redis, Database, or Local-memory.</li>
-</ul>
-<h3 id="the-per-site-cache"><a href="../setting-up-caching/#per-site-cache">The Per-Site Cache</a><a class="headerlink" href="#the-per-site-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Enabling the "fetch" and "update" middleware to cache the entire website automatically.</li>
-</ul>
-<h3 id="the-per-view-cache"><a href="../setting-up-caching/#per-view-cache">The Per-View Cache</a><a class="headerlink" href="#the-per-view-cache" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using the <code>@cache_page</code> decorator to cache specific, expensive views.</li>
-</ul>
-<h3 id="the-low-level-cache-api"><a href="../setting-up-caching/#low-level-cache-api">The Low-Level Cache API</a><a class="headerlink" href="#the-low-level-cache-api" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Manually setting, getting, and deleting keys in the cache for granular control.</li>
-</ul>
-<h3 id="upstream-caches"><a href="../setting-up-caching/#upstream-caches">Upstream Caches</a><a class="headerlink" href="#upstream-caches" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Working with Nginx/Varnish and the <code>Vary</code> header for proxy caching.</li>
-</ul>
-<h3 id="other-optimizations"><a href="../setting-up-caching/#other-optimizations">Other Optimizations</a><a class="headerlink" href="#other-optimizations" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Database indexing, <code>select_related</code>, and <code>prefetch_related</code> to reduce query overhead.</li>
+<li>Deep dive into essential defaults: <code>CommonMiddleware</code>, <code>SecurityMiddleware</code>, and <code>GZipMiddleware</code>.</li>
 </ul>
 <hr />
-<h2 id="4-middleware-and-security">4. Middleware and Security<a class="headerlink" href="#4-middleware-and-security" title="Permanent link">&para;</a></h2>
+<h2 id="2-legacy-systems-and-integration">2. Legacy Systems and Integration<a class="headerlink" href="#2-legacy-systems-and-integration" title="Permanent link">&para;</a></h2>
+<h3 id="integrating-with-a-legacy-database"><a href="../legacy-system-and-integration/#integrating-with-a-legacy-database">Integrating with a Legacy Database</a><a class="headerlink" href="#integrating-with-a-legacy-database" title="Permanent link">&para;</a></h3>
 <ul>
-<li>the "invisible layer" that processes every request before it reaches your view and every response before it leaves. </li>
-<li>implementing security best practices, protecting your site from common vulnerabilities like CSRF and XSS attacks.</li>
+<li>Using <code>inspectdb</code> to automatically generate Django models from an existing schema.</li>
+<li>Handling non-standard primary keys and unmanaged tables (<code>managed = False</code>).</li>
 </ul>
-<h3 id="order-of-middleware-classes"><a href="../middleware-and-security/#order-of-middleware-classes">Order of Middleware Classes</a><a class="headerlink" href="#order-of-middleware-classes" title="Permanent link">&para;</a></h3>
+<h3 id="integrating-with-an-authentication-system"><a href="../legacy-system-and-integration/#integrating-with-an-authentication-system">Integrating with an Authentication System</a><a class="headerlink" href="#integrating-with-an-authentication-system" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Why order matters (e.g., Session before Authentication).</li>
-<li>How request and response objects flow through the stack.</li>
+<li>Connecting Django to external Auth providers (LDAP, OAuth, or Remote Headers).</li>
+<li>Writing custom Authentication Backends.</li>
 </ul>
-<h3 id="security-best-practices"><a href="../middleware-and-security/#security-best-practices">Security Best Practices</a><a class="headerlink" href="#security-best-practices" title="Permanent link">&para;</a></h3>
-<h3 id="csrf-protection"><a href="../middleware-and-security/#csrf-protection">CSRF Protection</a><a class="headerlink" href="#csrf-protection" title="Permanent link">&para;</a></h3>
+<h3 id="integrating-with-legacy-web-applications"><a href="../legacy-system-and-integration/#integrating-with-legacy-web-applications">Integrating with Legacy Web Applications</a><a class="headerlink" href="#integrating-with-legacy-web-applications" title="Permanent link">&para;</a></h3>
 <ul>
-<li>How Django prevents Cross-Site Request Forgery.</li>
-<li>Using the <code>{% csrf_token %}</code> in forms and the <code>@csrf_exempt</code> decorator.</li>
+<li>Co-existing with non-Django apps on the same server.</li>
+<li>Shared session management and reverse proxy strategies.</li>
 </ul>
 <hr />
-<h2 id="5-the-django-standard-library-contrib-apps">5. The Django Standard Library (Contrib Apps)<a class="headerlink" href="#5-the-django-standard-library-contrib-apps" title="Permanent link">&para;</a></h2>
+<h2 id="3-advanced-django-admin">3. Advanced Django Admin<a class="headerlink" href="#3-advanced-django-admin" title="Permanent link">&para;</a></h2>
+<h3 id="the-zen-of-admin"><a href="../advanced-django-admin/#the-zen-of-admin">The Zen of Admin</a><a class="headerlink" href="#the-zen-of-admin" title="Permanent link">&para;</a></h3>
 <ul>
-<li>exploring more 'batteries' already included to save you from reinventing the wheel, from automated email sending to sophisticated humanizing utilities.</li>
+<li>Understanding the philosophy: The Admin is for internal staff, not end-users.</li>
+<li>When to use the Admin vs. when to build a custom dashboard.</li>
 </ul>
-<h3 id="sites"><a href="../django-standard-library/#sites">Sites</a><a class="headerlink" href="#sites" title="Permanent link">&para;</a></h3>
+<h3 id="customizing-admin-templates"><a href="../advanced-django-admin/#customizing-admin-templates">Customizing Admin Templates</a><a class="headerlink" href="#customizing-admin-templates" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Managing multiple websites from a single Django installation.</li>
+<li>Overriding default Admin HTML for branding or functional tweaks.</li>
+<li>Utilizing the <code>admin/base_site.html</code> override.</li>
 </ul>
-<h3 id="flatpages"><a href="../django-standard-library/#flatpages">Flatpages</a><a class="headerlink" href="#flatpages" title="Permanent link">&para;</a></h3>
+<h3 id="creating-custom-admin-views"><a href="../advanced-django-admin/#creating-custom-admin-views">Creating Custom Admin Views</a><a class="headerlink" href="#creating-custom-admin-views" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Creating simple, static-like pages (e.g., "About Us", "Privacy Policy") via the Admin interface.</li>
+<li>Adding completely new pages to the Admin interface.</li>
+<li>Mapping custom URLs within the <code>AdminSite</code> class.</li>
 </ul>
-<h3 id="redirects"><a href="../django-standard-library/#redirects">Redirects</a><a class="headerlink" href="#redirects" title="Permanent link">&para;</a></h3>
+<h3 id="overriding-built-in-views"><a href="../advanced-django-admin/#overriding-built-in-views">Overriding Built-in Views</a><a class="headerlink" href="#overriding-built-in-views" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Managing 301 and 302 redirects within the database.</li>
-</ul>
-<h3 id="humanizing-data"><a href="../django-standard-library/#humanizing-data">Humanizing Data</a><a class="headerlink" href="#humanizing-data" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Using <code>django.contrib.humanize</code> to turn numbers/dates into readable strings (e.g., "3 days ago", "1.2 million").</li>
-</ul>
-<h3 id="markup-filters"><a href="../django-standard-library/#markup-filters">Markup Filters</a><a class="headerlink" href="#markup-filters" title="Permanent link">&para;</a></h3>
-<ul>
-<li>Processing text as Markdown, ReStructuredText, or other formats within templates.</li>
+<li>Customizing the behavior of <code>add_view</code>, <code>change_view</code>, or <code>changelist_view</code>.</li>
+<li>Adding custom validation or redirect logic during the admin save process.</li>
 </ul>
 
 
