@@ -1,6 +1,8 @@
 ## 📚 Web Technology with Django — Documentation Repository
 
-Welcome to the documentation repository for **Web Technology with Django**, the course site for Web Technology (MIT656). This repository contains the source Markdown files and configuration (mkdocs.yml) used to build the complete, interactive documentation website.
+MIT
+
+Welcome to the documentation repository for **Web Technology with Django**, the course site for Web Technology(MIT656). This repository contains the source Markdown files and configuration (mkdocs.yml) used to build the complete, interactive documentation website.
 
 This documentation serves as the official guide and reference material for the course: class slides for each unit, topic notes for reference, and the verbatim course syllabus.
 
