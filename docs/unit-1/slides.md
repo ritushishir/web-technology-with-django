@@ -1,15 +1,8 @@
-# Unit 1 — Django Basics · Class Slides
+---
+title: Unit 1 · Django Basics
+---
 
-### Session Plan (7 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | Why frameworks · Django features | 1–5 | 1 hr |
-| 2 | MVC vs MTV · DRY · Project vs App | 6–9 | 1 hr |
-| 3 | Setup, project anatomy, dev server | 10–13 | 1.5 hr |
-| 4 | Request lifecycle · URLs · URLconfs | 14–18 | 1.5 hr |
-| 5 | Errors: 404 and pretty error pages | 19–20 | 0.5 hr |
-| 6 | Template system · inheritance | 21–25 | 1.5 hr |
+# Unit 1 — Django Basics
 
 ---
 
@@ -24,7 +17,10 @@ The whole unit in one line: **a URL comes in, a view runs, a template renders, H
 
 !!! tip "Prerequisite check"
 
-    Python 3.10+ · virtual environments · basic HTTP (GET/POST, status codes) · relational DB basics
+    - Python 3.10+ 
+    - virtual environments 
+    - basic HTTP (GET/POST, status codes) 
+    - relational DB basics
 
 ---
 
@@ -49,9 +45,13 @@ By the end of this unit you can:
 - **Don't reinvent the wheel** for common tasks — routing, forms, auth, admin, ORM
 
 ??? tip "Ask the class: name three things every web app needs"
-
-    Routing, templating, database access, forms/validation, authentication, sessions,
-    security defenses, static file handling, admin tooling. A framework ships all of these.
+    - Routing, 
+    - templating, 
+    - database access, 
+    - forms/validation, 
+    - authentication, sessions,
+    - security defenses, 
+    - static file handling, admin tooling. 
 
 → [Introduction to Django](introduction-to-django.md)
 
@@ -486,8 +486,6 @@ Students should leave the session having done all of this:
 - `DEBUG = True` is a development luxury and a production hazard
 - **DRY** shows up concretely as template inheritance and the `{% url %}` tag
 
-**Next up →** Unit 2: Models, the Administration Site, and Form Processing
-
 ---
 
 ## 28. Exit Questions
@@ -515,3 +513,4 @@ Students should leave the session having done all of this:
 ??? question "Where would you put markup that appears on every page?"
 
     In `base.html`, inside blocks that child templates extend — never copied per page.
+---

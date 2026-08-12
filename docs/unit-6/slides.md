@@ -1,15 +1,8 @@
-# Unit 6 — Internationalization, Security and Deployment · Class Slides
+---
+title: Unit 6 · Deployment and Beyond
+---
 
-### Session Plan (8 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | i18n vs l10n · translation strings in Python and templates | 1–7 | 1.5 hr |
-| 2 | `.po`/`.mo` files · language discovery · the switcher | 8–13 | 1.5 hr |
-| 3 | Defense in depth · settings layers · security headers | 14–19 | 1.5 hr |
-| 4 | The vulnerability tour: SQLi, XSS, CSRF, sessions, email, traversal | 20–27 | 1.5 hr |
-| 5 | Shared nothing · settings per environment · WSGI servers | 28–33 | 1.5 hr |
-| 6 | Scaling · monitoring · backup and recovery | 34–39 | 0.5 hr |
+# Unit 6 — Internationalization, Security and Deployment
 
 ---
 
@@ -23,8 +16,6 @@ This unit is about the **three pillars of professional deployment**:
 - **Empathy (i18n/l10n)** — the app feels local to anyone, anywhere; no language barriers
 - **Integrity (Security)** — one vulnerability must not compromise the whole system
 - **Resilience (Architecture)** — growth handled gracefully; more users ≠ more headaches
-
-→ [Unit overview](overview.md)
 
 ---
 
@@ -811,3 +802,5 @@ iterate on what the data shows.
 ??? question "Your backup script has run nightly for a year. Is your data safe?"
 
     Unknown until you have restored from it. Untested backups are hope, not recovery.
+
+---

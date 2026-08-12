@@ -1,5 +1,8 @@
 # Course Syllabus — Web Technology
 
+The official Tribhuvan University course document, reproduced verbatim. For the condensed version
+we work through in class, see [Course Introduction — Class Slides](../index.md).
+
 ## Course Information
 
 | | | | |
@@ -31,15 +34,15 @@ By the end of this course, participants will be able to:
 
 ## Course Contents
 
-| Unit | Title | Hours |
-|---|---|---|
-| 1 | Django Basics | 7 |
-| 2 | Model, Administration Site and Form Processing | 9 |
-| 3 | Views, URLConfs, Template Engine and Non-HTML Content | 7 |
-| 4 | Users, Caching and Subframework | 7 |
-| 5 | Middleware, Legacy Databases and Admin Interface | 7 |
-| 6 | Internationalization, Security and Deployment | 8 |
-| | **Total** | **45** |
+| Unit | Title | Hours | Class Slides |
+|---|---|---|---|
+| 1 | Django Basics | 7 | [Unit 1](../unit-1/slides.md) |
+| 2 | Model, Administration Site and Form Processing | 9 | [Unit 2](../unit-2/slides.md) |
+| 3 | Views, URLConfs, Template Engine and Non-HTML Content | 7 | [Unit 3](../unit-3/slides.md) |
+| 4 | Users, Caching and Subframework | 7 | [Unit 4](../unit-4/slides.md) |
+| 5 | Middleware, Legacy Databases and Admin Interface | 7 | [Unit 5](../unit-5/slides.md) |
+| 6 | Internationalization, Security and Deployment | 8 | [Unit 6](../unit-6/slides.md) |
+| | **Total** | **45** | |
 
 ### Unit 1: Django Basics (7 Hrs.)
 

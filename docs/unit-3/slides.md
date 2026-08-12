@@ -1,15 +1,8 @@
-# Unit 3 — Views, URLConfs, Template Engine and Non-HTML Content · Class Slides
+---
+title: Unit 3 · Beyond Basics
+---
 
-### Session Plan (7 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | URLconf tricks · namespaces · reverse lookups | 1–6 | 1.5 hr |
-| 2 | FBV → CBV · generic views · extending them | 7–13 | 2 hr |
-| 3 | Context processors · template loading internals | 14–17 | 1 hr |
-| 4 | Custom tags, filters, loaders · standalone mode | 18–22 | 1 hr |
-| 5 | MIME types · CSV · PDF · JSON · ZIP | 23–27 | 1 hr |
-| 6 | Syndication feeds · sitemaps · SEO metadata | 28–32 | 0.5 hr |
+# Unit 3 — Views, URLConfs, Template Engine and Non-HTML Content
 
 ---
 
@@ -22,8 +15,6 @@ and **serving more than HTML**.
 - Class-based generic views instead of repetitive functions
 - The template engine, extended on your terms
 - CSV, PDF, JSON, ZIP — and feeds and sitemaps so machines can find you
-
-→ [Unit overview](overview.md)
 
 ---
 
@@ -634,8 +625,6 @@ The goal is content that is actually **found**, not merely **online**.
 - `HttpResponse` is a file object — that one fact gives you CSV, PDF, JSON, ZIP
 - **Feeds for humans, sitemaps for crawlers**
 
-**Next up →** Unit 4: Users, sessions, caching, and Django's subframeworks
-
 ---
 
 ## 34. Exit Questions
@@ -662,3 +651,5 @@ The goal is content that is actually **found**, not merely **online**.
 ??? question "A search engine ignores half your pages. Which framework do you reach for?"
 
     The sitemap framework — and check `robots.txt` and `get_absolute_url()` while you are there.
+
+---

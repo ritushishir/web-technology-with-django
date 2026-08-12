@@ -1,15 +1,4 @@
-# Topics Covered
-
-- Model
-- Administration Site
-- Form Processing
-
-## Learning Objectives
-
-- Understand the Model-Template-View (MTV) architecture of Django.
-- Learn how to define and manage models in Django.
-- Gain proficiency in using Django's admin interface for database management.
-- Develop skills to create and process forms in Django applications.
+# Models and the Django ORM
 
 ## The MTV Development Pattern
 

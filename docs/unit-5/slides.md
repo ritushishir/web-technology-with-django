@@ -1,15 +1,8 @@
-# Unit 5 — Middleware, Legacy Databases and Admin Interface · Class Slides
+---
+title: Unit 5 · Middleware
+---
 
-### Session Plan (7 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | Middleware overview · the hook system · execution order | 1–6 | 1.5 hr |
-| 2 | Installation · order · writing custom middleware | 7–11 | 1.5 hr |
-| 3 | Built-in middleware deep dive | 12–14 | 1 hr |
-| 4 | Legacy databases · `inspectdb` · `managed = False` | 15–18 | 1.5 hr |
-| 5 | External auth backends · legacy web apps | 19–21 | 0.5 hr |
-| 6 | Advanced admin: zen, templates, custom views | 22–27 | 1 hr |
+# Unit 5 — Middleware, Legacy Databases and Admin Interface
 
 ---
 
@@ -21,8 +14,6 @@ enterprise work: the database was there before you were.
 - Middleware as a hook system you can write into
 - Django on top of a schema you do not control
 - The admin, pushed as far as it should go — and no further
-
-→ [Unit overview](overview.md)
 
 ---
 
@@ -481,8 +472,6 @@ custom validation before save · richer change lists · pre-populating the add f
 - Authentication is **pluggable**; legacy apps coexist behind a reverse proxy
 - The admin is for **staff CRUD** — know when to stop customizing and start building
 
-**Next up →** Unit 6: Internationalization, security, and deployment
-
 ---
 
 ## 30. Exit Questions
@@ -508,3 +497,5 @@ custom validation before save · richer change lists · pre-populating the add f
 
     When the interface is for end-users, or the task is a workflow rather than
     record-by-record data management.
+
+---

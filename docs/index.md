@@ -1,76 +1,230 @@
-# Welcome to Mastering Django
-
-A Complete Journey from Foundations to Deployment
+---
+title: Course Introduction
+---
 
 ---
 
-## Learning Web Development Using Django
+## Welcome
 
-### Why Learn Web Development? 🚀
+**Web Technology (MIT656)** — 45 hours, from never having written a line of Django to deploying a
+real, secured, multi-language web application.
 
-In-Demand, High-Growth Career
+Every unit comes in two forms:
 
-1. Massive and Growing Demand
-2. High-Paying and Flexible
-3. Future-Proof
+- **Class Slides** — what we work through together: numbered, paced, with checkpoints
+- **Topic Notes** — reference material for when you are stuck at 11pm and need the exact syntax
 
-The Power of Creation and Problem-Solving
+Start with the slides. Return to the notes.
 
-1. You Build the World
-2. Creative Outlet
-3. Continous Learning
+→ [Unit 1 — Class Slides](unit-1/slides.md)
 
-#### Why Learn Frameworks (Like Django)? 🛠️
+---
 
-1. Accelerated Development
-2. Security by Default
-3. Code Consistency and Best Practices
-4. Scalability and Robustness
-5. Rich Ecosystem and Community Support
+## Why Learn Web Development?
 
-#### Best Practices for Learning a Framework Effectively
+Almost everything an organisation does now happens partly through a browser. That is why demand has
+outstripped supply for two decades straight.
 
-1. Master The Prerequisite Language
-2. Learn the How Behind the Magic
-3. Build Real Projects
+- **In demand** — portable, remote-friendly, and priced accordingly
+- **Shortest path from idea to users** — think of it on Tuesday, strangers use it by the weekend
+- **The ground moves** — which is exactly why fundamentals beat any single tool
 
-![why-learn-django](introduction/assets/why-learn-django.png)
+Learn how a request becomes a response and you can pick up the next framework in a week.
+
+---
+
+## Why a Framework?
+
+You *can* build a web application with nothing but Python's standard library. People did. It taught
+them a great deal and shipped very slowly.
+
+| Without a framework | With Django |
+|---|---|
+| Hand-write SQL, escape every input yourself | An ORM that parameterises queries by default |
+| Build a login system, hash passwords, hope | A tested authentication and permissions system |
+| Write a CRUD back-office for every model | An admin site generated from your models |
+| Meet CSRF and XSS the hard way, in production | Protection on before you write any code |
+
+---
+
+## Conventions Are the Hidden Feature
+
+The most valuable thing a framework gives you is the least advertised: **one conventional structure
+that other developers already read fluently.**
+
+- A stranger opens `models.py` and knows what is inside it
+- Your code becomes reviewable
+- Stack Overflow answers apply to *your* situation
+
+Invent your own layout and you give away all three.
+
+---
+
+## How to Learn a Framework Well
+
+1. **Master the language underneath first.** Django is Python. Every hour spent confused about
+   decorators or classes reads as confusion about Django — and sends you to the wrong docs.
+2. **Learn the *how* behind the magic.** Anything that works when you cannot say why is a debt.
+   We pay those down: what `makemigrations` writes, how the template loader searches, what
+   middleware actually wraps.
+3. **Build real projects.** Reading about forms teaches you form syntax. A form rejecting a real
+   user's bad input teaches you forms.
+
+---
+
+## Checkpoint — Frameworks
+
+??? question "Name one thing a framework gives you that is not a feature."
+
+    Conventions. A shared project structure is what makes your code reviewable by strangers, and
+    what makes other people's answers apply to your problem.
+
+??? question "You copy a tutorial, it works, and you cannot explain why. What have you gained?"
+
+    A working page and a debt. It comes due the first time it breaks.
+
+---
+
+## What Is Django?
+
+!!! quote "Django's own tagline"
+
+    *The web framework for perfectionists with deadlines.*
+
+A high-level web framework written in Python. The trade it offers is explicit:
+
+- **You accept** a set of opinions about how a web application should be structured
+- **You get** an enormous amount of finished, tested, secured machinery
+
+---
+
+## Where Django Came From
+
+Built around **2003** in the newsroom of the *Lawrence Journal-World*, a local newspaper in
+Lawrence, Kansas, by **Adrian Holovaty** and **Simon Willison**.
+
+- Open-sourced **July 2005**
+- Named after the jazz guitarist **Django Reinhardt**
+- Governance passed to the non-profit **Django Software Foundation** in 2008
+
+---
+
+## Going Deeper on the Framework
+
+The rest of the Django story — what actually ships in the box, one request traced end to end,
+where Django runs in production, when it is the *wrong* tool, and which version to install — lives
+in the Unit 1 topic note.
+
+→ [Introduction to Django](unit-1/introduction-to-django.md)
+
+We come back to it properly in Unit 1. For the rest of this session: how the course runs.
 
 ---
 
 ## Your Learning Journey
 
+Six units, in three pairs:
+
+- **Units 1–2 · Foundations** — projects, apps, models, views, templates, the admin site.
+  Goal: a working database-backed page you understand end to end.
+- **Units 3–4 · Core Features** — advanced views, forms, authentication, caching, the standard
+  library. Goal: features that production applications actually contain.
+- **Units 5–6 · Pro-Level** — middleware internals, legacy databases, deep admin customisation,
+  i18n, security, deployment. Goal: the work that happens after *"it works on my machine"*.
+
 ![your-learning-journey](introduction/assets/your-learning-journey.png)
 
 ---
 
-## Course Objective - what you will be able to do
+## What You Will Be Able to Do
+
+- **Create and manage** Django projects and apps from scratch
+- **Work with databases** and build real data relationships using models
+- **Handle forms** and process user input safely
+- **Implement authentication** and authorisation
+- **Test and deploy** a complete, production-ready Django application
+
+Note the verbs. Not *understand* authentication — **implement** it.
 
 ![course-objective](introduction/assets/course-objective-what-you-will-be-able-to-do.png)
 
 ---
 
-## How This Class Will Be
+## How This Class Will Be Run
+
+**What to expect** — a hands-on course: clear lectures on the core concepts, live demonstrations,
+hands-on labs and coding sessions, and one project we build together from start to finish.
+
+**Your role in it** — your success depends on active participation:
+
+- **Be curious.** Ask *why?* and *what if?* The interesting material is one question past the slide.
+- **Be vocal.** Stuck? Say so. A question you are embarrassed to ask is one four other people have.
+- **Be practical.** Practice is the *only* way to learn programming. Watching me type is not
+  learning to type.
 
 ![how-this-class-will-be](introduction/assets/how-this-class-will-be.png)
 
 ---
 
-## Building a Real Project
+## We Are Building a Real Project
+
+Not isolated topics left isolated. One complete web application, built from scratch —
+**`geetshala`**, a Nepali song and lyrics library.
+
+| Unit | What gets added to the project |
+|---|---|
+| 1 | Project skeleton, first pages, templates |
+| 2 | Database models, the admin site, forms |
+| 3 | Class-based views, CSV and PDF export, feeds and sitemaps |
+| 4 | User accounts, login, permissions, caching |
+| 5 | Custom middleware, a customised admin |
+| 6 | Nepali/English translation, security hardening, deployment |
+
+One project across the whole course is how you see the pieces connect in context.
 
 ![we-are-building-a-real-project](introduction/assets/we-are-building-a-real-project.png)
 
 ---
 
-## Interactive Sessions
+## Interactive Code-Alongs
+
+Not a passive lecture. I code live, and you are encouraged to code along. It is the fastest way to
+build muscle memory and to meet the small "gotchas" that never appear in tutorials.
+
+**We debug errors together.** Seeing an error found and fixed live is usually worth more than a
+perfect scripted demo. Do not be afraid to make mistakes — a broken traceback on the projector is
+a teaching opportunity, not an embarrassment.
 
 ![interactive-code-alongs](introduction/assets/interactive-code-alongs.png)
 
+---
+
 ## Making It Stick
 
-## ![making-it-stick](introduction/assets/making-it-stick.png)
+**Mini-challenges.** After a new concept, a five-minute challenge — *"we just learned model
+filtering; how would you query all songs published in the last 7 days?"* Apply it while it is warm.
+
+**Code reviews.** Submit a piece of your homework or project code and we run a few constructive
+reviews as a class. Reading other people's code is an underrated way to improve your own.
+
+You will also meet `??? question` checkpoints throughout the slides — try to answer before you
+expand them.
+
+![making-it-stick](introduction/assets/making-it-stick.png)
+
+---
 
 ## Your Toolkit
+
+| Tool | What you need | Why |
+|---|---|---|
+| **Python** | 3.10 or newer | Django is Python; virtual environments keep projects clean |
+| **Django** | Current LTS, via `pip` | The subject of the course |
+| **Editor** | VS Code, PyCharm, Sublime | Any modern one is fine |
+| **Terminal** | Your shell | `pip`, `manage.py`, and everything else |
+| **Git & GitHub** | Latest | Version control; we save and track our work |
+| **Database** | MySQL or PostgreSQL | Unit 2 onward runs against a real server |
+| **Docker** | Optional | Only if you want it; not required for any unit |
 
 ![your-toolkit](introduction/assets/your-toolkit.png)
 
@@ -78,58 +232,30 @@ The Power of Creation and Problem-Solving
 
 ## Let's Set It Up
 
+**Your machine** — Python 3.10+, Git, and a database server (MySQL or PostgreSQL). Docker and
+Docker Compose are optional, for those who want them.
+
+**Your repository** — create a GitHub repository, name it something like `django-project`, and
+clone it locally. Every piece of work in this course lands there.
+
 ![lets-set-it-up](introduction/assets/lets-get-ready.png)
-
-## Verify the Installations
-
-Check the Python Version
-
-`python --version`
-
-Check the PIP Version
-
-`pip --version`
-
-Check the Git Version
-
-`git --version`
-
-Login to the DB shell
-
-`mysql -u root -p`
 
 ---
 
-# Course Syllabus — Web Technology
+## Verify Your Installation
 
-## Course Information
+Run all four before the next class. Anything that errors is what we sort out first.
 
-| | | | |
-|---|---|---|---|
-| **Course Title** | Web Technology | **Full Marks** | 45 + 30 |
-| **Course No.** | MIT656 | **Pass Marks** | 22.5 + 15 |
-| **Nature of the Course** | Theory + Practical | **Credit Hours** | 3 |
-| **Semester** | IV | | |
+```bash
+python --version      # expect 3.10 or newer
+pip --version
+git --version
+mysql -u root -p      # or: psql -U postgres
+```
 
-## Course Description
+→ * [Virtual environments](unit-1/virtual-environment.md) * [Setting up a project](unit-1/project-setup.md)
 
-This course is designed to take students from beginner to advanced levels in developing web
-applications using the Django framework. Django is a high-level Python web framework that
-promotes rapid development and clean, pragmatic design. This course covers all the essential
-aspects of Django — including models, views, templates, forms, authentication, and deployment —
-as well as advanced topics such as caching. Through hands-on projects and real-world examples,
-students will gain practical experience and a deep understanding of how to build robust, scalable
-web applications.
-
-## Course Objectives
-
-By the end of this course, participants will be able to:
-
-1. Create and manage Django projects and apps
-2. Work with databases and models
-3. Handle forms and user input
-4. Implement authentication and authorization features
-5. Test and deploy Django applications
+---
 
 ## Course Contents
 
@@ -143,70 +269,45 @@ By the end of this course, participants will be able to:
 | 6 | Internationalization, Security and Deployment | 8 |
 | | **Total** | **45** |
 
-### Unit 1: Django Basics (7 Hrs.)
+→ The official document, verbatim: [Course Syllabus](introduction/course-syllabus.md)
 
-Web Framework, MVC Design Pattern, Django Features, Setting Up a Database, Starting a
-Project, Dynamic Web Pages, Dynamic Content, Mapping URLs to Views, How Django Processes
-a Request, URLconfs and Loose Coupling, 404 Errors, Dynamic URLs, Django's Pretty Error,
-The Django Template System, Using the Template System, Basic Template Tags and Filters,
-Templates in Views, Template Loading, Template Inheritance.
+---
 
-### Unit 2: Model, Administration Site and Form Processing (9 Hrs.)
+## Before Next Class
 
-The Dumb Way to Do Database Queries in Views, The MTV Development Pattern, Configuring
-the Database, First App, Defining Models in Python, First Model, Installing the Model, Data
-Access, Adding Model String Representations, Inserting and Updating Data, Selecting Objects,
-Filtering Data, Deleting Objects, Making Changes to a Database Schema, Activating the Admin
-Interface, Using the Admin Interface, Customizing the Admin Interface, Customizing the Admin
-Interface's Look and Feel, Customizing the Admin Index Page, Search, The Perfect Form, Creating
-a Feedback Form, Processing the Submission, Custom Validation Rules, Custom Look and Feel,
-Creating Forms from Models.
+- [ ] Python 3.10+ installed, `python --version` works
+- [ ] Git installed, `git --version` works
+- [ ] MySQL or PostgreSQL running, and you can log into its shell
+- [ ] GitHub repository created and cloned locally
+- [ ] Skim [Unit 1 — Class Slides](unit-1/slides.md)
 
-### Unit 3: Views, URLConfs, Template Engine and Non-HTML Content (7 Hrs.)
+Bring the errors you hit. They are the first thing we fix.
 
-URLconf Tricks, Including Other URLconfs, Using Generic Views, Generic Views of Objects,
-Extending Generic Views, Template Language Review, Request Context and Context Processors,
-Inside Template Loading, Extending the Template System, Writing Custom Template Loaders,
-Using the Built-in Template Reference, Configuring the Template System in Standalone Mode,
-The Basics: Views and MIME-types, Producing CSV, Generating PDFs, Other Possibilities, The
-Syndication Feed Framework, The Sitemap Framework.
+---
 
-### Unit 4: Users, Caching and Subframework (7 Hrs.)
+## Recap
 
-Cookies, Django's Session Framework, Users and Authentication, The Other Bits: Permissions,
-Groups, Messages, and Profiles, Setting Up the Cache, The Per-Site Cache, The Per-View Cache,
-The Low-Level Cache API, Upstream Caches, Other Optimizations, Order of Middleware Classes,
-The Django Standard Library, Sites, Flatpages, Redirects, CSRF Protection, Humanizing Data,
-Markup Filters.
+- A framework buys you conventions as much as features — a structure others already read fluently
+- Django is Python, high-level and opinionated: you trade choices for finished, secured machinery
+- Born in a newsroom in 2003, which is why the admin site and the ORM come first
+- Six units, three pairs — foundations, core features, then the work after *"it runs on my machine"*
+- One project, `geetshala`, runs through all six units
+- Practice is the only thing that works: code along, ask, and bring your errors
 
-### Unit 5: Middleware, Legacy Databases and Admin Interface (7 Hrs.)
+---
 
-Middleware Overview, Middleware Installation, Middleware Methods, Built-in Middleware,
-Integrating with a Legacy Database, Integrating with an Authentication System, Integrating with
-Legacy Web Applications, The Zen of Admin, Customizing Admin Templates, Creating Custom
-Admin Views, Overriding Built-in Views.
+## Exit Questions
 
-### Unit 6: Internationalization, Security and Deployment (8 Hrs.)
+??? question "In one sentence: what does Django give you that Python alone does not?"
 
-Specifying Translation Strings in Python Code, Specifying Translation Strings in Template Code,
-Creating Language Files, Language Preference Discovery, The `set_language` Redirect View, Using
-Translations in Projects, Translations and JavaScript, Web Security Theme, SQL Injection Attack,
-XSS, Cross-Site Request Forgery, Session Forging/Hijacking, Email Header Injection, Directory
-Traversal, Exposed Error Messages, Shared Nothing, Personal Preferences, Using Django with
-Apache and mod_python, Using Django with FastCGI, Scaling, Performance Tuning.
+    Finished, tested, secured answers to the problems every web application has — plus conventions
+    other developers already read fluently.
 
-## Laboratory Works
+??? question "Why does a web framework ship with an admin interface at all?"
 
-Students need to write Python programs to demonstrate every concept taught in the classroom and
-should also develop a web app using Django.
+    Because it was built in a newsroom, where non-programmer journalists had to enter the content
+    themselves. The constraint became a feature.
 
-## References
+??? question "What is the first thing to do before the next class?"
 
-1. Adrian Holovaty, Jacob K. Moss, *The Definitive Guide to Django: Web Development Done
-   Right*, Apress, Second Edition, 2009.
-2. William S. Vincent, *Django for Beginners: Build Websites with Python and Django*,
-   WelcomeToCode, First Edition, 2023.
-
-## Source
-
-[Tribhuvan University course portal (PDF)](https://portal.tu.edu.np/downloads/2025_12_03_16_20_07.pdf)
+    Verify Python, Git, and the database server, and create the GitHub repository.

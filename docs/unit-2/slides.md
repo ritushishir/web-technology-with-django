@@ -1,15 +1,8 @@
-# Unit 2 — Model, Administration Site and Form Processing · Class Slides
+---
+title: Unit 2 · Models and Databases
+---
 
-### Session Plan (9 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | MTV recap · what a Model is · first model | 1–5 | 1.5 hr |
-| 2 | Database configuration · env vars · migrations | 6–10 | 2 hr |
-| 3 | Data access: the ORM and the shell (CRUD) | 11–16 | 2 hr |
-| 4 | Queries in views, not templates | 17–18 | 0.5 hr |
-| 5 | The admin site: activate, use, customize | 19–24 | 1.5 hr |
-| 6 | Forms: standard, ModelForm, validation, styling | 25–32 | 1.5 hr |
+# Unit 2 — Model, Administration Site and Form Processing
 
 ---
 
@@ -22,7 +15,7 @@ Unit 1 rendered *hardcoded* content. This unit gives the app a **memory**.
 - Get a full admin UI for free
 - Accept data *from* users safely with **forms**
 
-→ [Unit overview](overview.md)
+→ [Models and the ORM](models-and-the-orm.md)
 
 ---
 
@@ -622,8 +615,6 @@ message = forms.CharField(
 - Queries belong in **views**, never in templates — N+1 is the price otherwise
 - The **admin** is free CRUD; `ModelAdmin` makes it usable by non-technical staff
 - **Forms** validate and clean; `ModelForm` ties that straight to a model
-
-**Next up →** Unit 3: Views, URLConfs, the Template Engine, and non-HTML content
 
 ---
 

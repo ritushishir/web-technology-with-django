@@ -1,15 +1,8 @@
-# Unit 4 — Users, Caching and Subframework · Class Slides
+---
+title: Unit 4 · Users and Session
+---
 
-### Session Plan (7 Hrs.)
-
-| # | Block | Slides | Approx. |
-|---|---|---|---|
-| 1 | Statelessness · cookies · session framework | 1–8 | 1.5 hr |
-| 2 | Users, permissions, groups, messages, profiles | 9–14 | 1.5 hr |
-| 3 | Caching: backends, per-site, per-view, low-level | 15–20 | 1.5 hr |
-| 4 | Upstream caches · query optimization | 21–22 | 0.5 hr |
-| 5 | Middleware order · CSRF · security settings | 23–26 | 1 hr |
-| 6 | Contrib apps: sites, flatpages, redirects, humanize | 27–32 | 1 hr |
+# Unit 4 — Users, Caching and Subframework
 
 ---
 
@@ -23,8 +16,6 @@ Content on the modern web is
 - and must be **protected** and **high-performing**
 
 That is this unit: who the user is, what they may do, and how the site stays fast and safe.
-
-→ [Unit overview](overview.md)
 
 ---
 
@@ -546,8 +537,6 @@ Useful when users or editors submit content in Markdown rather than HTML.
 - CSRF protection is on by default; exempting it is a deliberate risk
 - Contrib apps — sites, flatpages, redirects, humanize — are free features
 
-**Next up →** Unit 5: Middleware internals, legacy databases, and the admin interface
-
 ---
 
 ## 35. Exit Questions
@@ -575,3 +564,5 @@ Useful when users or editors submit content in Markdown rather than HTML.
 
     `django.contrib.redirects` — on a 404 the middleware looks up the old path in the
     database and redirects to the new one.
+
+---

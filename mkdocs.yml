@@ -1,5 +1,5 @@
-site_name: Mastering Django
-site_url: https://example.com/docs/
+site_name: Web Technology with Django
+site_url: https://ritushishir.github.io/web-technology-with-django/
 dev_addr: 127.0.0.1:9000
 docs_dir: docs
 site_dir: site
@@ -67,6 +67,9 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   - pymdownx.keys          # ++slash++ style keyboard hints
+  # Renders "- [ ]" lab checklists as real checkboxes instead of literal "[ ]"
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tabbed:
       alternate_style: true
   - md_in_html    
@@ -76,7 +79,9 @@ plugins:
 
 #--- navigation structure ---
 nav:
-  - Introduction: index.md
+  - Introduction:
+      - Overview: index.md
+      - Course Syllabus: introduction/course-syllabus.md
   - 1. Django Basics:
       - Class Slides: unit-1/slides.md
       - Topic Notes:
@@ -88,7 +93,7 @@ nav:
   - 2. Models and Databases:
       - Class Slides: unit-2/slides.md
       - Topic Notes:
-          - Unit Overview: unit-2/overview.md
+          - Models and the ORM: unit-2/models-and-the-orm.md
           - Database Setup: unit-2/database-setup.md
           - Environment Variables: unit-2/using-environment-variables.md
           - Migrations: unit-2/database-migrations.md
@@ -98,7 +103,6 @@ nav:
   - 3. Beyond Basics:
       - Class Slides: unit-3/slides.md
       - Topic Notes:
-          - Unit Overview: unit-3/overview.md
           - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
           - Working with Generic Views: unit-3/working-with-generic-views.md
           - Deep Dive - Django Template System: unit-3/deep-dive-django-templates.md
@@ -108,7 +112,6 @@ nav:
   - 4. Users and Session:
       - Class Slides: unit-4/slides.md
       - Topic Notes:
-          - Unit Overview: unit-4/overview.md
           - Session Management: unit-4/session-and-state-management.md
           - Authentication and Authorization: unit-4/authentication-and-authorization.md
           - Caching: unit-4/setting-up-caching.md
@@ -118,7 +121,6 @@ nav:
   - 5. Middleware:
       - Class Slides: unit-5/slides.md
       - Topic Notes:
-          - Unit Overview: unit-5/overview.md
           - Middleware Deep Dive: unit-5/middleware-architecture.md
           - Legacy Systems and Integration: unit-5/legacy-system-and-integration.md
           - Advanced Django Admin: unit-5/advanced-django-admin.md
@@ -126,7 +128,6 @@ nav:
   - 6. Deployment and Beyond:
       - Class Slides: unit-6/slides.md
       - Topic Notes:
-          - Unit Overview: unit-6/overview.md
           - Internationalization and Localization: unit-6/internationalization-and-localization.md
           - i18n Step-by-Step Guide: unit-6/internationalization-localization-steps.md
           - Advanced Web Security: unit-6/advanced-web-security.md
