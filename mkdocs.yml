@@ -78,45 +78,57 @@ plugins:
 nav:
   - Introduction: index.md
   - 1. Django Basics:
-      - Overview: unit-1/overview.md
-      - Introduction to Django: unit-1/introduction-to-django.md
-      - Virtual Environments: unit-1/virtual-environment.md
-      - Setup a Project: unit-1/project-setup.md
-      - Project and App Structure: unit-1/project-and-app-structure.md
-      - Slides: unit-1/slides.md
+      - Class Slides: unit-1/slides.md
+      - Topic Notes:
+          - Introduction to Django: unit-1/introduction-to-django.md
+          - Virtual Environments: unit-1/virtual-environment.md
+          - Setup a Project: unit-1/project-setup.md
+          - Project and App Structure: unit-1/project-and-app-structure.md
+
   - 2. Models and Databases:
-      - Overview: unit-2/overview.md
-      - Migrations: unit-2/database-migrations.md
-      - Admin Interface: unit-2/admin-interface.md
-      - Forms in Django: unit-2/forms-in-django.md
-      - Database Setup: unit-2/database-setup.md
-      - Environment Variables: unit-2/using-environment-variables.md
+      - Class Slides: unit-2/slides.md
+      - Topic Notes:
+          - Unit Overview: unit-2/overview.md
+          - Database Setup: unit-2/database-setup.md
+          - Environment Variables: unit-2/using-environment-variables.md
+          - Migrations: unit-2/database-migrations.md
+          - Admin Interface: unit-2/admin-interface.md
+          - Forms in Django: unit-2/forms-in-django.md
+
   - 3. Beyond Basics:
-      - Overview: unit-3/overview.md
-      - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
-      - Working with Generic Views: unit-3/working-with-generic-views.md
-      - Deep Dive - Django Template System: unit-3/deep-dive-django-templates.md
-      - Specialized Content & Output: unit-3/specialized-content-and-output.md
-      - Metadata & Discovery Frameworks: unit-3/metadata-and-discovery-frameworks.md
-  
+      - Class Slides: unit-3/slides.md
+      - Topic Notes:
+          - Unit Overview: unit-3/overview.md
+          - Advanced URL Dispatching: unit-3/advanced-url-dispatching.md
+          - Working with Generic Views: unit-3/working-with-generic-views.md
+          - Deep Dive - Django Template System: unit-3/deep-dive-django-templates.md
+          - Specialized Content & Output: unit-3/specialized-content-and-output.md
+          - Metadata & Discovery Frameworks: unit-3/metadata-and-discovery-frameworks.md
+
   - 4. Users and Session:
-      - Overview: unit-4/overview.md
-      - Session Management: unit-4/session-and-state-management.md
-      - Authentication and Authorization: unit-4/authentication-and-authorization.md
-      - Caching: unit-4/setting-up-caching.md
-      - Middleware and Security: unit-4/middleware-and-security.md
-      - Django Standard Library: unit-4/django-standard-library.md
+      - Class Slides: unit-4/slides.md
+      - Topic Notes:
+          - Unit Overview: unit-4/overview.md
+          - Session Management: unit-4/session-and-state-management.md
+          - Authentication and Authorization: unit-4/authentication-and-authorization.md
+          - Caching: unit-4/setting-up-caching.md
+          - Middleware and Security: unit-4/middleware-and-security.md
+          - Django Standard Library: unit-4/django-standard-library.md
 
   - 5. Middleware:
-        - Overview: unit-5/overview.md
-        - Middleware Deep Dive: unit-5/middleware-architecture.md
-        - Legacy Systems and Integration: unit-5/legacy-system-and-integration.md
-        - Advanced Django Admin: unit-5/advanced-django-admin.md
-        
+      - Class Slides: unit-5/slides.md
+      - Topic Notes:
+          - Unit Overview: unit-5/overview.md
+          - Middleware Deep Dive: unit-5/middleware-architecture.md
+          - Legacy Systems and Integration: unit-5/legacy-system-and-integration.md
+          - Advanced Django Admin: unit-5/advanced-django-admin.md
+
   - 6. Deployment and Beyond:
-      - Overview: unit-6/overview.md
-      - Internationalization and Localization: unit-6/internationalization-and-localization.md
-      - Step-by-step-guide: unit-6/internationalization-localization-steps.md
-      - Advanced Web Security: unit-6/advanced-web-security.md
-      - Architecture and Deployment: unit-6/architecture-and-deployment.md
-      - Monitoring and Maintenance: unit-6/monitoring-and-maintenance.md
+      - Class Slides: unit-6/slides.md
+      - Topic Notes:
+          - Unit Overview: unit-6/overview.md
+          - Internationalization and Localization: unit-6/internationalization-and-localization.md
+          - i18n Step-by-Step Guide: unit-6/internationalization-localization-steps.md
+          - Advanced Web Security: unit-6/advanced-web-security.md
+          - Architecture and Deployment: unit-6/architecture-and-deployment.md
+          - Monitoring and Maintenance: unit-6/monitoring-and-maintenance.md
