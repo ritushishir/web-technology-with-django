@@ -12,13 +12,18 @@ theme:
   favicon: assets/favicon.ico
   logo: assets/logo.png
   features:
-    - navigation.tabs
-    - navigation.sections
-    - navigation.instant
-    - navigation.top
+    - navigation.instant      # instant page loads (SPA-like)
+    - navigation.tracking     # URL updates as you scroll
+    - navigation.tabs         # top-level sections as tabs
+    - navigation.sections     # group units in the sidebar
+    - navigation.top          # back-to-top button
+    - navigation.footer       # prev/next links at page bottom
+    - search.suggest
     - search.highlight
+    - search.share
+    - content.code.copy       # copy button on code blocks
     - content.code.annotate
-    - content.code.copy
+    - content.tabs.link
     - toc.follow
   palette:
     - scheme: default
@@ -38,15 +43,33 @@ markdown_extensions:
   - attr_list
   - pymdownx.emoji:
       emoji_index: !!python/name:material.extensions.emoji.twemoji
+  # Callout / admonition boxes (your notes' callouts map here)
   - admonition
   - pymdownx.details
   - toc:
       permalink: true
+      toc_depth: 3
   - codehilite:
       guess_lang: false
   - footnotes
   - def_list
   - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  # Code: syntax highlighting, line numbers, copy
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys          # ++slash++ style keyboard hints
+  - pymdownx.tabbed:
+      alternate_style: true
+  - md_in_html    
 
 plugins:
   - search
@@ -55,10 +78,12 @@ plugins:
 nav:
   - Introduction: index.md
   - 1. Django Basics:
+      - Overview: unit-1/overview.md
       - Introduction to Django: unit-1/introduction-to-django.md
       - Virtual Environments: unit-1/virtual-environment.md
       - Setup a Project: unit-1/project-setup.md
       - Project and App Structure: unit-1/project-and-app-structure.md
+      - Slides: unit-1/slides.md
   - 2. Models and Databases:
       - Overview: unit-2/overview.md
       - Migrations: unit-2/database-migrations.md
