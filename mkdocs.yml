@@ -80,7 +80,7 @@ plugins:
 #--- navigation structure ---
 nav:
   - Introduction:
-      - Overview: index.md
+      - Welcome: index.md
       - Course Syllabus: introduction/course-syllabus.md
   - 1. Django Basics:
       - Class Slides: unit-1/slides.md

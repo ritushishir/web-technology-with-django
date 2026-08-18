@@ -1,14 +1,14 @@
-## 📚 Mastering Django Documentation Repository
+## 📚 Web Technology with Django — Documentation Repository
 
-Welcome to the documentation repository for Mastering Django. This repository contains the source Markdown files and configuration (mkdocs.yml) used to build the complete, interactive documentation website.
+Welcome to the documentation repository for **Web Technology with Django**, the course site for Web Technology (MIT656). This repository contains the source Markdown files and configuration (mkdocs.yml) used to build the complete, interactive documentation website.
 
-This documentation serves as the official guide and reference material for learning and mastering the Django Web Framework.
+This documentation serves as the official guide and reference material for the course: class slides for each unit, topic notes for reference, and the verbatim course syllabus.
 
 ### ⚙️ 1. Technical Stack and ConfigurationThe documentation site is built using the following technologies:
 
 |Element|Tool/Theme|Key Configuration Detail|
 |---|---|---|
-|Static Site Generator|MkDocs|site_name: Mastering Django|
+|Static Site Generator|MkDocs|site_name: Web Technology with Django|
 |Theme|Material for MkDocs|Features: Navigation Tabs, Instant Loading, Code Copy|
 |Styling|Custom Palette|Primary: green, Accent: deep purple (Default Scheme)|
 |Extensions|pymdownx.emoji, admonition, toc|Enables advanced markdown features like callouts and footnotes.|
@@ -82,7 +82,7 @@ The final HTML/CSS/JS files will be output to the site/ directory.
 
 ### ✍️ 4. Contribution Guidelines
 
-I highly value contributions to improve clarity, add examples, or fix errors in the Mastering Django guides. 
+I highly value contributions to improve clarity, add examples, or fix errors in the course slides and topic notes. 
 
 Please follow these steps:
 

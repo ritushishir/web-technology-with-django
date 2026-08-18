@@ -4,30 +4,77 @@ title: Course Introduction
 
 ---
 
-## Welcome
 
-**Web Technology (MIT656)** — 45 hours, from never having written a line of Django to deploying a
-real, secured, multi-language web application.
+Over the next few weeks you go from — quite possibly — never having written a line of Django, to
+putting a real application on the internet: one with user accounts, a database behind it, an admin
+screen, two languages, and enough security to survive being public.
 
-Every unit comes in two forms:
+Not a tutorial you follow once and forget. **One application, built together, across
+all six units** — and in Unit 6 you deploy it and send someone the link.
 
-- **Class Slides** — what we work through together: numbered, paced, with checkpoints
-- **Topic Notes** — reference material for when you are stuck at 11pm and need the exact syntax
+!!! quote "The one thing to know on day one"
 
-Start with the slides. Return to the notes.
+    You will be confused, and you will break things. Both are the job, not a failure at it.
+    We debug in front of everyone, and the person asking the "obvious" question is doing the
+    whole room a favour.
+
+Bring a laptop and your questions. Let's build something.
 
 → [Unit 1 — Class Slides](unit-1/slides.md)
 
 ---
 
+## What Is Web Technology?
+
+Every web page you have ever opened is the same conversation, repeated:
+
+```mermaid
+graph LR
+    C["Client<br/>browser or mobile app"] -->|HTTP request| S["Server<br/>your code runs here"]
+    S -->|HTTP response| C
+    S <--> DB[(Database)]
+```
+
+**Web technology** is the stack of standards and tools that makes that exchange work — HTTP as the
+protocol, HTML, CSS and JavaScript on the client, and a server that decides what to send back.
+
+- **Front end** — what runs in the browser: structure (HTML), presentation (CSS), behaviour (JS)
+- **Back end** — what runs on the server: routing, logic, data, authentication
+- **Between them** — HTTP, which is **stateless**: the server forgets you the moment it replies
+
+Though all three parts play an important role here the last two points cause more of this course. Sessions, cookies, and authentication all exist to work around a protocol with no memory.
+
+---
+
+## From Web Pages to Web Applications
+
+The early web served **files**. Ask for `/about.html` and you get that exact file — the same bytes
+for every visitor, every time.
+
+A **web application** builds its response *at the moment you ask for it*:
+
+| | Static site | Web application |
+|---|---|---|
+| What the server sends | A file from disk | A page assembled per request |
+| Same for every visitor? | Yes | No — your data, your language, your permissions |
+| Where the content lives | In the file | In a database |
+| To change content | Edit and re-upload files | Edit data, usually through an admin screen |
+
+Everything that makes an application *an application* — accounts, saved work, permissions, search,
+a shopping cart — follows from that one shift: **the page is computed, not stored.**
+
+Writing that computation is the back end's job, and it is what this course teaches.
+
+---
+
 ## Why Learn Web Development?
 
-Almost everything an organisation does now happens partly through a browser. That is why demand has
-outstripped supply for two decades straight.
+Almost everything an organisation does now happens partly through a browser.
 
-- **In demand** — portable, remote-friendly, and priced accordingly
+- **Low Barrier to Entry** - no need of years of costly schooling, a computer and an internet connection is enough to get started
+- **Empowertment for your own projects** - build your own web apps, automate taks, bring your own unique ideas to life
 - **Shortest path from idea to users** — think of it on Tuesday, strangers use it by the weekend
-- **The ground moves** — which is exactly why fundamentals beat any single tool
+- **In demand** — portable, remote-friendly, and priced accordingly
 
 Learn how a request becomes a response and you can pick up the next framework in a week.
 
@@ -54,7 +101,7 @@ that other developers already read fluently.**
 
 - A stranger opens `models.py` and knows what is inside it
 - Your code becomes reviewable
-- Stack Overflow answers apply to *your* situation
+- Stack Overflow(ChatGPT, Gemini these days!) answers apply to *your* situation
 
 Invent your own layout and you give away all three.
 
@@ -62,8 +109,7 @@ Invent your own layout and you give away all three.
 
 ## How to Learn a Framework Well
 
-1. **Master the language underneath first.** Django is Python. Every hour spent confused about
-   decorators or classes reads as confusion about Django — and sends you to the wrong docs.
+1. **Master the language underneath first.** Django is Python.
 2. **Learn the *how* behind the magic.** Anything that works when you cannot say why is a debt.
    We pay those down: what `makemigrations` writes, how the template loader searches, what
    middleware actually wraps.
@@ -123,46 +169,26 @@ We come back to it properly in Unit 1. For the rest of this session: how the cou
 
 ## Your Learning Journey
 
-Six units, in three pairs:
-
-- **Units 1–2 · Foundations** — projects, apps, models, views, templates, the admin site.
-  Goal: a working database-backed page you understand end to end.
-- **Units 3–4 · Core Features** — advanced views, forms, authentication, caching, the standard
-  library. Goal: features that production applications actually contain.
-- **Units 5–6 · Pro-Level** — middleware internals, legacy databases, deep admin customisation,
-  i18n, security, deployment. Goal: the work that happens after *"it works on my machine"*.
-
 ![your-learning-journey](introduction/assets/your-learning-journey.png)
 
 ---
 
 ## What You Will Be Able to Do
 
-- **Create and manage** Django projects and apps from scratch
-- **Work with databases** and build real data relationships using models
-- **Handle forms** and process user input safely
-- **Implement authentication** and authorisation
-- **Test and deploy** a complete, production-ready Django application
-
-Note the verbs. Not *understand* authentication — **implement** it.
-
 ![course-objective](introduction/assets/course-objective-what-you-will-be-able-to-do.png)
+
+Not *understand* authentication — **implement** it.
 
 ---
 
 ## How This Class Will Be Run
 
 **What to expect** — a hands-on course: clear lectures on the core concepts, live demonstrations,
-hands-on labs and coding sessions, and one project we build together from start to finish.
-
-**Your role in it** — your success depends on active participation:
-
-- **Be curious.** Ask *why?* and *what if?* The interesting material is one question past the slide.
-- **Be vocal.** Stuck? Say so. A question you are embarrassed to ask is one four other people have.
-- **Be practical.** Practice is the *only* way to learn programming. Watching me type is not
-  learning to type.
+hands-on labs and coding sessions.
 
 ![how-this-class-will-be](introduction/assets/how-this-class-will-be.png)
+
+And, **one project we build together from start to finish**!
 
 ---
 
@@ -187,13 +213,6 @@ One project across the whole course is how you see the pieces connect in context
 ---
 
 ## Interactive Code-Alongs
-
-Not a passive lecture. I code live, and you are encouraged to code along. It is the fastest way to
-build muscle memory and to meet the small "gotchas" that never appear in tutorials.
-
-**We debug errors together.** Seeing an error found and fixed live is usually worth more than a
-perfect scripted demo. Do not be afraid to make mistakes — a broken traceback on the projector is
-a teaching opportunity, not an embarrassment.
 
 ![interactive-code-alongs](introduction/assets/interactive-code-alongs.png)
 
@@ -224,7 +243,6 @@ expand them.
 | **Terminal** | Your shell | `pip`, `manage.py`, and everything else |
 | **Git & GitHub** | Latest | Version control; we save and track our work |
 | **Database** | MySQL or PostgreSQL | Unit 2 onward runs against a real server |
-| **Docker** | Optional | Only if you want it; not required for any unit |
 
 ![your-toolkit](introduction/assets/your-toolkit.png)
 
@@ -232,17 +250,8 @@ expand them.
 
 ## Let's Set It Up
 
-**Your machine** — Python 3.10+, Git, and a database server (MySQL or PostgreSQL). Docker and
-Docker Compose are optional, for those who want them.
-
-**Your repository** — create a GitHub repository, name it something like `django-project`, and
-clone it locally. Every piece of work in this course lands there.
-
 ![lets-set-it-up](introduction/assets/lets-get-ready.png)
 
----
-
-## Verify Your Installation
 
 Run all four before the next class. Anything that errors is what we sort out first.
 
@@ -253,25 +262,8 @@ git --version
 mysql -u root -p      # or: psql -U postgres
 ```
 
-→ * [Virtual environments](unit-1/virtual-environment.md) * [Setting up a project](unit-1/project-setup.md)
-
 ---
 
-## Course Contents
-
-| Unit | Title | Hours |
-|---|---|---|
-| 1 | Django Basics | 7 |
-| 2 | Model, Administration Site and Form Processing | 9 |
-| 3 | Views, URLConfs, Template Engine and Non-HTML Content | 7 |
-| 4 | Users, Caching and Subframework | 7 |
-| 5 | Middleware, Legacy Databases and Admin Interface | 7 |
-| 6 | Internationalization, Security and Deployment | 8 |
-| | **Total** | **45** |
-
-→ The official document, verbatim: [Course Syllabus](introduction/course-syllabus.md)
-
----
 
 ## Before Next Class
 
@@ -282,17 +274,6 @@ mysql -u root -p      # or: psql -U postgres
 - [ ] Skim [Unit 1 — Class Slides](unit-1/slides.md)
 
 Bring the errors you hit. They are the first thing we fix.
-
----
-
-## Recap
-
-- A framework buys you conventions as much as features — a structure others already read fluently
-- Django is Python, high-level and opinionated: you trade choices for finished, secured machinery
-- Born in a newsroom in 2003, which is why the admin site and the ORM come first
-- Six units, three pairs — foundations, core features, then the work after *"it runs on my machine"*
-- One project, `geetshala`, runs through all six units
-- Practice is the only thing that works: code along, ask, and bring your errors
 
 ---
 

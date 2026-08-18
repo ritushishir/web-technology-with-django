@@ -1,8 +1,5 @@
 # Course Syllabus — Web Technology
 
-The official Tribhuvan University course document, reproduced verbatim. For the condensed version
-we work through in class, see [Course Introduction — Class Slides](../index.md).
-
 ## Course Information
 
 | | | | |
@@ -46,55 +43,139 @@ By the end of this course, participants will be able to:
 
 ### Unit 1: Django Basics (7 Hrs.)
 
-Web Framework, MVC Design Pattern, Django Features, Setting Up a Database, Starting a
-Project, Dynamic Web Pages, Dynamic Content, Mapping URLs to Views, How Django Processes
-a Request, URLconfs and Loose Coupling, 404 Errors, Dynamic URLs, Django's Pretty Error,
-The Django Template System, Using the Template System, Basic Template Tags and Filters,
-Templates in Views, Template Loading, Template Inheritance.
+- Web Framework, 
+- MVC Design Pattern, 
+- Django Features, 
+- Setting Up a Database, 
+- Starting a Project, 
+- Dynamic Web Pages, Dynamic Content, 
+- Mapping URLs to Views, 
+- How Django Processes a Request, 
+- URLconfs and Loose Coupling, 
+- 404 Errors, Django's Pretty Error,
+- Dynamic URLs,
+- The Django Template System, 
+    - Using the Template System, 
+    - Basic Template Tags and Filters,
+    - Templates in Views, 
+    - Template Loading,
+    - Template Inheritance.
 
 ### Unit 2: Model, Administration Site and Form Processing (9 Hrs.)
 
-The Dumb Way to Do Database Queries in Views, The MTV Development Pattern, Configuring
-the Database, First App, Defining Models in Python, First Model, Installing the Model, Data
-Access, Adding Model String Representations, Inserting and Updating Data, Selecting Objects,
-Filtering Data, Deleting Objects, Making Changes to a Database Schema, Activating the Admin
-Interface, Using the Admin Interface, Customizing the Admin Interface, Customizing the Admin
-Interface's Look and Feel, Customizing the Admin Index Page, Search, The Perfect Form, Creating
-a Feedback Form, Processing the Submission, Custom Validation Rules, Custom Look and Feel,
-Creating Forms from Models.
+- The Dumb Way to Do Database Queries in Views, 
+- The MTV Development Pattern, 
+- Configuring the Database, First App, 
+- Models in Python, 
+    - Defining Models in Python
+    - First Model, 
+    - Installing the Model, Data Access, 
+    - Adding Model String Representations, 
+    - Inserting and Updating Data, 
+    - Selecting Objects,
+    - Filtering Data, 
+    - Deleting Objects, 
+    - Making Changes to a Database Schema, 
+- Admin Interface
+   - Activating the Admin Interface, 
+    - Using the Admin Interface, 
+    - Customizing the Admin Interface, 
+    - Customizing the Admin Interface's Look and Feel, 
+    - Customizing the Admin Index Page, Search, 
+- Form
+    - The Perfect Form, 
+    - Creating a Feedback Form, 
+    - Processing the Submission, 
+    - Custom Validation Rules, 
+    - Custom Look and Feel,
+    - Creating Forms from Models.
 
 ### Unit 3: Views, URLConfs, Template Engine and Non-HTML Content (7 Hrs.)
 
-URLconf Tricks, Including Other URLconfs, Using Generic Views, Generic Views of Objects,
-Extending Generic Views, Template Language Review, Request Context and Context Processors,
-Inside Template Loading, Extending the Template System, Writing Custom Template Loaders,
-Using the Built-in Template Reference, Configuring the Template System in Standalone Mode,
-The Basics: Views and MIME-types, Producing CSV, Generating PDFs, Other Possibilities, The
-Syndication Feed Framework, The Sitemap Framework.
+- URLconf Tricks, Including Other URLconfs, 
+- Generic Views
+    - Using Generic Views, 
+    - Generic Views of Objects,
+    - Extending Generic Views, 
+- Template
+    - Template Language Review, 
+    - Request Context and Context Processors,
+    - Inside Template Loading, 
+    - Extending the Template System, 
+    - Writing Custom Template Loaders,
+    - Using the Built-in Template Reference, 
+    - Configuring the Template System in Standalone Mode,
+- The Basics: 
+    - Views and MIME-types, 
+    - Producing CSV, 
+    - Generating PDFs, 
+    - Other Possibilities, 
+    - The Syndication Feed Framework, 
+    - The Sitemap Framework.
 
 ### Unit 4: Users, Caching and Subframework (7 Hrs.)
 
-Cookies, Django's Session Framework, Users and Authentication, The Other Bits: Permissions,
-Groups, Messages, and Profiles, Setting Up the Cache, The Per-Site Cache, The Per-View Cache,
-The Low-Level Cache API, Upstream Caches, Other Optimizations, Order of Middleware Classes,
-The Django Standard Library, Sites, Flatpages, Redirects, CSRF Protection, Humanizing Data,
-Markup Filters.
+- Cookies, 
+- Django's Session Framework, 
+- Users and Authentication, 
+- The Other Bits: 
+    - Permissions, 
+    - Groups, 
+    - Messages, and 
+    - Profiles, 
+- Cache 
+  - Setting Up the Cache, 
+  - The Per-Site Cache, 
+  - The Per-View Cache,
+  - The Low-Level Cache API, 
+  - Upstream Caches, 
+- Other Optimizations, 
+- Order of Middleware Classes,
+- The Django Standard Library, 
+    - Sites, 
+    - Flatpages, 
+    - Redirects, 
+    - CSRF Protection, 
+    - Humanizing Data,
+    - Markup Filters.
 
 ### Unit 5: Middleware, Legacy Databases and Admin Interface (7 Hrs.)
 
-Middleware Overview, Middleware Installation, Middleware Methods, Built-in Middleware,
-Integrating with a Legacy Database, Integrating with an Authentication System, Integrating with
-Legacy Web Applications, The Zen of Admin, Customizing Admin Templates, Creating Custom
-Admin Views, Overriding Built-in Views.
+- Middleware Overview, 
+- Middleware Installation, 
+- Middleware Methods, 
+- Built-in Middleware,
+- Integrating with a Legacy Database, 
+- Integrating with an Authentication System, 
+- Integrating with Legacy Web Applications, 
+- The Zen of Admin, 
+- Customizing Admin Templates, 
+- Creating Custom Admin Views, 
+- Overriding Built-in Views.
 
 ### Unit 6: Internationalization, Security and Deployment (8 Hrs.)
 
-Specifying Translation Strings in Python Code, Specifying Translation Strings in Template Code,
-Creating Language Files, Language Preference Discovery, The `set_language` Redirect View, Using
-Translations in Projects, Translations and JavaScript, Web Security Theme, SQL Injection Attack,
-XSS, Cross-Site Request Forgery, Session Forging/Hijacking, Email Header Injection, Directory
-Traversal, Exposed Error Messages, Shared Nothing, Personal Preferences, Using Django with
-Apache and mod_python, Using Django with FastCGI, Scaling, Performance Tuning.
+- Specifying Translation Strings in Python Code, 
+- Specifying Translation Strings in Template Code,
+- Creating Language Files, 
+- Language Preference Discovery, 
+- The `set_language` Redirect View, 
+- Using Translations in Projects, 
+- Translations and JavaScript, 
+- Web Security Theme, 
+    - SQL Injection Attack, 
+    - XSS, 
+    - Cross-Site Request Forgery, 
+    - Session Forging/Hijacking, 
+    - Email Header Injection, 
+    - Directory Traversal, 
+    - Exposed Error Messages, 
+- Shared Nothing, 
+- Personal Preferences, 
+- Using Django with Apache and mod_python, 
+- Using Django with FastCGI, 
+- Scaling, 
+- Performance Tuning.
 
 ## Laboratory Works
 
@@ -110,4 +191,4 @@ should also develop a web app using Django.
 
 ## Source
 
-[Tribhuvan University course portal (PDF)](https://portal.tu.edu.np/downloads/2025_12_03_16_20_07.pdf)
+[Tribhuvan University course portal (PDF)](https://portal.tu.edu.np/downloads/2025_12_03_16_20_07.pdf){:target="_blank"}
