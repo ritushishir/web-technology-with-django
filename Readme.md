@@ -1,5 +1,8 @@
 ## 📚 Mastering Django Documentation Repository
 
+
+MIT
+
 Welcome to the documentation repository for Mastering Django. This repository contains the source Markdown files and configuration (mkdocs.yml) used to build the complete, interactive documentation website.
 
 This documentation serves as the official guide and reference material for learning and mastering the Django Web Framework.
