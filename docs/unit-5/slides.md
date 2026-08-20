@@ -179,7 +179,7 @@ Runs when the view returns a **`TemplateResponse`** — before rendering.
 
 **Use cases:** modify context data before rendering · swap the template
 
-??? question "Ask the class: why must this be a `TemplateResponse`, not a normal one?"
+??? question "Why must this be a `TemplateResponse`, not a normal one?"
 
     A plain `HttpResponse` is already rendered — the string is final. `TemplateResponse`
     keeps the template and context separate until later, which is what leaves room to edit.
@@ -209,7 +209,7 @@ Handles the unglamorous HTTP correctness work:
 
 Improves consistency and HTTP compliance.
 
-??? tip "Ask the class: who fixed your missing trailing slash in Unit 1?"
+??? tip "Who fixed your missing trailing slash in Unit 1?"
 
     `CommonMiddleware`, via `APPEND_SLASH` — it was working invisibly the whole time.
 
@@ -286,7 +286,7 @@ Use when:
 - The database is controlled externally
 - The schema must not change
 
-??? question "Ask the class: what still works with `managed = False`?"
+??? question "What still works with `managed = False`?"
 
     Everything about *reading and writing rows* — the ORM, queries, the admin.
     Only schema management is switched off.

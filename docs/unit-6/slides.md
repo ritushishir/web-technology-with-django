@@ -51,7 +51,7 @@ class Song(models.Model):                     # translated when accessed
 **Use lazy** in model definitions, form fields, and anywhere the string is evaluated
 **before a request exists**.
 
-??? question "Ask the class: why does a model field need the lazy version?"
+??? question "Why does a model field need the lazy version?"
 
     Models load at import time — before any request, so before any language is active.
     Eager translation would freeze whichever language happened to be default at startup.

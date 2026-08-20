@@ -44,7 +44,7 @@ By the end of this unit you can:
 - Build faster and more efficiently
 - **Don't reinvent the wheel** for common tasks — routing, forms, auth, admin, ORM
 
-??? tip "Ask the class: name three things every web app needs"
+??? tip "Name three things every web app needs"
     - Routing, 
     - templating, 
     - database access, 
@@ -97,7 +97,7 @@ Django's **Model–Template–View** is a variation of MVC:
 | **View (V)** | Business logic — handles the request, talks to the model, picks a template | List songs, show one song, process a form |
 | **Template (T)** | Presentation — the user interface | Different components for logged-in vs anonymous users |
 
-??? tip "Ask the class: so where is the 'Controller'?"
+??? tip "So where is the 'Controller'?"
 
     Django itself is the controller — the framework's URL dispatcher decides which view runs.
     That is why Django calls the pattern MTV rather than MVC.
@@ -135,7 +135,7 @@ A **Project** is the entire web application; an **App** is a modular component s
 
 **Flow:** Request arrives → **Project routes** → **App handles** → App executes
 
-??? tip "Ask the class: which apps would Geetshala need?"
+??? tip "Which apps would Geetshala need?"
 
     `users`, `artists`, `songs`, `playlists`, `reviews`, `api`
 
@@ -196,7 +196,7 @@ geetshala/            ← project root (just a folder)
         asgi.py       ← entry point for ASGI servers
 ```
 
-??? tip "Ask the class: why two folders with the same name?"
+??? tip "Why two folders with the same name?"
 
     The outer one is just a container you can rename freely; the inner one is the
     importable Python package, so renaming it breaks `geetshala.settings`.
@@ -208,7 +208,7 @@ geetshala/            ← project root (just a folder)
 - Django ships with **SQLite** — lightweight, file-based, minimal setup
 - Good for development and small-scale applications
 
-??? tip "Ask the class: where is SQLite configured, and where does the file live?"
+??? tip "Where is SQLite configured, and where does the file live?"
 
     Configured in the `DATABASES` setting in `settings.py`; the file is `db.sqlite3`
     in the project root by default.
@@ -245,7 +245,7 @@ graph LR
     E --> F[HttpResponse back to browser]
 ```
 
-??? tip "Ask the class: name the six steps in order"
+??? tip "Name the six steps in order"
 
     1. User requests `/songs`
     2. Django's URL dispatcher matches the URL to a view
@@ -399,7 +399,7 @@ TEMPLATES = [{ ..., 'DIRS': [BASE_DIR / 'templates'], ... }]
 
 ## 23. Templates in Views
 
-??? tip "Ask the class: what exactly does a View do?"
+??? tip "What exactly does a View do?"
 
     Processes the request → retrieves data from the Model → tells Django to render
     the appropriate Template with that data.

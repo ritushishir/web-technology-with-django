@@ -66,7 +66,7 @@ url = reverse('song-detail', args=[song.id])
 <a href="{% url 'song-detail' song.id %}">View</a>
 ```
 
-??? tip "Ask the class: why is `reverse()` better than typing `/song/5/`?"
+??? tip "Why is `reverse()` better than typing `/song/5/`?"
 
     Change the URL pattern once and every link follows. Hardcoded paths rot silently.
 

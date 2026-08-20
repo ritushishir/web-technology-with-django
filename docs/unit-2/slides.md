@@ -71,7 +71,7 @@ Database table — **`songs_song`**
 - Table naming convention: **`appname_modelname`** → app `songs` + model `Song`
 - An `id` primary key is **added automatically** unless you define one
 
-??? tip "Ask the class: what does `null=True, blank=True` actually control?"
+??? tip "What does `null=True, blank=True` actually control?"
 
     `null` is a **database** constraint (the column may store NULL);
     `blank` is a **validation** rule (forms may leave it empty). They are not the same thing.
@@ -232,7 +232,7 @@ new_song = Song.objects.create(title="Song Title", lyrics="Song Lyrics",
                                release_date="2023-10-01", is_published=True)
 ```
 
-??? tip "Ask the class: what is the difference?"
+??? tip "What is the difference?"
 
     `create()` builds the instance **and** hits the database in one call.
     The two-step form lets you adjust attributes before the `INSERT` happens.
@@ -248,7 +248,7 @@ Song.objects.get(id=1)                      # exactly one → instance
 Song.objects.order_by('release_date')       # sorted → QuerySet
 ```
 
-??? tip "Ask the class: when does `get()` blow up?"
+??? tip "When does `get()` blow up?"
 
     `DoesNotExist` when nothing matches, `MultipleObjectsReturned` when more than one does.
     `filter()` simply returns an empty QuerySet — no exception.
@@ -513,7 +513,7 @@ def feedback_view(request):
     return render(request, 'feedback.html', {'form': form})
 ```
 
-??? tip "Ask the class: why must the invalid branch pass the *same* form object back?"
+??? tip "Why must the invalid branch pass the *same* form object back?"
 
     That instance carries both the submitted values and the error messages —
     a fresh `FeedbackForm()` would wipe the user's input.

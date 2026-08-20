@@ -61,7 +61,7 @@ Django's answers: **cookies**, **sessions**, the **messages framework**, and
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'
 ```
 
-??? tip "Ask the class: which backend for a bank? For a game leaderboard?"
+??? tip "Which backend for a bank? For a game leaderboard?"
 
     Bank → `cached_db` (durable, still fast). Leaderboard → `cache` (loss is acceptable).
     Never `signed_cookies` for anything the user should not see.
@@ -179,7 +179,7 @@ A way to categorize users so permissions are not assigned one person at a time.
 
 A user **inherits every permission** of every group they belong to.
 
-??? question "Ask the class: 40 new interns need edit rights. What do you touch?"
+??? question "30 new interns need edit rights. What do you touch?"
 
     The group, once — not forty user records.
 
@@ -374,7 +374,7 @@ MIDDLEWARE = [
 - `SessionMiddleware` **must** come before `AuthenticationMiddleware` — authentication
   reads the session to identify the user
 
-??? question "Ask the class: what happens if you swap those two lines?"
+??? question "What happens if you swap those two lines?"
 
     Authentication runs with no session available, so `request.user` cannot be resolved —
     every visitor looks anonymous.
