@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-1/project-setup/">
+        <link rel="canonical" href="https://ritushishir.github.io/web-technology-with-django/unit-1/project-setup/">
       
       
         <link rel="prev" href="../virtual-environment/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Setup a Project - Mastering Django</title>
+        <title>Setup a Project - Web Technology with Django</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mastering Django" class="md-header__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-header__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mastering Django
+            Web Technology with Django
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -166,11 +166,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -207,17 +214,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Introduction
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -231,7 +239,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../introduction-to-django/" class="md-tabs__link">
+        <a href="../slides/" class="md-tabs__link">
           
   
   
@@ -251,7 +259,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-2/overview/" class="md-tabs__link">
+        <a href="../../unit-2/slides/" class="md-tabs__link">
           
   
   
@@ -271,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-3/overview/" class="md-tabs__link">
+        <a href="../../unit-3/slides/" class="md-tabs__link">
           
   
   
@@ -291,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-4/overview/" class="md-tabs__link">
+        <a href="../../unit-4/slides/" class="md-tabs__link">
           
   
   
@@ -311,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-5/overview/" class="md-tabs__link">
+        <a href="../../unit-5/slides/" class="md-tabs__link">
           
   
   
@@ -331,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-6/overview/" class="md-tabs__link">
+        <a href="../../unit-6/slides/" class="md-tabs__link">
           
   
   
@@ -365,12 +373,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mastering Django" class="md-nav__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-nav__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
     </a>
-    Mastering Django
+    Web Technology with Django
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -381,9 +389,25 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -397,7 +421,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/course-syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -454,6 +550,91 @@
             
   
     1. Django Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
   
 
           </label>
@@ -642,23 +823,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Dissecting the Django Project Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#project-and-app-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project and App Structure
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -669,51 +833,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Architectural Design Pattern">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-mtv-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The MTV Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dont-repeat-yourself-dry-principle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Don't Repeat Yourself (DRY) Principle
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Don&#39;t Repeat Yourself (DRY) Principle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-of-dry-in-django" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Example of DRY in Django
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -798,23 +917,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="URLconfs and Loose Coupling">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loose-coupling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Loose Coupling
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -876,23 +978,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 Using the Template System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-template-tags-and-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔖 Basic Template Tags and Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -925,34 +1010,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="🧱 Template Inheritance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#next-steps-model-administration-site-and-form-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps:: Model, Administration Site, and Form Processing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-a-separate-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up a Separate Database
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -993,6 +1050,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1064,14 +1129,150 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-2/overview/" class="md-nav__link">
+      <a href="../../unit-2/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/models-and-the-orm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models and the ORM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/database-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/using-environment-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Variables
   
 
     
@@ -1169,57 +1370,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-2/database-setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Database Setup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-2/using-environment-variables/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment Variables
-  
-
-    
-  </span>
-  
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1291,14 +1444,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-3/overview/" class="md-nav__link">
+      <a href="../../unit-3/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1311,6 +1464,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1458,6 +1663,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1518,14 +1731,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-4/overview/" class="md-nav__link">
+      <a href="../../unit-4/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1538,6 +1751,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1685,6 +1950,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1745,14 +2018,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/overview/" class="md-nav__link">
+      <a href="../../unit-5/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1765,6 +2038,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1856,6 +2181,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1916,14 +2249,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/overview/" class="md-nav__link">
+      <a href="../../unit-6/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1936,6 +2269,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1979,7 +2364,7 @@
   <span class="md-ellipsis">
     
   
-    Step-by-step-guide
+    i18n Step-by-Step Guide
   
 
     
@@ -2083,6 +2468,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
   </ul>
 </nav>
@@ -2173,23 +2566,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Dissecting the Django Project Structure">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#project-and-app-structure" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Project and App Structure
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -2200,51 +2576,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Architectural Design Pattern">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-mtv-architecture" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The MTV Architecture
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#dont-repeat-yourself-dry-principle" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Don't Repeat Yourself (DRY) Principle
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Don&#39;t Repeat Yourself (DRY) Principle">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#example-of-dry-in-django" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🏗️ Example of DRY in Django
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2329,23 +2660,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="URLconfs and Loose Coupling">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#loose-coupling" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Loose Coupling
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -2407,23 +2721,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🎨 Using the Template System">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-template-tags-and-filters" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🔖 Basic Template Tags and Filters
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -2457,34 +2754,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="🧱 Template Inheritance">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#next-steps-model-administration-site-and-form-processing" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Next Steps:: Model, Administration Site, and Form Processing
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#setting-up-a-separate-database" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Setting Up a Separate Database
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
       </ul>
@@ -2516,28 +2785,24 @@
 <ul>
 <li>Install the latest version of Django using pip, the Python package manager</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>django
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>django
+</span></code></pre></div>
 <ul>
 <li>Create and activate a virtual environment to isolate your Django project dependencies</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myenv
-<span class="nb">source</span><span class="w"> </span>myenv/bin/activate<span class="w">  </span><span class="c1"># On Windows use `myenv\Scripts\activate`</span>
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>myenv
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="nb">source</span><span class="w"> </span>myenv/bin/activate<span class="w">  </span><span class="c1"># On Windows use `myenv\Scripts\activate`</span>
+</span></code></pre></div>
 <p>This creates and activates a <a href="../virtual-environment/">virtual environment</a> named <code>myenv</code>.</p>
 <p>This makes other commands available only within this isolated environment.</p>
 <p>Verify the installation by checking the Django version</p>
-<div class="codehilite"><pre><span></span><code>django-admin<span class="w"> </span>--version
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>django-admin<span class="w"> </span>--version
+</span></code></pre></div>
 <p>e.g. <code>django-admin</code> command-line utility is used to create and manage Django projects and applications.</p>
 <h3 id="starting-a-project">Starting a Project<a class="headerlink" href="#starting-a-project" title="Permanent link">&para;</a></h3>
 <p>Run the following command to create a new Django project named <code>geetshala</code>:</p>
-<div class="codehilite"><pre><span></span><code>django-admin<span class="w"> </span>startproject<span class="w"> </span>geetshala
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>django-admin<span class="w"> </span>startproject<span class="w"> </span>geetshala
+</span></code></pre></div>
 <ul>
 <li><code>manage.py</code> file - command-line utility for managing the project</li>
 <li><code>settings.py</code> file - configuration settings for the project</li>
@@ -2545,12 +2810,10 @@
 <li><code>wsgi.py</code> file - entry point for WSGI-compatible web servers to serve the project</li>
 </ul>
 <h3 id="running-the-development-server">Running the Development Server<a class="headerlink" href="#running-the-development-server" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code>django-admin<span class="w"> </span>runserver
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>runserver
+</span></code></pre></div>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>django-admin<span class="w"> </span>runserver
+</span></code></pre></div>
 <p><img alt="you-should-see-django-welcome-page" src="../assets/django-welcome-page.png" /></p>
 <h3 id="default-sqlite-database">Default SQLite Database<a class="headerlink" href="#default-sqlite-database" title="Permanent link">&para;</a></h3>
 <ul>
@@ -2564,23 +2827,22 @@
 <hr />
 <details class="tip">
 <summary>Let the World Know What You Have Built!</summary>
-<p><code>bash
-git init
-git add .
-git commit -m "Initial commit"</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>git<span class="w"> </span>init
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>git<span class="w"> </span>add<span class="w"> </span>.
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>git<span class="w"> </span>commit<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Initial commit&quot;</span>
+</span></code></pre></div>
 </details>
 <hr />
 <h3 id="dissecting-the-django-project-structure">Dissecting the Django Project Structure<a class="headerlink" href="#dissecting-the-django-project-structure" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><code>geetshala/
-    manage.py
-    geetshala/
-        __init__.py
-        settings.py
-        urls.py
-        wsgi.py
-        asgi.py
-</code></pre></div>
-
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>geetshala/
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    manage.py
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>    geetshala/
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>        __init__.py
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>        settings.py
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>        urls.py
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>        wsgi.py
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>        asgi.py
+</span></code></pre></div>
 <ul>
 <li>The outer <code>geetshala/</code> directory is the project root directory</li>
 <li><code>manage.py</code> - A command-line utility that lets you interact with this Django project in various ways</li>
@@ -2692,9 +2954,8 @@ git commit -m "Initial commit"</code></p>
 <li>structured string that specifies the location of a resource and the protocol used to access it</li>
 </ul>
 <p>Structure of a URL:</p>
-<div class="codehilite"><pre><span></span><code>scheme://domain:port/path?query_string#fragment_id
-</code></pre></div>
-
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>scheme://domain:port/path?query_string#fragment_id
+</span></code></pre></div>
 <table>
 <thead>
 <tr>
@@ -2748,26 +3009,24 @@ In a Django application, the part you primarily define is the Path:</p>
 <p>URLconfs (The Map)
 A URLconf is a Python list named urlpatterns containing path() definitions.</p>
 <p><code>geetshala/urls.py</code>(Project-level URLconf)</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Project-level URLconf: routes to &#39;admin/&#39; and the &#39;songs&#39; app</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
-<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;songs/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;songs.urls&#39;</span><span class="p">)),</span>  <span class="c1"># Include URLs from the songs app</span>
-<span class="p">]</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># Project-level URLconf: routes to &#39;admin/&#39; and the &#39;songs&#39; app</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;songs/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;songs.urls&#39;</span><span class="p">)),</span>  <span class="c1"># Include URLs from the songs app</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a><span class="p">]</span>
+</span></code></pre></div>
 <p><code>songs/urls.py</code> (App-level URLconf)</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># App-level URLconf: routes to specific views within the songs app</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
-<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_list</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song_list&#39;</span><span class="p">),</span>  <span class="c1"># e.g., /songs/</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:song_id&gt;/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_detail</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song_detail&#39;</span><span class="p">),</span>  <span class="c1"># e.g., /songs/1/</span>
-<span class="p">]</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="c1"># App-level URLconf: routes to specific views within the songs app</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_list</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song_list&#39;</span><span class="p">),</span>  <span class="c1"># e.g., /songs/</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:song_id&gt;/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_detail</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;song_detail&#39;</span><span class="p">),</span>  <span class="c1"># e.g., /songs/1/</span>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a><span class="p">]</span>
+</span></code></pre></div>
 <h5 id="loose-coupling">Loose Coupling<a class="headerlink" href="#loose-coupling" title="Permanent link">&para;</a></h5>
 <ul>
 <li>a design principle that promotes separation of concerns</li>
@@ -2788,30 +3047,28 @@ A URLconf is a Python list named urlpatterns containing path() definitions.</p>
 <li>URLs that contain variable parts</li>
 <li>allows a single URL pattern in <code>urls.py</code> to handle multiple requests with different parameters</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># songs/urls.py</span>
-
-  <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
-
-  <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="c1"># Captures an integer (int:song_id)</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:song_id&gt;/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_detail</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;detail&#39;</span><span class="p">),</span>
-  <span class="p">]</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>  <span class="c1"># songs/urls.py</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>
+</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
+</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
+</span><span id="__span-11-5"><a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a>
+</span><span id="__span-11-6"><a id="__codelineno-11-6" name="__codelineno-11-6" href="#__codelineno-11-6"></a>  <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-11-7"><a id="__codelineno-11-7" name="__codelineno-11-7" href="#__codelineno-11-7"></a>    <span class="c1"># Captures an integer (int:song_id)</span>
+</span><span id="__span-11-8"><a id="__codelineno-11-8" name="__codelineno-11-8" href="#__codelineno-11-8"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&lt;int:song_id&gt;/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">song_detail</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;detail&#39;</span><span class="p">),</span>
+</span><span id="__span-11-9"><a id="__codelineno-11-9" name="__codelineno-11-9" href="#__codelineno-11-9"></a>  <span class="p">]</span>
+</span></code></pre></div>
 <p><strong>How it works</strong>
 When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>543</code> as <code>song_id</code> , passing it to the <code>song_detail</code> view function. And calls the view like this: <code>song_detail(request, song_id=543)</code>.</p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># songs/views.py</span>
-
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
-
-<span class="k">def</span><span class="w"> </span><span class="nf">song_detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">song_id</span><span class="p">):</span>
-    <span class="c1"># The arguments (song_id) are passed directly from the URLconf</span>
-    <span class="n">response_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;You are viewing Song ID: </span><span class="si">{</span><span class="n">song_id</span><span class="si">}</span><span class="s2">&quot;</span>
-    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">response_text</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="c1"># songs/views.py</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
+</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
+</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
+</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a><span class="k">def</span><span class="w"> </span><span class="nf">song_detail</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">song_id</span><span class="p">):</span>
+</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>    <span class="c1"># The arguments (song_id) are passed directly from the URLconf</span>
+</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>    <span class="n">response_text</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;You are viewing Song ID: </span><span class="si">{</span><span class="n">song_id</span><span class="si">}</span><span class="s2">&quot;</span>
+</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">response_text</span><span class="p">)</span>
+</span></code></pre></div>
 <h2 id="djangos-pretty-error">Django’s Pretty Error<a class="headerlink" href="#djangos-pretty-error" title="Permanent link">&para;</a></h2>
 <ul>
 <li>pretty error pages during development</li>
@@ -2845,24 +3102,22 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li>View Logic: Verify that the view function handling the request is properly implemented and returns a valid HTTP response</li>
 <li>Custom 404 Page: Create a custom 404 error template (e.g., <code>404.html</code>) and configure Django to use it by setting <code>handler404</code> in the project's <code>urls.py</code> file</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># geetshala/urls.py</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">handler404</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
-  <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
-  <span class="p">]</span>
-  <span class="n">handler404</span> <span class="o">=</span> <span class="s1">&#39;geetshala.views.custom_404_view&#39;</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code>  <span class="c1"># geetshala/views.py</span>
-  <span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
-
-  <span class="k">def</span><span class="w"> </span><span class="nf">custom_404_view</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">exception</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;Custom 404 - Trying to render a page&quot;</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="mi">404</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>  <span class="c1"># geetshala/urls.py</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.contrib</span><span class="w"> </span><span class="kn">import</span> <span class="n">admin</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">handler404</span>
+</span><span id="__span-13-5"><a id="__codelineno-13-5" name="__codelineno-13-5" href="#__codelineno-13-5"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">views</span>
+</span><span id="__span-13-6"><a id="__codelineno-13-6" name="__codelineno-13-6" href="#__codelineno-13-6"></a>  <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-13-7"><a id="__codelineno-13-7" name="__codelineno-13-7" href="#__codelineno-13-7"></a>      <span class="n">path</span><span class="p">(</span><span class="s1">&#39;admin/&#39;</span><span class="p">,</span> <span class="n">admin</span><span class="o">.</span><span class="n">site</span><span class="o">.</span><span class="n">urls</span><span class="p">),</span>
+</span><span id="__span-13-8"><a id="__codelineno-13-8" name="__codelineno-13-8" href="#__codelineno-13-8"></a>  <span class="p">]</span>
+</span><span id="__span-13-9"><a id="__codelineno-13-9" name="__codelineno-13-9" href="#__codelineno-13-9"></a>  <span class="n">handler404</span> <span class="o">=</span> <span class="s1">&#39;geetshala.views.custom_404_view&#39;</span>
+</span></code></pre></div>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>  <span class="c1"># geetshala/views.py</span>
+</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
+</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>
+</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>  <span class="k">def</span><span class="w"> </span><span class="nf">custom_404_view</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="n">exception</span><span class="p">):</span>
+</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="s2">&quot;Custom 404 - Trying to render a page&quot;</span><span class="p">,</span> <span class="n">status</span><span class="o">=</span><span class="mi">404</span><span class="p">)</span>
+</span></code></pre></div>
 <hr />
 <h2 id="the-django-template-system">The Django Template System<a class="headerlink" href="#the-django-template-system" title="Permanent link">&para;</a></h2>
 <hr />
@@ -2880,26 +3135,24 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li>default directory for templates is <code>templates/</code> within each app directory</li>
 <li>alternatively, define a global <code>templates/</code> directory at the project level and configure it in <code>settings.py</code></li>
 </ul>
-<div class="codehilite"><pre><span></span><code>    <span class="c1"># mysite/settings.py</span>
-
-    <span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
-      <span class="p">{</span>
-        <span class="o">...</span>
-        <span class="s1">&#39;DIRS&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;templates&#39;</span><span class="p">],</span> <span class="c1"># Points to project_root/templates/</span>
-        <span class="o">...</span>
-    <span class="p">},</span>
-  <span class="p">]</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>    <span class="c1"># mysite/settings.py</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
+</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>    <span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>      <span class="p">{</span>
+</span><span id="__span-15-5"><a id="__codelineno-15-5" name="__codelineno-15-5" href="#__codelineno-15-5"></a>        <span class="o">...</span>
+</span><span id="__span-15-6"><a id="__codelineno-15-6" name="__codelineno-15-6" href="#__codelineno-15-6"></a>        <span class="s1">&#39;DIRS&#39;</span><span class="p">:</span> <span class="p">[</span><span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;templates&#39;</span><span class="p">],</span> <span class="c1"># Points to project_root/templates/</span>
+</span><span id="__span-15-7"><a id="__codelineno-15-7" name="__codelineno-15-7" href="#__codelineno-15-7"></a>        <span class="o">...</span>
+</span><span id="__span-15-8"><a id="__codelineno-15-8" name="__codelineno-15-8" href="#__codelineno-15-8"></a>    <span class="p">},</span>
+</span><span id="__span-15-9"><a id="__codelineno-15-9" name="__codelineno-15-9" href="#__codelineno-15-9"></a>  <span class="p">]</span>
+</span></code></pre></div>
 <h4 id="basic-template-tags-and-filters">🔖 Basic Template Tags and Filters<a class="headerlink" href="#basic-template-tags-and-filters" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Variables({{...}})</strong>: placeholders for dynamic content, enclosed in double curly braces <code>{{ }}</code></li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ song.title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Artist: {{ song.artist.name }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Comment: {{ song.comments.1 }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{{ song.title }}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Artist: {{ song.artist.name }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Comment: {{ song.comments.1 }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <ul>
 <li><strong>Template Tags</strong>: control flow, loops, and conditional logic</li>
 </ul>
@@ -2935,25 +3188,23 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 </tbody>
 </table>
 <p>How to use it in templates:</p>
-<div class="codehilite"><pre><span></span><code>{% if user.is_authenticated %}
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Welcome, {{ user.username }}!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-{% else %}
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Please log in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-{% endif %}
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code>{% for song in songs %}
-<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.title }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Artist: {{ song.artist.name }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-{% endfor %}
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>{% if user.is_authenticated %}
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Welcome, {{ user.username }}!<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>{% else %}
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Please log in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-17-5"><a id="__codelineno-17-5" name="__codelineno-17-5" href="#__codelineno-17-5"></a>{% endif %}
+</span></code></pre></div>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>{% for song in songs %}
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.title }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Artist: {{ song.artist.name }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-18-4"><a id="__codelineno-18-4" name="__codelineno-18-4" href="#__codelineno-18-4"></a>{% endfor %}
+</span></code></pre></div>
 <details class="tip">
 <summary>Mini-Challenge: Set up Link to Details page in List of Songs and to List of Songs in Details Page</summary>
 </details>
 <p>Use the <code>{% url %}</code> tag to create a link to the song detail page dynamically.</p>
-<p><code>html
-    &lt;a href="{% url 'song_detail' song.geet_id %}"&gt;View Details&lt;/a&gt;</code></p>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>  <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;{% url &#39;song_detail&#39; song.geet_id %}&quot;</span><span class="p">&gt;</span>View Details<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <ul>
 <li>
 <p><strong>Template Filters</strong>: modify the display of variables (e.g., formatting dates, converting text to uppercase)</p>
@@ -2971,10 +3222,9 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li><code>{{ comments          | length }}</code></li>
 <li><code>{{ html_content      | safe }}</code></li>
 </ul>
-<div class="codehilite"><pre><span></span><code>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Current date: {{ current_date|date:&quot;F j, Y&quot; }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Uppercase Name: {{ user.username|upper }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Current date: {{ current_date|date:&quot;F j, Y&quot; }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>  <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Uppercase Name: {{ user.username|upper }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <h3 id="templates-in-viewscontext-of-mvt">Templates in Views(context of MVT)<a class="headerlink" href="#templates-in-viewscontext-of-mvt" title="Permanent link">&para;</a></h3>
 <details class="tip">
 <summary>Mini-Challenge: What is the role of View?</summary>
@@ -2994,13 +3244,12 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li>easiest way to generate HTML responses using templates</li>
 <li>signature: <code>render(request, template_name, context=None, content_type=None, status=None, using=None)</code></li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>  <span class="c1"># Retrieve all songs from the database</span>
-    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">}</span>  <span class="c1"># Context dictionary to pass to the template</span>
-    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>  <span class="c1"># Render the template with context</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-21-1"><a id="__codelineno-21-1" name="__codelineno-21-1" href="#__codelineno-21-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
+</span><span id="__span-21-2"><a id="__codelineno-21-2" name="__codelineno-21-2" href="#__codelineno-21-2"></a><span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+</span><span id="__span-21-3"><a id="__codelineno-21-3" name="__codelineno-21-3" href="#__codelineno-21-3"></a>    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>  <span class="c1"># Retrieve all songs from the database</span>
+</span><span id="__span-21-4"><a id="__codelineno-21-4" name="__codelineno-21-4" href="#__codelineno-21-4"></a>    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">}</span>  <span class="c1"># Context dictionary to pass to the template</span>
+</span><span id="__span-21-5"><a id="__codelineno-21-5" name="__codelineno-21-5" href="#__codelineno-21-5"></a>    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">,</span> <span class="n">context</span><span class="p">)</span>  <span class="c1"># Render the template with context</span>
+</span></code></pre></div>
 <ol>
 <li>
 <p>Manual Rendering(Under the Hood)</p>
@@ -3009,16 +3258,15 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <p>simple or non-HTML responses, you might manually load and render templates using <code>loader</code> and <code>HttpResponse</code></p>
 </li>
 </ol>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.template</span><span class="w"> </span><span class="kn">import</span> <span class="n">loader</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>  <span class="c1"># Retrieve all songs from the database</span>
-    <span class="n">template</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">)</span>  <span class="c1"># Load the template</span>
-    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">}</span>  <span class="c1"># Context dictionary to pass to the template</span>
-    <span class="n">rendered_template</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span>  <span class="c1"># Render the template with context</span>
-    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">rendered_template</span><span class="p">)</span>  <span class="c1"># Return an HttpResponse with the rendered content</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-22-1"><a id="__codelineno-22-1" name="__codelineno-22-1" href="#__codelineno-22-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.http</span><span class="w"> </span><span class="kn">import</span> <span class="n">HttpResponse</span>
+</span><span id="__span-22-2"><a id="__codelineno-22-2" name="__codelineno-22-2" href="#__codelineno-22-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.template</span><span class="w"> </span><span class="kn">import</span> <span class="n">loader</span>
+</span><span id="__span-22-3"><a id="__codelineno-22-3" name="__codelineno-22-3" href="#__codelineno-22-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+</span><span id="__span-22-4"><a id="__codelineno-22-4" name="__codelineno-22-4" href="#__codelineno-22-4"></a>    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>  <span class="c1"># Retrieve all songs from the database</span>
+</span><span id="__span-22-5"><a id="__codelineno-22-5" name="__codelineno-22-5" href="#__codelineno-22-5"></a>    <span class="n">template</span> <span class="o">=</span> <span class="n">loader</span><span class="o">.</span><span class="n">get_template</span><span class="p">(</span><span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">)</span>  <span class="c1"># Load the template</span>
+</span><span id="__span-22-6"><a id="__codelineno-22-6" name="__codelineno-22-6" href="#__codelineno-22-6"></a>    <span class="n">context</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">}</span>  <span class="c1"># Context dictionary to pass to the template</span>
+</span><span id="__span-22-7"><a id="__codelineno-22-7" name="__codelineno-22-7" href="#__codelineno-22-7"></a>    <span class="n">rendered_template</span> <span class="o">=</span> <span class="n">template</span><span class="o">.</span><span class="n">render</span><span class="p">(</span><span class="n">context</span><span class="p">,</span> <span class="n">request</span><span class="p">)</span>  <span class="c1"># Render the template with context</span>
+</span><span id="__span-22-8"><a id="__codelineno-22-8" name="__codelineno-22-8" href="#__codelineno-22-8"></a>    <span class="k">return</span> <span class="n">HttpResponse</span><span class="p">(</span><span class="n">rendered_template</span><span class="p">)</span>  <span class="c1"># Return an HttpResponse with the rendered content</span>
+</span></code></pre></div>
 <h3 id="template-loading">📥 Template Loading<a class="headerlink" href="#template-loading" title="Permanent link">&para;</a></h3>
 <ul>
 <li>process of locating and loading correct template file requested by the view</li>
@@ -3030,16 +3278,15 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <li>Load the template file if found, else raise <code>TemplateDoesNotExist</code> error</li>
 </ul>
 <p><strong>Configuration</strong> in <code>settings.py</code></p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># geetshala/settings.py</span>
-<span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">{</span>
-        <span class="o">...</span>
-        <span class="s1">&#39;APP_DIRS&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1"># Enable app-level templates directory</span>
-        <span class="o">...</span>
-    <span class="p">},</span>
-<span class="p">]</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-23-1"><a id="__codelineno-23-1" name="__codelineno-23-1" href="#__codelineno-23-1"></a><span class="c1"># geetshala/settings.py</span>
+</span><span id="__span-23-2"><a id="__codelineno-23-2" name="__codelineno-23-2" href="#__codelineno-23-2"></a><span class="n">TEMPLATES</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-23-3"><a id="__codelineno-23-3" name="__codelineno-23-3" href="#__codelineno-23-3"></a>    <span class="p">{</span>
+</span><span id="__span-23-4"><a id="__codelineno-23-4" name="__codelineno-23-4" href="#__codelineno-23-4"></a>        <span class="o">...</span>
+</span><span id="__span-23-5"><a id="__codelineno-23-5" name="__codelineno-23-5" href="#__codelineno-23-5"></a>        <span class="s1">&#39;APP_DIRS&#39;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>  <span class="c1"># Enable app-level templates directory</span>
+</span><span id="__span-23-6"><a id="__codelineno-23-6" name="__codelineno-23-6" href="#__codelineno-23-6"></a>        <span class="o">...</span>
+</span><span id="__span-23-7"><a id="__codelineno-23-7" name="__codelineno-23-7" href="#__codelineno-23-7"></a>    <span class="p">},</span>
+</span><span id="__span-23-8"><a id="__codelineno-23-8" name="__codelineno-23-8" href="#__codelineno-23-8"></a><span class="p">]</span>
+</span></code></pre></div>
 <h3 id="template-inheritance">🧱 Template Inheritance<a class="headerlink" href="#template-inheritance" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -3049,39 +3296,37 @@ When a user visits <code>/songs/543/hello-world/</code>, Django extracts <code>5
 <p>Don't Repeat Yourself (DRY) principle</p>
 </li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- base.html --&gt;</span>
-<span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{% block title %} Welcome to Geetshala{% endblock %}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
-  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to Geetshala<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
-      <span class="cm">&lt;!-- Navigation links --&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
-      {% block content %}
-      <span class="cm">&lt;!-- Default content can go here --&gt;</span>
-      {% endblock %}
-    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
-      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2024 Geetshala<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
-  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
-</code></pre></div>
-
-<div class="codehilite"><pre><span></span><code><span class="cm">&lt;!-- child.html --&gt;</span>
-{% extends &quot;base.html&quot; %} {% block title %}Home - Geetshala{% endblock %} {%
-block content %}
-<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>List of Songs<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Top Songs<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-{% endblock %}
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-24-1"><a id="__codelineno-24-1" name="__codelineno-24-1" href="#__codelineno-24-1"></a><span class="cm">&lt;!-- base.html --&gt;</span>
+</span><span id="__span-24-2"><a id="__codelineno-24-2" name="__codelineno-24-2" href="#__codelineno-24-2"></a><span class="cp">&lt;!DOCTYPE html&gt;</span>
+</span><span id="__span-24-3"><a id="__codelineno-24-3" name="__codelineno-24-3" href="#__codelineno-24-3"></a><span class="p">&lt;</span><span class="nt">html</span><span class="p">&gt;</span>
+</span><span id="__span-24-4"><a id="__codelineno-24-4" name="__codelineno-24-4" href="#__codelineno-24-4"></a>  <span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-24-5"><a id="__codelineno-24-5" name="__codelineno-24-5" href="#__codelineno-24-5"></a>    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>{% block title %} Welcome to Geetshala{% endblock %}<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+</span><span id="__span-24-6"><a id="__codelineno-24-6" name="__codelineno-24-6" href="#__codelineno-24-6"></a>  <span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+</span><span id="__span-24-7"><a id="__codelineno-24-7" name="__codelineno-24-7" href="#__codelineno-24-7"></a>  <span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-24-8"><a id="__codelineno-24-8" name="__codelineno-24-8" href="#__codelineno-24-8"></a>    <span class="p">&lt;</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-24-9"><a id="__codelineno-24-9" name="__codelineno-24-9" href="#__codelineno-24-9"></a>      <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Welcome to Geetshala<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-24-10"><a id="__codelineno-24-10" name="__codelineno-24-10" href="#__codelineno-24-10"></a>    <span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span>
+</span><span id="__span-24-11"><a id="__codelineno-24-11" name="__codelineno-24-11" href="#__codelineno-24-11"></a>    <span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-24-12"><a id="__codelineno-24-12" name="__codelineno-24-12" href="#__codelineno-24-12"></a>      <span class="cm">&lt;!-- Navigation links --&gt;</span>
+</span><span id="__span-24-13"><a id="__codelineno-24-13" name="__codelineno-24-13" href="#__codelineno-24-13"></a>    <span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+</span><span id="__span-24-14"><a id="__codelineno-24-14" name="__codelineno-24-14" href="#__codelineno-24-14"></a>    <span class="p">&lt;</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-24-15"><a id="__codelineno-24-15" name="__codelineno-24-15" href="#__codelineno-24-15"></a>      {% block content %}
+</span><span id="__span-24-16"><a id="__codelineno-24-16" name="__codelineno-24-16" href="#__codelineno-24-16"></a>      <span class="cm">&lt;!-- Default content can go here --&gt;</span>
+</span><span id="__span-24-17"><a id="__codelineno-24-17" name="__codelineno-24-17" href="#__codelineno-24-17"></a>      {% endblock %}
+</span><span id="__span-24-18"><a id="__codelineno-24-18" name="__codelineno-24-18" href="#__codelineno-24-18"></a>    <span class="p">&lt;/</span><span class="nt">main</span><span class="p">&gt;</span>
+</span><span id="__span-24-19"><a id="__codelineno-24-19" name="__codelineno-24-19" href="#__codelineno-24-19"></a>    <span class="p">&lt;</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-24-20"><a id="__codelineno-24-20" name="__codelineno-24-20" href="#__codelineno-24-20"></a>      <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="ni">&amp;copy;</span> 2024 Geetshala<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-24-21"><a id="__codelineno-24-21" name="__codelineno-24-21" href="#__codelineno-24-21"></a>    <span class="p">&lt;/</span><span class="nt">footer</span><span class="p">&gt;</span>
+</span><span id="__span-24-22"><a id="__codelineno-24-22" name="__codelineno-24-22" href="#__codelineno-24-22"></a>  <span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+</span><span id="__span-24-23"><a id="__codelineno-24-23" name="__codelineno-24-23" href="#__codelineno-24-23"></a><span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span>
+</span></code></pre></div>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-25-1"><a id="__codelineno-25-1" name="__codelineno-25-1" href="#__codelineno-25-1"></a><span class="cm">&lt;!-- child.html --&gt;</span>
+</span><span id="__span-25-2"><a id="__codelineno-25-2" name="__codelineno-25-2" href="#__codelineno-25-2"></a>{% extends &quot;base.html&quot; %} {% block title %}Home - Geetshala{% endblock %} {%
+</span><span id="__span-25-3"><a id="__codelineno-25-3" name="__codelineno-25-3" href="#__codelineno-25-3"></a>block content %}
+</span><span id="__span-25-4"><a id="__codelineno-25-4" name="__codelineno-25-4" href="#__codelineno-25-4"></a><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>List of Songs<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-25-5"><a id="__codelineno-25-5" name="__codelineno-25-5" href="#__codelineno-25-5"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Top Songs<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-25-6"><a id="__codelineno-25-6" name="__codelineno-25-6" href="#__codelineno-25-6"></a>{% endblock %}
+</span></code></pre></div>
 <hr />
 <h6 id="next-steps-model-administration-site-and-form-processing">Next Steps:: Model, Administration Site, and Form Processing<a class="headerlink" href="#next-steps-model-administration-site-and-form-processing" title="Permanent link">&para;</a></h6>
 <hr />
@@ -3089,8 +3334,8 @@ block content %}
 <details class="note">
 <summary>Setting Up MySQL Database with Django</summary>
 <p>Install the MySQL Adapter for Django</p>
-<p><code>bash
-pip install mysqlclient</code></p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-26-1"><a id="__codelineno-26-1" name="__codelineno-26-1" href="#__codelineno-26-1"></a>pip<span class="w"> </span>install<span class="w"> </span>mysqlclient
+</span></code></pre></div>
 </details>
 
 
@@ -3109,6 +3354,8 @@ pip install mysqlclient</code></p>
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -3121,6 +3368,46 @@ pip install mysqlclient</code></p>
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../virtual-environment/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Virtual Environments">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Virtual Environments
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../project-and-app-structure/" class="md-footer__link md-footer__link--next" aria-label="Next: Project and App Structure">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Project and App Structure
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -3147,7 +3434,7 @@ pip install mysqlclient</code></p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

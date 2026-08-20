@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-2/overview/">
+        <link rel="canonical" href="https://ritushishir.github.io/web-technology-with-django/unit-2/models-and-the-orm/">
       
       
-        <link rel="prev" href="../../unit-1/project-and-app-structure/">
+        <link rel="prev" href="../slides/">
       
       
-        <link rel="next" href="../database-migrations/">
+        <link rel="next" href="../database-setup/">
       
       
         
@@ -25,7 +25,7 @@
     
     
       
-        <title>Overview - Mastering Django</title>
+        <title>Models and the ORM - Web Technology with Django</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#topics-covered" class="md-skip">
+        <a href="#models-and-the-django-orm" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mastering Django" class="md-header__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-header__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
@@ -103,13 +103,13 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mastering Django
+            Web Technology with Django
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Overview
+              Models and the ORM
             
           </span>
         </div>
@@ -166,11 +166,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -207,17 +214,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Introduction
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -229,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-1/introduction-to-django/" class="md-tabs__link">
+        <a href="../../unit-1/slides/" class="md-tabs__link">
           
   
   
@@ -251,7 +259,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="./" class="md-tabs__link">
+        <a href="../slides/" class="md-tabs__link">
           
   
   
@@ -271,7 +279,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-3/overview/" class="md-tabs__link">
+        <a href="../../unit-3/slides/" class="md-tabs__link">
           
   
   
@@ -291,7 +299,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-4/overview/" class="md-tabs__link">
+        <a href="../../unit-4/slides/" class="md-tabs__link">
           
   
   
@@ -311,7 +319,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-5/overview/" class="md-tabs__link">
+        <a href="../../unit-5/slides/" class="md-tabs__link">
           
   
   
@@ -331,7 +339,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-6/overview/" class="md-tabs__link">
+        <a href="../../unit-6/slides/" class="md-tabs__link">
           
   
   
@@ -365,12 +373,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mastering Django" class="md-nav__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-nav__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
     </a>
-    Mastering Django
+    Web Technology with Django
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -381,9 +389,25 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -397,7 +421,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/course-syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -449,6 +545,86 @@
             
   
     1. Django Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
   
 
           </label>
@@ -572,6 +748,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -634,6 +818,91 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
     
   
   
@@ -653,7 +922,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Models and the ORM
   
 
     
@@ -671,7 +940,7 @@
   <span class="md-ellipsis">
     
   
-    Overview
+    Models and the ORM
   
 
     
@@ -697,17 +966,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Learning Objectives
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#the-mtv-development-pattern" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -727,79 +985,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Understanding Model in Django">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#defining-a-model-in-python-quick-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Defining a Model in Python - Quick Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Defining a Model in Python - Quick Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#first-model-database-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        First Model - Database Representation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installing-the-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installing the Model
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing the Model">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Migrations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Applying Migrations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -867,23 +1052,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Data Access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-django-manager-database-gatekeeper" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        👨‍💼 The Django Manager: Database Gatekeeper
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -894,201 +1062,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Interacting with the Database Using Django Shell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-database-operations-crud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Basic Database Operations (CRUD)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#inserting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Inserting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Inserting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-an-instance-and-saving-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating an instance and saving it
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create method
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#selecting-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Selecting Objects
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Selecting Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieving-all-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieving All Objects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#filtering-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Filtering Objects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-a-single-object" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get a Single Object
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordering-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ordering Results
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Updating Data
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instance-update" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instance Update
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#queryset-update" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QuerySet Update
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deleting Objects
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deleting Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instance-deletion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instance Deletion
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#queryset-deletion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QuerySet Deletion
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -1140,6 +1113,62 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../database-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../using-environment-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Variables
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -1229,57 +1258,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../database-setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Database Setup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../using-environment-variables/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment Variables
-  
-
-    
-  </span>
-  
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1351,14 +1332,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-3/overview/" class="md-nav__link">
+      <a href="../../unit-3/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1371,6 +1352,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1518,6 +1551,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1578,14 +1619,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-4/overview/" class="md-nav__link">
+      <a href="../../unit-4/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1598,6 +1639,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1745,6 +1838,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1805,14 +1906,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/overview/" class="md-nav__link">
+      <a href="../../unit-5/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1825,6 +1926,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1916,6 +2069,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1976,14 +2137,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-6/overview/" class="md-nav__link">
+      <a href="../../unit-6/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1996,6 +2157,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -2039,7 +2252,7 @@
   <span class="md-ellipsis">
     
   
-    Step-by-step-guide
+    i18n Step-by-Step Guide
   
 
     
@@ -2143,6 +2356,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
   </ul>
 </nav>
@@ -2171,17 +2392,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#learning-objectives" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Learning Objectives
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#the-mtv-development-pattern" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2201,79 +2411,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Understanding Model in Django">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#defining-a-model-in-python-quick-example" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Defining a Model in Python - Quick Example
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Defining a Model in Python - Quick Example">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#first-model-database-representation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        First Model - Database Representation
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#installing-the-model" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Installing the Model
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Installing the Model">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating Migrations
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#applying-migrations" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Applying Migrations
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2341,23 +2478,6 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Data Access">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#the-django-manager-database-gatekeeper" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        👨‍💼 The Django Manager: Database Gatekeeper
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -2368,201 +2488,6 @@
       
     </span>
   </a>
-  
-    <nav class="md-nav" aria-label="Interacting with the Database Using Django Shell">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#basic-database-operations-crud" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        🛠️ Basic Database Operations (CRUD)
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#inserting" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Inserting
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Inserting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#creating-an-instance-and-saving-it" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Creating an instance and saving it
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#create-method" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Create method
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#selecting-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Selecting Objects
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Selecting Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#retrieving-all-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Retrieving All Objects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#filtering-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Filtering Objects
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#get-a-single-object" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Get a Single Object
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#ordering-results" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Ordering Results
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#updating-data" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Updating Data
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Updating Data">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instance-update" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instance Update
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#queryset-update" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QuerySet Update
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#deleting-objects" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Deleting Objects
-      
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Deleting Objects">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#instance-deletion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Instance Deletion
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#queryset-deletion" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        QuerySet Deletion
-      
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
         
@@ -2627,19 +2552,7 @@
 
 
 
-<h1 id="topics-covered">Topics Covered<a class="headerlink" href="#topics-covered" title="Permanent link">&para;</a></h1>
-<ul>
-<li>Model</li>
-<li>Administration Site</li>
-<li>Form Processing</li>
-</ul>
-<h2 id="learning-objectives">Learning Objectives<a class="headerlink" href="#learning-objectives" title="Permanent link">&para;</a></h2>
-<ul>
-<li>Understand the Model-Template-View (MTV) architecture of Django.</li>
-<li>Learn how to define and manage models in Django.</li>
-<li>Gain proficiency in using Django's admin interface for database management.</li>
-<li>Develop skills to create and process forms in Django applications.</li>
-</ul>
+<h1 id="models-and-the-django-orm">Models and the Django ORM<a class="headerlink" href="#models-and-the-django-orm" title="Permanent link">&para;</a></h1>
 <h2 id="the-mtv-development-pattern">The MTV Development Pattern<a class="headerlink" href="#the-mtv-development-pattern" title="Permanent link">&para;</a></h2>
 <h3 id="understanding-model-in-django">Understanding Model in Django<a class="headerlink" href="#understanding-model-in-django" title="Permanent link">&para;</a></h3>
 <hr />
@@ -2655,15 +2568,14 @@
 <li>Automatically-generated database-access API</li>
 </ul>
 <h4 id="defining-a-model-in-python-quick-example">Defining a Model in Python - Quick Example<a class="headerlink" href="#defining-a-model-in-python-quick-example" title="Permanent link">&para;</a></h4>
-<div class="codehilite"><pre><span></span><code>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
-
-  <span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-      <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># field of the model and maps to a database column</span>
-      <span class="n">lyrics</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
-      <span class="n">release_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-      <span class="n">is_published</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>  <span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>  <span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>      <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="c1"># field of the model and maps to a database column</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>      <span class="n">lyrics</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>      <span class="n">release_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>      <span class="n">is_published</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
 <h5 id="first-model-database-representation">First Model - Database Representation<a class="headerlink" href="#first-model-database-representation" title="Permanent link">&para;</a></h5>
 <ul>
 <li>Dabase Table - <em>songs_song</em></li>
@@ -2718,9 +2630,8 @@
 <ul>
 <li>creating migration class files that describe the changes to be made to the database schema.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>makemigrations
+</span></code></pre></div>
 <p><img alt="alt text" src="../assets/output-makemigrations.png" /></p>
 <h5 id="applying-migrations">Applying Migrations<a class="headerlink" href="#applying-migrations" title="Permanent link">&para;</a></h5>
 <ul>
@@ -2728,9 +2639,8 @@
 <li>needs to be run whenever there are new migrations to apply.</li>
 <li>requires database connectivity.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>migrate
+</span></code></pre></div>
 <hr />
 <h3 id="lets-get-started-setting-up-the-database">Let's Get Started - Setting Up the Database<a class="headerlink" href="#lets-get-started-setting-up-the-database" title="Permanent link">&para;</a></h3>
 <hr />
@@ -2739,18 +2649,17 @@
 <ul>
 <li>Update the <code>DATABASES</code> setting in your Django project's <code>settings.py</code> file to configure the connection to your MySQL database.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
-    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;database-name&gt;&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;djangouser&gt;&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;djangopassword&gt;&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="s1">&#39;3306&#39;</span><span class="p">,</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">DATABASES</span> <span class="o">=</span> <span class="p">{</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>    <span class="s1">&#39;default&#39;</span><span class="p">:</span> <span class="p">{</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>        <span class="s1">&#39;ENGINE&#39;</span><span class="p">:</span> <span class="s1">&#39;django.db.backends.mysql&#39;</span><span class="p">,</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        <span class="s1">&#39;NAME&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;database-name&gt;&#39;</span><span class="p">,</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>        <span class="s1">&#39;USER&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;djangouser&gt;&#39;</span><span class="p">,</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>        <span class="s1">&#39;PASSWORD&#39;</span><span class="p">:</span> <span class="s1">&#39;&lt;djangopassword&gt;&#39;</span><span class="p">,</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a>        <span class="s1">&#39;HOST&#39;</span><span class="p">:</span> <span class="s1">&#39;localhost&#39;</span><span class="p">,</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a>        <span class="s1">&#39;PORT&#39;</span><span class="p">:</span> <span class="s1">&#39;3306&#39;</span><span class="p">,</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>    <span class="p">}</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="p">}</span>
+</span></code></pre></div>
 <details class="tip">
 <summary>Industry Practice</summary>
 <p>Risk of sharing the database credentials in the codebase. In real-world applications, it's a common practice to use environment variables or configuration management tools to securely manage sensitive information like database credentials. This approach helps prevent accidental exposure of credentials in version control systems and enhances overall security.</p>
@@ -2762,26 +2671,24 @@
 <p>Command to run migrations for a specific app:
 <code>python manage.py migrate &lt;app-name&gt;</code></p>
 <p>To run migrations for the <code>songs</code> app, use the following command:</p>
-<div class="codehilite"><pre><span></span><code>python<span class="w"> </span>manage.py<span class="w"> </span>migrate<span class="w"> </span>songs
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>python<span class="w"> </span>manage.py<span class="w"> </span>migrate<span class="w"> </span>songs
+</span></code></pre></div>
 <h3 id="adding-model-string-representations">Adding Model String Representations<a class="headerlink" href="#adding-model-string-representations" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Standard python method <code>__str__</code> to define a human-readable, official string representation of the object.</li>
 <li>In the context of Django models, the <code>__str__</code> method is used to provide a meaningful string representation of model instances.</li>
 </ul>
 <p>To add a string representation to the <code>Song</code> model, you can define the <code>__str__</code> method within the model class. This method should return a human-readable string that represents the object.</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-    <span class="n">lyrics</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
-    <span class="n">release_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">is_published</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-
-    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.db</span><span class="w"> </span><span class="kn">import</span> <span class="n">models</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="n">lyrics</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">TextField</span><span class="p">()</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>    <span class="n">release_date</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">DateField</span><span class="p">(</span><span class="n">null</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">blank</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="n">is_published</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">BooleanField</span><span class="p">(</span><span class="n">default</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span><span id="__span-5-7"><a id="__codelineno-5-7" name="__codelineno-5-7" href="#__codelineno-5-7"></a>
+</span><span id="__span-5-8"><a id="__codelineno-5-8" name="__codelineno-5-8" href="#__codelineno-5-8"></a>    <span class="k">def</span><span class="w"> </span><span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span><span id="__span-5-9"><a id="__codelineno-5-9" name="__codelineno-5-9" href="#__codelineno-5-9"></a>        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">title</span>
+</span></code></pre></div>
 <p>Significance(why it's important):</p>
 <ul>
 <li>Improves readability in the Django admin interface and other places where model instances are displayed.</li>
@@ -2816,9 +2723,8 @@
 </li>
 </ul>
 <p>To start the Django shell, use the following command in your terminal:</p>
-<div class="codehilite"><pre><span></span><code><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>shell
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="w">  </span>python<span class="w"> </span>manage.py<span class="w"> </span>shell
+</span></code></pre></div>
 <h4 id="basic-database-operations-crud">🛠️ Basic Database Operations (CRUD)<a class="headerlink" href="#basic-database-operations-crud" title="Permanent link">&para;</a></h4>
 <h4 id="inserting">Inserting<a class="headerlink" href="#inserting" title="Permanent link">&para;</a></h4>
 <ul>
@@ -2826,52 +2732,44 @@
 <li>Two common methods</li>
 </ul>
 <h5 id="creating-an-instance-and-saving-it">Creating an instance and saving it<a class="headerlink" href="#creating-an-instance-and-saving-it" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code>    <span class="n">new_song</span> <span class="o">=</span> <span class="n">Song</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;फूलको आँखामा फूलै संन्सार&quot;</span><span class="p">,</span> <span class="n">lyrics</span><span class="o">=</span><span class="s2">&quot;फूलको आँखामा फूलै संन्सार, काडा को आँखामा काडैं संन्सार । झुल्किन्छ है छायाँ बस्तु अनुसार, काडाको आँखामा काडैं संन्सार । चित्त सुद्ध होस् मेरो बोलि बुद्ध होस्, मेरो पैतलाले किरै नमरोस् । राम्रो आँखामा खुल्छ राम्रै संन्सार, काडाको आँखामा काडैं संन्सार । तह-तह जुन देखु कालो रातैमा, जीवन संगीत सुनु म सुख पातैमा । सङ्लो मनमा खुल्छ है सङ्लै संन्सार, काडाको आँखामा काडैं संन्सार ।&quot;</span><span class="p">,</span> <span class="n">release_date</span><span class="o">=</span><span class="s2">&quot;2004-10-11&quot;</span><span class="p">,</span> <span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-    <span class="n">new_song</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>    <span class="n">new_song</span> <span class="o">=</span> <span class="n">Song</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;फूलको आँखामा फूलै संन्सार&quot;</span><span class="p">,</span> <span class="n">lyrics</span><span class="o">=</span><span class="s2">&quot;फूलको आँखामा फूलै संन्सार, काडा को आँखामा काडैं संन्सार । झुल्किन्छ है छायाँ बस्तु अनुसार, काडाको आँखामा काडैं संन्सार । चित्त सुद्ध होस् मेरो बोलि बुद्ध होस्, मेरो पैतलाले किरै नमरोस् । राम्रो आँखामा खुल्छ राम्रै संन्सार, काडाको आँखामा काडैं संन्सार । तह-तह जुन देखु कालो रातैमा, जीवन संगीत सुनु म सुख पातैमा । सङ्लो मनमा खुल्छ है सङ्लै संन्सार, काडाको आँखामा काडैं संन्सार ।&quot;</span><span class="p">,</span> <span class="n">release_date</span><span class="o">=</span><span class="s2">&quot;2004-10-11&quot;</span><span class="p">,</span> <span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>    <span class="n">new_song</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</span></code></pre></div>
 <h5 id="create-method">Create method<a class="headerlink" href="#create-method" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code>  <span class="n">new_song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Song Title&quot;</span><span class="p">,</span> <span class="n">lyrics</span><span class="o">=</span><span class="s2">&quot;Song Lyrics&quot;</span><span class="p">,</span> <span class="n">release_date</span><span class="o">=</span><span class="s2">&quot;2023-10-01&quot;</span><span class="p">,</span> <span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>  <span class="n">new_song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">create</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&quot;Song Title&quot;</span><span class="p">,</span> <span class="n">lyrics</span><span class="o">=</span><span class="s2">&quot;Song Lyrics&quot;</span><span class="p">,</span> <span class="n">release_date</span><span class="o">=</span><span class="s2">&quot;2023-10-01&quot;</span><span class="p">,</span> <span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></code></pre></div>
 <h4 id="selecting-objects">Selecting Objects<a class="headerlink" href="#selecting-objects" title="Permanent link">&para;</a></h4>
 <p>Selecting involves retrieving data from the database using the Manager (.objects) and returning it as a QuerySet (a list-like collection) or a single object.</p>
 <h5 id="retrieving-all-objects">Retrieving All Objects<a class="headerlink" href="#retrieving-all-objects" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">all_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">all_songs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="n">all_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">all_songs</span><span class="p">:</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</span></code></pre></div>
 <h5 id="filtering-objects">Filtering Objects<a class="headerlink" href="#filtering-objects" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">published_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">published_songs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="n">published_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a><span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">published_songs</span><span class="p">:</span>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</span></code></pre></div>
 <h5 id="get-a-single-object">Get a Single Object<a class="headerlink" href="#get-a-single-object" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</span></code></pre></div>
 <h5 id="ordering-results">Ordering Results<a class="headerlink" href="#ordering-results" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">ordered_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span>
-<span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">ordered_songs</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="n">ordered_songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">order_by</span><span class="p">(</span><span class="s1">&#39;release_date&#39;</span><span class="p">)</span>
+</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="k">for</span> <span class="n">song</span> <span class="ow">in</span> <span class="n">ordered_songs</span><span class="p">:</span>
+</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>    <span class="nb">print</span><span class="p">(</span><span class="n">song</span><span class="o">.</span><span class="n">title</span><span class="p">)</span>
+</span></code></pre></div>
 <h4 id="updating-data">Updating Data<a class="headerlink" href="#updating-data" title="Permanent link">&para;</a></h4>
 <p>Updating data involves retrieving an existing object, modifying its attributes, and saving the changes back to the database.</p>
 <h5 id="instance-update">Instance Update<a class="headerlink" href="#instance-update" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">song</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Updated Song Title&quot;</span>
-<span class="n">song</span><span class="o">.</span><span class="n">is_published</span> <span class="o">=</span> <span class="kc">False</span>
-<span class="n">song</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="n">song</span><span class="o">.</span><span class="n">title</span> <span class="o">=</span> <span class="s2">&quot;Updated Song Title&quot;</span>
+</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a><span class="n">song</span><span class="o">.</span><span class="n">is_published</span> <span class="o">=</span> <span class="kc">False</span>
+</span><span id="__span-13-4"><a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a><span class="n">song</span><span class="o">.</span><span class="n">save</span><span class="p">()</span>
+</span></code></pre></div>
 <h5 id="queryset-update">QuerySet Update<a class="headerlink" href="#queryset-update" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</span></code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The <code>update()</code> method directly modifies the database and does not call the <code>save()</code> method on individual instances, so any custom save logic will not be executed.</p>
@@ -2879,32 +2777,28 @@
 <h4 id="deleting-objects">Deleting Objects<a class="headerlink" href="#deleting-objects" title="Permanent link">&para;</a></h4>
 <p>Deleting involves removing one or more records from the database.</p>
 <h5 id="instance-deletion">Instance Deletion<a class="headerlink" href="#instance-deletion" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">song</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="n">song</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="nb">id</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a><span class="n">song</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</span></code></pre></div>
 <h5 id="queryset-deletion">QuerySet Deletion<a class="headerlink" href="#queryset-deletion" title="Permanent link">&para;</a></h5>
-<div class="codehilite"><pre><span></span><code><span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a><span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">is_published</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">delete</span><span class="p">()</span>
+</span></code></pre></div>
 <h2 id="the-dumb-way-to-do-database-queries-in-views">The Dumb Way to Do Database Queries in Views<a class="headerlink" href="#the-dumb-way-to-do-database-queries-in-views" title="Permanent link">&para;</a></h2>
 <ol>
 <li>Query in Template</li>
 </ol>
-<div class="codehilite"><pre><span></span><code>{% for song in songs %}
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ song.lyrics }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.album.song_count }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-{% endfor %}
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>{% for song in songs %}
+</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ song.lyrics }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.album.song_count }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-17-4"><a id="__codelineno-17-4" name="__codelineno-17-4" href="#__codelineno-17-4"></a>{% endfor %}
+</span></code></pre></div>
 <ol>
 <li>Query Inside Template Logic</li>
 </ol>
-<div class="codehilite"><pre><span></span><code>  {% if Song.objects.filter(id=1).exists %}
-    Song exists
-  {% endif %}
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>  {% if Song.objects.filter(id=1).exists %}
+</span><span id="__span-18-2"><a id="__codelineno-18-2" name="__codelineno-18-2" href="#__codelineno-18-2"></a>    Song exists
+</span><span id="__span-18-3"><a id="__codelineno-18-3" name="__codelineno-18-3" href="#__codelineno-18-3"></a>  {% endif %}
+</span></code></pre></div>
 <h3 id="why-this-is-dumb">Why this is dumb?<a class="headerlink" href="#why-this-is-dumb" title="Permanent link">&para;</a></h3>
 <ul>
 <li>
@@ -2928,21 +2822,20 @@
 <ul>
 <li>Query in the View only. No queries in the template.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
-<span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
-    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">select_related</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">})</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.shortcuts</span><span class="w"> </span><span class="kn">import</span> <span class="n">render</span>
+</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">.models</span><span class="w"> </span><span class="kn">import</span> <span class="n">Song</span>
+</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a><span class="k">def</span><span class="w"> </span><span class="nf">song_list</span><span class="p">(</span><span class="n">request</span><span class="p">):</span>
+</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>    <span class="n">songs</span> <span class="o">=</span> <span class="n">Song</span><span class="o">.</span><span class="n">objects</span><span class="o">.</span><span class="n">all</span><span class="p">()</span><span class="o">.</span><span class="n">select_related</span><span class="p">(</span><span class="s1">&#39;album&#39;</span><span class="p">)</span>
+</span><span id="__span-19-5"><a id="__codelineno-19-5" name="__codelineno-19-5" href="#__codelineno-19-5"></a>    <span class="k">return</span> <span class="n">render</span><span class="p">(</span><span class="n">request</span><span class="p">,</span> <span class="s1">&#39;songs/song_list.html&#39;</span><span class="p">,</span> <span class="p">{</span><span class="s1">&#39;songs&#39;</span><span class="p">:</span> <span class="n">songs</span><span class="p">})</span>
+</span></code></pre></div>
 <ul>
 <li>Simple Template! Fast. Clean. Proper MTV.</li>
 </ul>
-<div class="codehilite"><pre><span></span><code>{% for song in songs %}
-    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ song.lyrics }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.album.song_count }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
-{% endfor %}
-</code></pre></div>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-20-1"><a id="__codelineno-20-1" name="__codelineno-20-1" href="#__codelineno-20-1"></a>{% for song in songs %}
+</span><span id="__span-20-2"><a id="__codelineno-20-2" name="__codelineno-20-2" href="#__codelineno-20-2"></a>    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{{ song.lyrics }}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-20-3"><a id="__codelineno-20-3" name="__codelineno-20-3" href="#__codelineno-20-3"></a>    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>{{ song.album.song_count }}<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span><span id="__span-20-4"><a id="__codelineno-20-4" name="__codelineno-20-4" href="#__codelineno-20-4"></a>{% endfor %}
+</span></code></pre></div>
 
 
 
@@ -2960,6 +2853,8 @@
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2972,6 +2867,46 @@
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../slides/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Class Slides">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Class Slides
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../database-setup/" class="md-footer__link md-footer__link--next" aria-label="Next: Database Setup">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Database Setup
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2998,7 +2933,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>

@@ -8,10 +8,10 @@
       
       
       
-        <link rel="canonical" href="https://example.com/docs/unit-6/internationalization-and-localization/">
+        <link rel="canonical" href="https://ritushishir.github.io/web-technology-with-django/unit-6/internationalization-and-localization/">
       
       
-        <link rel="prev" href="../overview/">
+        <link rel="prev" href="../slides/">
       
       
         <link rel="next" href="../internationalization-localization-steps/">
@@ -25,7 +25,7 @@
     
     
       
-        <title>Internationalization and Localization - Mastering Django</title>
+        <title>Internationalization and Localization - Web Technology with Django</title>
       
     
     
@@ -90,7 +90,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="../.." title="Mastering Django" class="md-header__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-header__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
@@ -103,7 +103,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Mastering Django
+            Web Technology with Django
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -166,11 +166,18 @@
       </label>
       <nav class="md-search__options" aria-label="Search">
         
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
       
     </form>
     <div class="md-search__output">
@@ -207,17 +214,18 @@
   
   
   
-    <li class="md-tabs__item">
-      <a href="../.." class="md-tabs__link">
-        
-  
-  
     
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
   
   Introduction
 
-      </a>
-    </li>
+        </a>
+      </li>
+    
   
 
       
@@ -229,7 +237,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-1/introduction-to-django/" class="md-tabs__link">
+        <a href="../../unit-1/slides/" class="md-tabs__link">
           
   
   
@@ -249,7 +257,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-2/overview/" class="md-tabs__link">
+        <a href="../../unit-2/slides/" class="md-tabs__link">
           
   
   
@@ -269,7 +277,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-3/overview/" class="md-tabs__link">
+        <a href="../../unit-3/slides/" class="md-tabs__link">
           
   
   
@@ -289,7 +297,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-4/overview/" class="md-tabs__link">
+        <a href="../../unit-4/slides/" class="md-tabs__link">
           
   
   
@@ -309,7 +317,7 @@
     
     
       <li class="md-tabs__item">
-        <a href="../../unit-5/overview/" class="md-tabs__link">
+        <a href="../../unit-5/slides/" class="md-tabs__link">
           
   
   
@@ -331,7 +339,7 @@
     
     
       <li class="md-tabs__item md-tabs__item--active">
-        <a href="../overview/" class="md-tabs__link">
+        <a href="../slides/" class="md-tabs__link">
           
   
   
@@ -365,12 +373,12 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../.." title="Mastering Django" class="md-nav__button md-logo" aria-label="Mastering Django" data-md-component="logo">
+    <a href="../.." title="Web Technology with Django" class="md-nav__button md-logo" aria-label="Web Technology with Django" data-md-component="logo">
       
   <img src="../../assets/logo.png" alt="logo">
 
     </a>
-    Mastering Django
+    Web Technology with Django
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -381,9 +389,25 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../.." class="md-nav__link">
+    
+    
+    
+    
+      
+      
         
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -397,7 +421,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Introduction
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../introduction/course-syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course Syllabus
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -449,6 +545,86 @@
             
   
     1. Django Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-1/slides/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
   
 
           </label>
@@ -572,6 +748,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -632,14 +816,150 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-2/overview/" class="md-nav__link">
+      <a href="../../unit-2/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/models-and-the-orm/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models and the ORM
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/database-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Database Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../unit-2/using-environment-variables/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Environment Variables
   
 
     
@@ -737,57 +1057,9 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-2/database-setup/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Database Setup
-  
-
-    
-  </span>
-  
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../unit-2/using-environment-variables/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Environment Variables
-  
-
-    
-  </span>
-  
-  
-
-      </a>
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -859,14 +1131,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-3/overview/" class="md-nav__link">
+      <a href="../../unit-3/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -879,6 +1151,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1026,6 +1350,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1086,14 +1418,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-4/overview/" class="md-nav__link">
+      <a href="../../unit-4/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1106,6 +1438,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1253,6 +1637,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1313,14 +1705,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../../unit-5/overview/" class="md-nav__link">
+      <a href="../../unit-5/slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1333,6 +1725,58 @@
   
 
               
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_2" id="__nav_6_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1424,6 +1868,14 @@
     </li>
   
 
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
     
       
       
@@ -1489,14 +1941,14 @@
   
   
     <li class="md-nav__item">
-      <a href="../overview/" class="md-nav__link">
+      <a href="../slides/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     
   
-    Overview
+    Class Slides
   
 
     
@@ -1509,6 +1961,63 @@
   
 
               
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Topic Notes
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Topic Notes
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
             
               
                 
@@ -1772,7 +2281,7 @@
   <span class="md-ellipsis">
     
   
-    Step-by-step-guide
+    i18n Step-by-Step Guide
   
 
     
@@ -1865,6 +2374,14 @@
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -2101,16 +2618,15 @@
 <h2 id="specifying-translation-strings-in-python-code">Specifying Translation Strings in Python Code<a class="headerlink" href="#specifying-translation-strings-in-python-code" title="Permanent link">&para;</a></h2>
 <h3 id="using-gettext-and-gettext_lazy">Using <code>gettext</code> and <code>gettext_lazy</code><a class="headerlink" href="#using-gettext-and-gettext_lazy" title="Permanent link">&para;</a></h3>
 <p>Django provides two main functions for marking strings for translation in Python code:</p>
-<div class="codehilite"><pre><span></span><code><span class="kn">from</span><span class="w"> </span><span class="nn">django.utils.translation</span><span class="w"> </span><span class="kn">import</span> <span class="n">gettext</span> <span class="k">as</span> <span class="n">_</span><span class="p">,</span> <span class="n">gettext_lazy</span> <span class="k">as</span> <span class="n">_l</span>
-
-<span class="c1"># Immediate translation (evaluated at runtime)</span>
-<span class="n">title</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Welcome to our website&#39;</span><span class="p">)</span>
-
-<span class="c1"># Lazy translation (evaluated when accessed, ideal for models/forms)</span>
-<span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
-    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="n">_l</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">))</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.utils.translation</span><span class="w"> </span><span class="kn">import</span> <span class="n">gettext</span> <span class="k">as</span> <span class="n">_</span><span class="p">,</span> <span class="n">gettext_lazy</span> <span class="k">as</span> <span class="n">_l</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="c1"># Immediate translation (evaluated at runtime)</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="n">title</span> <span class="o">=</span> <span class="n">_</span><span class="p">(</span><span class="s1">&#39;Welcome to our website&#39;</span><span class="p">)</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="c1"># Lazy translation (evaluated when accessed, ideal for models/forms)</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="k">class</span><span class="w"> </span><span class="nc">Song</span><span class="p">(</span><span class="n">models</span><span class="o">.</span><span class="n">Model</span><span class="p">):</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    <span class="n">title</span> <span class="o">=</span> <span class="n">models</span><span class="o">.</span><span class="n">CharField</span><span class="p">(</span><span class="n">max_length</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">verbose_name</span><span class="o">=</span><span class="n">_l</span><span class="p">(</span><span class="s1">&#39;Title&#39;</span><span class="p">))</span>
+</span></code></pre></div>
 <p><strong>Key Differences:</strong></p>
 <ul>
 <li><code>gettext()</code>: Translates immediately when called</li>
@@ -2120,49 +2636,47 @@
 <h2 id="specifying-translation-strings-in-template-code">Specifying Translation Strings in Template Code<a class="headerlink" href="#specifying-translation-strings-in-template-code" title="Permanent link">&para;</a></h2>
 <h3 id="using-the-trans-and-blocktrans-tags">Using the <code>{% trans %}</code> and <code>{% blocktrans %}</code> tags<a class="headerlink" href="#using-the-trans-and-blocktrans-tags" title="Permanent link">&para;</a></h3>
 <p>Django provides template tags for marking translatable content:</p>
-<div class="codehilite"><pre><span></span><code>{% load i18n %}
-
-<span class="cm">&lt;!-- Simple translation --&gt;</span>
-<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{% trans &quot;Welcome to our site&quot; %}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
-
-<span class="cm">&lt;!-- With context --&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% trans &quot;Welcome&quot; context &quot;greeting&quot; %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-
-<span class="cm">&lt;!-- Blocktrans for complex content --&gt;</span>
-{% blocktrans %}
-Hello {{ user.name }}, you have {{ count }} new messages.
-{% endblocktrans %}
-
-<span class="cm">&lt;!-- Blocktrans with pluralization --&gt;</span>
-{% blocktrans count count=cart.items.count %}
-You have {{ count }} item in your cart.
-{% plural %}
-You have {{ count }} items in your cart.
-{% endblocktrans %}
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>{% load i18n %}
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="cm">&lt;!-- Simple translation --&gt;</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>{% trans &quot;Welcome to our site&quot; %}<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="cm">&lt;!-- With context --&gt;</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% trans &quot;Welcome&quot; context &quot;greeting&quot; %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="cm">&lt;!-- Blocktrans for complex content --&gt;</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>{% blocktrans %}
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>Hello {{ user.name }}, you have {{ count }} new messages.
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>{% endblocktrans %}
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="cm">&lt;!-- Blocktrans with pluralization --&gt;</span>
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>{% blocktrans count count=cart.items.count %}
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>You have {{ count }} item in your cart.
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>{% plural %}
+</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>You have {{ count }} items in your cart.
+</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>{% endblocktrans %}
+</span></code></pre></div>
 <h3 id="translating-variable-content-within-templates">Translating Variable Content within Templates<a class="headerlink" href="#translating-variable-content-within-templates" title="Permanent link">&para;</a></h3>
 <p>For translating variables that contain translatable strings:</p>
-<div class="codehilite"><pre><span></span><code>{% load i18n %}
-
-<span class="cm">&lt;!-- Using with blocktrans --&gt;</span>
-{% blocktrans with product_name=product.name %}
-Product: {{ product_name }}
-{% endblocktrans %}
-
-<span class="cm">&lt;!-- Translating template variables --&gt;</span>
-{% get_current_language as LANGUAGE_CODE %}
-{% get_available_languages as LANGUAGES %}
-
-<span class="cm">&lt;!-- Using trans tag with filters --&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% trans message|upper %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-
-<span class="cm">&lt;!-- Date/time localization --&gt;</span>
-{% load locale %}
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% localdate appointment.date %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% localtime appointment.time %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
-</code></pre></div>
-
+<div class="language-html highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>{% load i18n %}
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="cm">&lt;!-- Using with blocktrans --&gt;</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>{% blocktrans with product_name=product.name %}
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>Product: {{ product_name }}
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>{% endblocktrans %}
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="cm">&lt;!-- Translating template variables --&gt;</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a>{% get_current_language as LANGUAGE_CODE %}
+</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a>{% get_available_languages as LANGUAGES %}
+</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a>
+</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="cm">&lt;!-- Using trans tag with filters --&gt;</span>
+</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% trans message|upper %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a>
+</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="cm">&lt;!-- Date/time localization --&gt;</span>
+</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>{% load locale %}
+</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% localdate appointment.date %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>{% localtime appointment.time %}<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></code></pre></div>
 <p><strong>Best Practices:</strong></p>
 <ul>
 <li>Use <code>{% trans %}</code> for simple strings</li>
@@ -2178,18 +2692,17 @@ Product: {{ product_name }}
 <li>Includes metadata like translator information, creation date</li>
 <li>Example structure:</li>
 </ul>
-<div class="codehilite"><pre><span></span><code><span class="kd">#: templates/base.html:10</span>
-<span class="nv">msgid</span> <span class="s">&quot;Welcome&quot;</span>
-<span class="nv">msgstr</span> <span class="s">&quot;Bienvenue&quot;</span>
-
-<span class="kd">#: models.py:15</span>
-<span class="kt">#, python-format</span>
-<span class="nv">msgid</span> <span class="s">&quot;There is %(count)s item&quot;</span>
-<span class="nv">msgid_plural</span> <span class="s">&quot;There are %(count)s items&quot;</span>
-<span class="nv">msgstr[</span><span class="mi">0</span><span class="nv">]</span> <span class="s">&quot;Il y a %(count)s élément&quot;</span>
-<span class="nv">msgstr[</span><span class="mi">1</span><span class="nv">]</span> <span class="s">&quot;Il y a %(count)s éléments&quot;</span>
-</code></pre></div>
-
+<div class="language-po highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">#: templates/base.html:10</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="nv">msgid</span> <span class="s">&quot;Welcome&quot;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="nv">msgstr</span> <span class="s">&quot;Bienvenue&quot;</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="kd">#: models.py:15</span>
+</span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a><span class="kt">#, python-format</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="nv">msgid</span> <span class="s">&quot;There is %(count)s item&quot;</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nv">msgid_plural</span> <span class="s">&quot;There are %(count)s items&quot;</span>
+</span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a><span class="nv">msgstr[</span><span class="mi">0</span><span class="nv">]</span> <span class="s">&quot;Il y a %(count)s élément&quot;</span>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="nv">msgstr[</span><span class="mi">1</span><span class="nv">]</span> <span class="s">&quot;Il y a %(count)s éléments&quot;</span>
+</span></code></pre></div>
 <p><strong><code>.mo</code> Files (Machine Object):</strong></p>
 <ul>
 <li>Compiled binary versions of <code>.po</code> files</li>
@@ -2199,41 +2712,38 @@ Product: {{ product_name }}
 </ul>
 <h3 id="using-makemessages-and-compilemessages-commands">Using <code>makemessages</code> and <code>compilemessages</code> commands<a class="headerlink" href="#using-makemessages-and-compilemessages-commands" title="Permanent link">&para;</a></h3>
 <p><strong>Creating Translation Files:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Create translation files for all enabled languages</span>
-python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne
-
-<span class="c1"># Create for specific domains</span>
-django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--domain<span class="o">=</span>djangojs<span class="w">  </span><span class="c1"># JavaScript translations</span>
-django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--domain<span class="o">=</span>django<span class="w">     </span><span class="c1"># Python/template translations</span>
-
-<span class="c1"># Update existing translations</span>
-django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--no-obsolete
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="c1"># Create translation files for all enabled languages</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="c1"># Create for specific domains</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--domain<span class="o">=</span>djangojs<span class="w">  </span><span class="c1"># JavaScript translations</span>
+</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--domain<span class="o">=</span>django<span class="w">     </span><span class="c1"># Python/template translations</span>
+</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>
+</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="c1"># Update existing translations</span>
+</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>django-admin<span class="w"> </span>makemessages<span class="w"> </span>-l<span class="w"> </span>ne<span class="w"> </span>--no-obsolete
+</span></code></pre></div>
 <p><strong>Compiling Translations:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># Compile all translation files</span>
-python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages
-
-<span class="c1"># Compile for specific language</span>
-python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<span class="w"> </span>-l<span class="w"> </span>ne
-</code></pre></div>
-
-<p><strong>Directory Structure:</strong></p>
-<div class="codehilite"><pre><span></span><code>locale/
-├── ne/
-│   └── LC_MESSAGES/
-│       ├── django.po      # Python/template translations
-│       ├── django.mo      # Compiled Python/template translations
-│       ├── djangojs.po    # JavaScript translations
-│       └── djangojs.mo    # Compiled JavaScript translations
-├── in/
-│   └── LC_MESSAGES/
-│       ├── django.po
-│       ├── django.mo
-│       ├── djangojs.po
-│       └── djangojs.mo
-</code></pre></div>
-
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="c1"># Compile all translation files</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a><span class="c1"># Compile for specific language</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<span class="w"> </span>-l<span class="w"> </span>ne
+</span></code></pre></div>
+<p><strong>Directory Structure:</strong>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>locale/
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>├── ne/
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>│   └── LC_MESSAGES/
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a>│       ├── django.po      # Python/template translations
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>│       ├── django.mo      # Compiled Python/template translations
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>│       ├── djangojs.po    # JavaScript translations
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>│       └── djangojs.mo    # Compiled JavaScript translations
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>├── in/
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>│   └── LC_MESSAGES/
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>│       ├── django.po
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>│       ├── django.mo
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>│       ├── djangojs.po
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>│       └── djangojs.mo
+</span></code></pre></div></p>
 <p><strong>Workflow:</strong></p>
 <ol>
 <li>Add translatable strings to code using translation functions</li>
@@ -2247,22 +2757,21 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
 <p>Django uses a sophisticated process to determine the appropriate language for each request:</p>
 <p><strong>Priority Order (from highest to lowest):</strong></p>
 <p><strong>URL Prefix</strong> (when using <code>i18n_patterns</code>)</p>
-<div class="codehilite"><pre><span></span><code>   <span class="c1"># urls.py</span>
-   <span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.i18n</span><span class="w"> </span><span class="kn">import</span> <span class="n">i18n_patterns</span>
-   <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
-
-   <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;i18n/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.conf.urls.i18n&#39;</span><span class="p">)),</span>
-   <span class="p">]</span>
-
-   <span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">i18n_patterns</span><span class="p">(</span>
-       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">home</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;home&#39;</span><span class="p">),</span>
-       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;about/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">about</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;about&#39;</span><span class="p">),</span>
-       <span class="n">prefix_default_language</span><span class="o">=</span><span class="kc">False</span>  <span class="c1"># Optional: don&#39;t add default language prefix</span>
-   <span class="p">)</span>
-</code></pre></div>
-
-<p>URLs become: <code>/ne/home/</code>, <code>/fr/accueil/</code> etc</p>
+<p><div class="language-python highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>   <span class="c1"># urls.py</span>
+</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>   <span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.i18n</span><span class="w"> </span><span class="kn">import</span> <span class="n">i18n_patterns</span>
+</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>   <span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>
+</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>   <span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;i18n/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.conf.urls.i18n&#39;</span><span class="p">)),</span>
+</span><span id="__span-7-7"><a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>   <span class="p">]</span>
+</span><span id="__span-7-8"><a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a>
+</span><span id="__span-7-9"><a id="__codelineno-7-9" name="__codelineno-7-9" href="#__codelineno-7-9"></a>   <span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">i18n_patterns</span><span class="p">(</span>
+</span><span id="__span-7-10"><a id="__codelineno-7-10" name="__codelineno-7-10" href="#__codelineno-7-10"></a>       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">home</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;home&#39;</span><span class="p">),</span>
+</span><span id="__span-7-11"><a id="__codelineno-7-11" name="__codelineno-7-11" href="#__codelineno-7-11"></a>       <span class="n">path</span><span class="p">(</span><span class="s1">&#39;about/&#39;</span><span class="p">,</span> <span class="n">views</span><span class="o">.</span><span class="n">about</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;about&#39;</span><span class="p">),</span>
+</span><span id="__span-7-12"><a id="__codelineno-7-12" name="__codelineno-7-12" href="#__codelineno-7-12"></a>       <span class="n">prefix_default_language</span><span class="o">=</span><span class="kc">False</span>  <span class="c1"># Optional: don&#39;t add default language prefix</span>
+</span><span id="__span-7-13"><a id="__codelineno-7-13" name="__codelineno-7-13" href="#__codelineno-7-13"></a>   <span class="p">)</span>
+</span></code></pre></div>
+URLs become: <code>/ne/home/</code>, <code>/fr/accueil/</code> etc</p>
 <p><strong>Language Cookie</strong> (<code>django_language</code>)</p>
 <ul>
 <li>Set by the <code>set_language</code> view or manually</li>
@@ -2285,26 +2794,25 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
 <li>Final fallback if no other method yields a match</li>
 </ul>
 <h3 id="the-role-of-localemiddleware">The role of <code>LocaleMiddleware</code><a class="headerlink" href="#the-role-of-localemiddleware" title="Permanent link">&para;</a></h3>
-<p><strong>Configuration in <code>settings.py</code>:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="n">MIDDLEWARE</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="c1"># ... other middleware</span>
-    <span class="s1">&#39;django.middleware.locale.LocaleMiddleware&#39;</span><span class="p">,</span>
-    <span class="c1"># Must be after SessionMiddleware and before CommonMiddleware</span>
-<span class="p">]</span>
-
-<span class="c1"># Language settings</span>
-<span class="n">LANGUAGE_CODE</span> <span class="o">=</span> <span class="s1">&#39;en-us&#39;</span>
-<span class="n">LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="s1">&#39;English&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;es&#39;</span><span class="p">,</span> <span class="s1">&#39;Español&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;Français&#39;</span><span class="p">),</span>
-    <span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">,</span> <span class="s1">&#39;Deutsch&#39;</span><span class="p">),</span>
-<span class="p">]</span>
-<span class="n">LOCALE_PATHS</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;locale/&#39;</span><span class="p">,</span>
-<span class="p">]</span>
-</code></pre></div>
-
+<p><strong>Configuration in <code>settings.py</code>:</strong>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="n">MIDDLEWARE</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-8-2"><a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>    <span class="c1"># ... other middleware</span>
+</span><span id="__span-8-3"><a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>    <span class="s1">&#39;django.middleware.locale.LocaleMiddleware&#39;</span><span class="p">,</span>
+</span><span id="__span-8-4"><a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>    <span class="c1"># Must be after SessionMiddleware and before CommonMiddleware</span>
+</span><span id="__span-8-5"><a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a><span class="p">]</span>
+</span><span id="__span-8-6"><a id="__codelineno-8-6" name="__codelineno-8-6" href="#__codelineno-8-6"></a>
+</span><span id="__span-8-7"><a id="__codelineno-8-7" name="__codelineno-8-7" href="#__codelineno-8-7"></a><span class="c1"># Language settings</span>
+</span><span id="__span-8-8"><a id="__codelineno-8-8" name="__codelineno-8-8" href="#__codelineno-8-8"></a><span class="n">LANGUAGE_CODE</span> <span class="o">=</span> <span class="s1">&#39;en-us&#39;</span>
+</span><span id="__span-8-9"><a id="__codelineno-8-9" name="__codelineno-8-9" href="#__codelineno-8-9"></a><span class="n">LANGUAGES</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-8-10"><a id="__codelineno-8-10" name="__codelineno-8-10" href="#__codelineno-8-10"></a>    <span class="p">(</span><span class="s1">&#39;en&#39;</span><span class="p">,</span> <span class="s1">&#39;English&#39;</span><span class="p">),</span>
+</span><span id="__span-8-11"><a id="__codelineno-8-11" name="__codelineno-8-11" href="#__codelineno-8-11"></a>    <span class="p">(</span><span class="s1">&#39;es&#39;</span><span class="p">,</span> <span class="s1">&#39;Español&#39;</span><span class="p">),</span>
+</span><span id="__span-8-12"><a id="__codelineno-8-12" name="__codelineno-8-12" href="#__codelineno-8-12"></a>    <span class="p">(</span><span class="s1">&#39;fr&#39;</span><span class="p">,</span> <span class="s1">&#39;Français&#39;</span><span class="p">),</span>
+</span><span id="__span-8-13"><a id="__codelineno-8-13" name="__codelineno-8-13" href="#__codelineno-8-13"></a>    <span class="p">(</span><span class="s1">&#39;de&#39;</span><span class="p">,</span> <span class="s1">&#39;Deutsch&#39;</span><span class="p">),</span>
+</span><span id="__span-8-14"><a id="__codelineno-8-14" name="__codelineno-8-14" href="#__codelineno-8-14"></a><span class="p">]</span>
+</span><span id="__span-8-15"><a id="__codelineno-8-15" name="__codelineno-8-15" href="#__codelineno-8-15"></a><span class="n">LOCALE_PATHS</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-8-16"><a id="__codelineno-8-16" name="__codelineno-8-16" href="#__codelineno-8-16"></a>    <span class="n">BASE_DIR</span> <span class="o">/</span> <span class="s1">&#39;locale/&#39;</span><span class="p">,</span>
+</span><span id="__span-8-17"><a id="__codelineno-8-17" name="__codelineno-8-17" href="#__codelineno-8-17"></a><span class="p">]</span>
+</span></code></pre></div></p>
 <p><strong>Middleware Responsibilities:</strong></p>
 <ol>
 <li>
@@ -2335,39 +2843,38 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
 <h3 id="implementing-a-language-switcher-for-users-to-manually-toggle-between-languages">Implementing a language switcher for users to manually toggle between languages<a class="headerlink" href="#implementing-a-language-switcher-for-users-to-manually-toggle-between-languages" title="Permanent link">&para;</a></h3>
 <p>Django provides a built-in view for handling language switching:</p>
 <p><strong>Basic Implementation:</strong></p>
-<div class="codehilite"><pre><span></span><code><span class="c1"># urls.py</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.i18n</span><span class="w"> </span><span class="kn">import</span> <span class="n">i18n_patterns</span>
-<span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
-
-<span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;i18n/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.conf.urls.i18n&#39;</span><span class="p">)),</span>  <span class="c1"># Includes set_language view</span>
-<span class="p">]</span>
-
-<span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">i18n_patterns</span><span class="p">(</span>
-    <span class="c1"># Your URL patterns here</span>
-<span class="p">)</span>
-</code></pre></div>
-
+<div class="language-python highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="c1"># urls.py</span>
+</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.conf.urls.i18n</span><span class="w"> </span><span class="kn">import</span> <span class="n">i18n_patterns</span>
+</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a><span class="kn">from</span><span class="w"> </span><span class="nn">django.urls</span><span class="w"> </span><span class="kn">import</span> <span class="n">path</span><span class="p">,</span> <span class="n">include</span>
+</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>
+</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a><span class="n">urlpatterns</span> <span class="o">=</span> <span class="p">[</span>
+</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>    <span class="n">path</span><span class="p">(</span><span class="s1">&#39;i18n/&#39;</span><span class="p">,</span> <span class="n">include</span><span class="p">(</span><span class="s1">&#39;django.conf.urls.i18n&#39;</span><span class="p">)),</span>  <span class="c1"># Includes set_language view</span>
+</span><span id="__span-9-7"><a id="__codelineno-9-7" name="__codelineno-9-7" href="#__codelineno-9-7"></a><span class="p">]</span>
+</span><span id="__span-9-8"><a id="__codelineno-9-8" name="__codelineno-9-8" href="#__codelineno-9-8"></a>
+</span><span id="__span-9-9"><a id="__codelineno-9-9" name="__codelineno-9-9" href="#__codelineno-9-9"></a><span class="n">urlpatterns</span> <span class="o">+=</span> <span class="n">i18n_patterns</span><span class="p">(</span>
+</span><span id="__span-9-10"><a id="__codelineno-9-10" name="__codelineno-9-10" href="#__codelineno-9-10"></a>    <span class="c1"># Your URL patterns here</span>
+</span><span id="__span-9-11"><a id="__codelineno-9-11" name="__codelineno-9-11" href="#__codelineno-9-11"></a><span class="p">)</span>
+</span></code></pre></div>
 <p><strong>Language Switcher Template:</strong></p>
-<div class="codehilite"><pre><span></span><code>{% load i18n %}
-
-<span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;{% url &#39;set_language&#39; %}&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
-    {% csrf_token %}
-    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;next&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ request.path }}&quot;</span> <span class="p">/&gt;</span>
-
-    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;language&quot;</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&quot;this.form.submit()&quot;</span><span class="p">&gt;</span>
-        {% get_current_language as LANGUAGE_CODE %}
-        {% get_available_languages as LANGUAGES %}
-
-        {% for lang_code, lang_name in LANGUAGES %}
-            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ lang_code }}&quot;</span> 
-                    <span class="err">{%</span> <span class="na">if</span> <span class="na">lang_code </span><span class="o">=</span><span class="s">=</span> <span class="na">LANGUAGE_CODE</span> <span class="err">%}</span><span class="na">selected</span><span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="p">&gt;</span>
-                {{ lang_name }}
-            <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
-        {% endfor %}
-    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
-<span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
-</code></pre></div>
+<div class="language-html highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>{% load i18n %}
+</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>
+</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a><span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;{% url &#39;set_language&#39; %}&quot;</span> <span class="na">method</span><span class="o">=</span><span class="s">&quot;post&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>    {% csrf_token %}
+</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>    <span class="p">&lt;</span><span class="nt">input</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;next&quot;</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;hidden&quot;</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ request.path }}&quot;</span> <span class="p">/&gt;</span>
+</span><span id="__span-10-6"><a id="__codelineno-10-6" name="__codelineno-10-6" href="#__codelineno-10-6"></a>
+</span><span id="__span-10-7"><a id="__codelineno-10-7" name="__codelineno-10-7" href="#__codelineno-10-7"></a>    <span class="p">&lt;</span><span class="nt">select</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;language&quot;</span> <span class="na">onchange</span><span class="o">=</span><span class="s">&quot;this.form.submit()&quot;</span><span class="p">&gt;</span>
+</span><span id="__span-10-8"><a id="__codelineno-10-8" name="__codelineno-10-8" href="#__codelineno-10-8"></a>        {% get_current_language as LANGUAGE_CODE %}
+</span><span id="__span-10-9"><a id="__codelineno-10-9" name="__codelineno-10-9" href="#__codelineno-10-9"></a>        {% get_available_languages as LANGUAGES %}
+</span><span id="__span-10-10"><a id="__codelineno-10-10" name="__codelineno-10-10" href="#__codelineno-10-10"></a>
+</span><span id="__span-10-11"><a id="__codelineno-10-11" name="__codelineno-10-11" href="#__codelineno-10-11"></a>        {% for lang_code, lang_name in LANGUAGES %}
+</span><span id="__span-10-12"><a id="__codelineno-10-12" name="__codelineno-10-12" href="#__codelineno-10-12"></a>            <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;{{ lang_code }}&quot;</span> 
+</span><span id="__span-10-13"><a id="__codelineno-10-13" name="__codelineno-10-13" href="#__codelineno-10-13"></a>                    <span class="err">{%</span> <span class="na">if</span> <span class="na">lang_code </span><span class="o">=</span><span class="s">=</span> <span class="na">LANGUAGE_CODE</span> <span class="err">%}</span><span class="na">selected</span><span class="err">{%</span> <span class="na">endif</span> <span class="err">%}</span><span class="p">&gt;</span>
+</span><span id="__span-10-14"><a id="__codelineno-10-14" name="__codelineno-10-14" href="#__codelineno-10-14"></a>                {{ lang_name }}
+</span><span id="__span-10-15"><a id="__codelineno-10-15" name="__codelineno-10-15" href="#__codelineno-10-15"></a>            <span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+</span><span id="__span-10-16"><a id="__codelineno-10-16" name="__codelineno-10-16" href="#__codelineno-10-16"></a>        {% endfor %}
+</span><span id="__span-10-17"><a id="__codelineno-10-17" name="__codelineno-10-17" href="#__codelineno-10-17"></a>    <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+</span><span id="__span-10-18"><a id="__codelineno-10-18" name="__codelineno-10-18" href="#__codelineno-10-18"></a><span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+</span></code></pre></div>
 
 
 
@@ -2385,6 +2892,8 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
             </div>
           
           
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
         </div>
         
@@ -2397,6 +2906,46 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
       </main>
       
         <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../slides/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Class Slides">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Class Slides
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../internationalization-localization-steps/" class="md-footer__link md-footer__link--next" aria-label="Next: i18n Step-by-Step Guide">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                i18n Step-by-Step Guide
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -2423,7 +2972,7 @@ python<span class="w"> </span>manage.py<span class="w"> </span>compilemessages<s
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.instant", "navigation.top", "search.highlight", "content.code.annotate", "content.code.copy", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.tabs", "navigation.sections", "navigation.top", "navigation.footer", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
