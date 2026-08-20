@@ -15,13 +15,6 @@ The whole unit in one line: **a URL comes in, a view runs, a template renders, H
 - Follow one request end to end
 - Render dynamic pages without repeating yourself
 
-!!! tip "Prerequisite check"
-
-    - Python 3.10+ 
-    - virtual environments 
-    - basic HTTP (GET/POST, status codes) 
-    - relational DB basics
-
 ---
 
 ## 2. Learning Outcomes
@@ -45,12 +38,12 @@ By the end of this unit you can:
 - **Don't reinvent the wheel** for common tasks — routing, forms, auth, admin, ORM
 
 ??? tip "Name three things every web app needs"
-    - Routing, 
-    - templating, 
-    - database access, 
-    - forms/validation, 
-    - authentication, sessions,
-    - security defenses, 
+    - Routing
+    - templating
+    - database access
+    - forms/validation
+    - authentication, sessions
+    - security defenses
     - static file handling, admin tooling. 
 
 → [Introduction to Django](introduction-to-django.md)
@@ -59,10 +52,19 @@ By the end of this unit you can:
 
 ## 4. What Comes with Django
 
-![django-features](assets/django-features.png)
-
-"Batteries included" — the ORM, template engine, admin site, forms, auth and security
+**Batteries included** - the ORM, template engine, admin site, forms, auth and security
 layers all ship in the box.
+
+- **Admin Interface** - A powerful, auto-generated site for managing your app's data
+- **Object-Relational Mapper(ORM)** - Lets you interact with your database using Python code instead of SQL
+- **Security** - Built-in protection against common attacks like XSS, CSRF, and SQL injection
+- **Template Engine** - A simple yet powerful syntax for creating dynamic HTML
+- **URL Routing** - A clean and flexible system for mapping URLs to your code
+
+
+??? tip "Why is Django called 'Batteries Included' framework?"
+
+    Because it comes with almost all the essential tools and features built-in, allowing developers to build complete web applications straight "out of the box" wihtout relying on third-party libraries.
 
 ---
 
@@ -137,7 +139,12 @@ A **Project** is the entire web application; an **App** is a modular component s
 
 ??? tip "Which apps would Geetshala need?"
 
-    `users`, `artists`, `songs`, `playlists`, `reviews`, `api`
+     -  `users`
+     -  `artists`
+     -  `songs`
+     -  `playlists`
+     -  `reviews`
+     -  `api`
 
 → [Project and App structure](project-and-app-structure.md)
 
@@ -343,8 +350,13 @@ def custom_404_view(request, exception):
     return HttpResponse("Custom 404 - Trying to render a page", status=404)
 ```
 
-**Pretty error page** (only when `DEBUG = True`): stack trace · code context ·
-variable inspection · request information · settings overview.
+**Pretty error page** (only when `DEBUG = True`): 
+
+  - stack trace
+  - code context
+  - variable inspection
+  - request information
+  - settings overview
 
 !!! warning "In production"
 
@@ -502,8 +514,9 @@ Students should leave the session having done all of this:
 
 ??? question "`/songs/` returns 404 but the view exists. Name three things to check."
 
-    App in `INSTALLED_APPS`; URL pattern present and `include()`d from the project URLconf;
-    the view actually returns an `HttpResponse`.
+    - App in `INSTALLED_APPS`; 
+    - URL pattern present and it's `include()`d from the project URLconf;
+    - the view actually returns an `HttpResponse`.
 
 ??? question "Give one concrete benefit of loose coupling between URLs and views."
 

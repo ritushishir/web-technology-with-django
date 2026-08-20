@@ -15,8 +15,6 @@
 
 ## What comes with Django
 
-![django-features](../unit-1/assets/django-features.png)
-
 ### "Batteries Included" — What Is Actually in the Box
 
 The phrase gets repeated until it stops meaning anything. Concretely, here is what ships in the
@@ -142,8 +140,10 @@ very good use of Django.
 
 ??? question "Give one honest reason *not* to use Django."
 
-    Any of: a single tiny endpoint; an async-first websocket application; non-relational data; or
-    wanting to choose every layer of the stack yourself.
+    - a single tiny endpoint; 
+    - an async-first websocket application; 
+    - non-relational data; or
+    - wanting to choose every layer of the stack yourself.
 
 ??? question "Your Django site is slow. What is the most likely culprit?"
 
